@@ -1,0 +1,8 @@
+CommonTest:
+ description: '公共方法'
+ input: []
+ output: []
+ steps:
+   # 打开浏览器
+   - openUrl('https://www.invisalign.com.cn/find-a-doctor')
+   - sleep(3)

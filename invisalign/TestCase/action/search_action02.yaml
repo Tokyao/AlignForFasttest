@@ -1,0 +1,42 @@
+module: action
+skip: false
+description: 搜索case-2
+input: [keywords]
+steps:
+  # 调用公共方法：打开浏览器目标地址
+  - call CommonTest()
+  # 检查地址输入框
+  - check('id=amap-city-input')
+  # 点击地址输⼊框
+  - click('id=amap-city-input')
+  # 输入keywords=西单
+  - sendKeys('name=location', ${keywords})
+  # 点击‘⾼级选项’
+  - click('class=dl-white')
+  # 断⾔⾼级选项中的第⼀个输⼊框默认为‘诊所’
+  - ${element_name} = $.getElement('name=practicename')
+  - ${attribute} = $.getAttribute(${element_name}, 'placeholder')
+  - assert '诊所' == ${attribute}
+  # 断⾔⾼级选项中的第⼆个输⼊框默认为‘10 km’
+  - ${element_name} = $.getElement('name=radius')
+  - ${attribute} = $.getAttribute(${element_name}, 'value')
+  - assert '10' in ${attribute}
+  # 第⼀个输⼊框中输⼊‘⼉童’
+  - sendKeys('name=practicename', '儿童')
+  # 第⼆个下拉框中选择‘20km’
+  - ${element_name} = $.getElement('name=radius')
+  - ${tag} = $.getTagName(${element_name})
+  # 选中‘提供微笑模拟’
+  - click('xpath=//*[@id="__next"]/div[2]/div/div/div/div[1]/div/div/div[2]/div/div/div/div[2]/div/div/div[3]/div/label/span')
+  # 点击‘寻找隐适美治疗机构’
+  - click('xpath=//*[@id="__next"]/div[2]/div/div/div/div[1]/div/div/div[2]/div/div/div/p/a')
+  - sleep(3)
+  # 断⾔‘⾸都医科⼤学附属北京⼉童医院’
+  - ${element_class} = $.getElement('class=col-8')
+  - ${text} = $.getText(${element_class})
+  - assert '首都医科大学附属北京儿童医院' == ${text}
+  # 点击返回按钮
+  - back()
+  # 定位当前⻚⾯元素是否在https://www. invisalign.com.cn/find-a-doctor
+  - ${title} = $.getCurrentUrl()
+  - assert 'https://www.invisalign.com.cn/find-a-doctor' == ${title}

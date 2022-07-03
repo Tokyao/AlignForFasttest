@@ -1,0 +1,1477 @@
+{
+    "report": "./Report/chrome_20220702143431_MainThread",
+    "total": 13,
+    "successes": 13,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "startTime": "2022-07-02 14:34:31",
+    "duration": "224s",
+    "result": {
+        "action": [
+            {
+                "caseName": "search_action01",
+                "casePath": "./TestCase/action/search_action01.yaml",
+                "dataId": "search_action01",
+                "description": "\u641c\u7d22case-1",
+                "moduleName": "action",
+                "report": "./Report/chrome_20220702143431_MainThread",
+                "snapshotDir": "./Report/chrome_20220702143431_MainThread/Steps/action/search_action01",
+                "startTime": "2022-07-02 14:34:31",
+                "duration": "16s",
+                "status": 0,
+                "err": null,
+                "steps": {
+                    "2": {
+                        "index": 2,
+                        "status": true,
+                        "duration": "6.07",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/action/search_action01/Step_2.png",
+                        "step": "  - openUrl('https://www.invisalign.com.cn/find-a-doctor')",
+                        "result": ""
+                    },
+                    "3": {
+                        "index": 3,
+                        "status": true,
+                        "duration": "3.01",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/action/search_action01/Step_3.png",
+                        "step": "  - sleep(3)",
+                        "result": ""
+                    },
+                    "1": {
+                        "index": 1,
+                        "status": true,
+                        "duration": "9.07",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/action/search_action01/Step_1.png",
+                        "step": "- call CommonTest()",
+                        "result": ""
+                    },
+                    "4": {
+                        "index": 4,
+                        "status": true,
+                        "duration": "0.14",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/action/search_action01/Step_4.png",
+                        "step": "- check('id=amap-city-input')",
+                        "result": ""
+                    },
+                    "5": {
+                        "index": 5,
+                        "status": true,
+                        "duration": "0.45",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/action/search_action01/Step_5.png",
+                        "step": "- click('id=amap-city-input')",
+                        "result": ""
+                    },
+                    "6": {
+                        "index": 6,
+                        "status": true,
+                        "duration": "1.64",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/action/search_action01/Step_6.png",
+                        "step": "- sendKeys('name=location', ${keywords})",
+                        "result": ""
+                    },
+                    "7": {
+                        "index": 7,
+                        "status": true,
+                        "duration": "2.01",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/action/search_action01/Step_7.png",
+                        "step": "- sleep(2)",
+                        "result": ""
+                    },
+                    "8": {
+                        "index": 8,
+                        "status": true,
+                        "duration": "0.03",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/action/search_action01/Step_8.png",
+                        "step": "- ${element_id} = $.getElement('id=amap-sug0')",
+                        "result": "{selenium.webdriver.remote.webelement.WebElement (session=\"b86d8e8d21cd55bb7ce89fe486de90f5\", element=\"961b9979-2f67-4237-9ab1-d5c403af2893\")}"
+                    },
+                    "9": {
+                        "index": 9,
+                        "status": true,
+                        "duration": "0.03",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/action/search_action01/Step_9.png",
+                        "step": "- ${text} = $.getText(${element_id})",
+                        "result": "\u7231\u56de\u6536(\u5317\u4eac\u897f\u5355\u5927\u60a6\u57ce\u5e97)\u5317\u4eac\u5e02\u897f\u57ce\u533a"
+                    },
+                    "10": {
+                        "index": 10,
+                        "status": true,
+                        "duration": "0.00",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/action/search_action01/Step_10.png",
+                        "step": "- assert '\u897f' in \"\u7231\u56de\u6536(\u5317\u4eac\u897f\u5355\u5927\u60a6\u57ce\u5e97)\u5317\u4eac\u5e02\u897f\u57ce\u533a\"",
+                        "result": ""
+                    }
+                }
+            },
+            {
+                "caseName": "search_action02",
+                "casePath": "./TestCase/action/search_action02.yaml",
+                "dataId": "search_action02",
+                "description": "\u641c\u7d22case-2",
+                "moduleName": "action",
+                "report": "./Report/chrome_20220702143431_MainThread",
+                "snapshotDir": "./Report/chrome_20220702143431_MainThread/Steps/action/search_action02",
+                "startTime": "2022-07-02 14:34:48",
+                "duration": "21s",
+                "status": 0,
+                "err": null,
+                "steps": {
+                    "2": {
+                        "index": 2,
+                        "status": true,
+                        "duration": "6.40",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/action/search_action02/Step_2.png",
+                        "step": "  - openUrl('https://www.invisalign.com.cn/find-a-doctor')",
+                        "result": ""
+                    },
+                    "3": {
+                        "index": 3,
+                        "status": true,
+                        "duration": "3.01",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/action/search_action02/Step_3.png",
+                        "step": "  - sleep(3)",
+                        "result": ""
+                    },
+                    "1": {
+                        "index": 1,
+                        "status": true,
+                        "duration": "9.41",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/action/search_action02/Step_1.png",
+                        "step": "- call CommonTest()",
+                        "result": ""
+                    },
+                    "4": {
+                        "index": 4,
+                        "status": true,
+                        "duration": "0.14",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/action/search_action02/Step_4.png",
+                        "step": "- check('id=amap-city-input')",
+                        "result": ""
+                    },
+                    "5": {
+                        "index": 5,
+                        "status": true,
+                        "duration": "0.41",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/action/search_action02/Step_5.png",
+                        "step": "- click('id=amap-city-input')",
+                        "result": ""
+                    },
+                    "6": {
+                        "index": 6,
+                        "status": true,
+                        "duration": "1.04",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/action/search_action02/Step_6.png",
+                        "step": "- sendKeys('name=location', ${keywords})",
+                        "result": ""
+                    },
+                    "7": {
+                        "index": 7,
+                        "status": true,
+                        "duration": "0.88",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/action/search_action02/Step_7.png",
+                        "step": "- click('class=dl-white')",
+                        "result": ""
+                    },
+                    "8": {
+                        "index": 8,
+                        "status": true,
+                        "duration": "0.01",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/action/search_action02/Step_8.png",
+                        "step": "- ${element_name} = $.getElement('name=practicename')",
+                        "result": "{selenium.webdriver.remote.webelement.WebElement (session=\"280b40b5dada8d5c579d0dcdc5e5c99d\", element=\"93cd26d8-7590-4c3e-b1b5-338b0cf5ce24\")}"
+                    },
+                    "9": {
+                        "index": 9,
+                        "status": true,
+                        "duration": "0.04",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/action/search_action02/Step_9.png",
+                        "step": "- ${attribute} = $.getAttribute(${element_name}, 'placeholder')",
+                        "result": "\u8bca\u6240"
+                    },
+                    "10": {
+                        "index": 10,
+                        "status": true,
+                        "duration": "0.00",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/action/search_action02/Step_10.png",
+                        "step": "- assert '\u8bca\u6240' == \"\u8bca\u6240\"",
+                        "result": ""
+                    },
+                    "11": {
+                        "index": 11,
+                        "status": true,
+                        "duration": "0.02",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/action/search_action02/Step_11.png",
+                        "step": "- ${element_name} = $.getElement('name=radius')",
+                        "result": "{selenium.webdriver.remote.webelement.WebElement (session=\"280b40b5dada8d5c579d0dcdc5e5c99d\", element=\"a5f65a4d-d3df-4c6c-a866-8907010a87e5\")}"
+                    },
+                    "12": {
+                        "index": 12,
+                        "status": true,
+                        "duration": "0.04",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/action/search_action02/Step_12.png",
+                        "step": "- ${attribute} = $.getAttribute(${element_name}, 'value')",
+                        "result": "10"
+                    },
+                    "13": {
+                        "index": 13,
+                        "status": true,
+                        "duration": "0.00",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/action/search_action02/Step_13.png",
+                        "step": "- assert '10' in \"10\"",
+                        "result": ""
+                    },
+                    "14": {
+                        "index": 14,
+                        "status": true,
+                        "duration": "0.37",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/action/search_action02/Step_14.png",
+                        "step": "- sendKeys('name=practicename', '\u513f\u7ae5')",
+                        "result": ""
+                    },
+                    "15": {
+                        "index": 15,
+                        "status": true,
+                        "duration": "0.12",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/action/search_action02/Step_15.png",
+                        "step": "- ${element_name} = $.getElement('name=radius')",
+                        "result": "{selenium.webdriver.remote.webelement.WebElement (session=\"280b40b5dada8d5c579d0dcdc5e5c99d\", element=\"a5f65a4d-d3df-4c6c-a866-8907010a87e5\")}"
+                    },
+                    "16": {
+                        "index": 16,
+                        "status": true,
+                        "duration": "0.00",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/action/search_action02/Step_16.png",
+                        "step": "- ${tag} = $.getTagName(${element_name})",
+                        "result": "select"
+                    },
+                    "17": {
+                        "index": 17,
+                        "status": true,
+                        "duration": "0.40",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/action/search_action02/Step_17.png",
+                        "step": "- click('xpath=//*[@id=\"__next\"]/div[2]/div/div/div/div[1]/div/div/div[2]/div/div/div/div[2]/div/div/div[3]/div/label/span')",
+                        "result": ""
+                    },
+                    "18": {
+                        "index": 18,
+                        "status": true,
+                        "duration": "0.36",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/action/search_action02/Step_18.png",
+                        "step": "- click('xpath=//*[@id=\"__next\"]/div[2]/div/div/div/div[1]/div/div/div[2]/div/div/div/p/a')",
+                        "result": ""
+                    },
+                    "19": {
+                        "index": 19,
+                        "status": true,
+                        "duration": "3.00",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/action/search_action02/Step_19.png",
+                        "step": "- sleep(3)",
+                        "result": ""
+                    },
+                    "20": {
+                        "index": 20,
+                        "status": true,
+                        "duration": "1.02",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/action/search_action02/Step_20.png",
+                        "step": "- ${element_class} = $.getElement('class=col-8')",
+                        "result": "{selenium.webdriver.remote.webelement.WebElement (session=\"280b40b5dada8d5c579d0dcdc5e5c99d\", element=\"c1bcb720-56e6-4acb-aadc-75480c4d7a96\")}"
+                    },
+                    "21": {
+                        "index": 21,
+                        "status": true,
+                        "duration": "0.05",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/action/search_action02/Step_21.png",
+                        "step": "- ${text} = $.getText(${element_class})",
+                        "result": "\u9996\u90fd\u533b\u79d1\u5927\u5b66\u9644\u5c5e\u5317\u4eac\u513f\u7ae5\u533b\u9662"
+                    },
+                    "22": {
+                        "index": 22,
+                        "status": true,
+                        "duration": "0.00",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/action/search_action02/Step_22.png",
+                        "step": "- assert '\u9996\u90fd\u533b\u79d1\u5927\u5b66\u9644\u5c5e\u5317\u4eac\u513f\u7ae5\u533b\u9662' == \"\u9996\u90fd\u533b\u79d1\u5927\u5b66\u9644\u5c5e\u5317\u4eac\u513f\u7ae5\u533b\u9662\"",
+                        "result": ""
+                    },
+                    "23": {
+                        "index": 23,
+                        "status": true,
+                        "duration": "0.43",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/action/search_action02/Step_23.png",
+                        "step": "- back()",
+                        "result": ""
+                    },
+                    "24": {
+                        "index": 24,
+                        "status": true,
+                        "duration": "0.19",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/action/search_action02/Step_24.png",
+                        "step": "- ${title} = $.getCurrentUrl()",
+                        "result": "https://www.invisalign.com.cn/find-a-doctor"
+                    },
+                    "25": {
+                        "index": 25,
+                        "status": true,
+                        "duration": "0.00",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/action/search_action02/Step_25.png",
+                        "step": "- assert 'https://www.invisalign.com.cn/find-a-doctor' == \"https://www.invisalign.com.cn/find-a-doctor\"",
+                        "result": ""
+                    }
+                }
+            },
+            {
+                "caseName": "search_action03",
+                "casePath": "./TestCase/action/search_action03.yaml",
+                "dataId": "search_action03",
+                "description": "\u641c\u7d22case-3",
+                "moduleName": "action",
+                "report": "./Report/chrome_20220702143431_MainThread",
+                "snapshotDir": "./Report/chrome_20220702143431_MainThread/Steps/action/search_action03",
+                "startTime": "2022-07-02 14:35:09",
+                "duration": "10s",
+                "status": 0,
+                "err": null,
+                "steps": {
+                    "2": {
+                        "index": 2,
+                        "status": true,
+                        "duration": "3.94",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/action/search_action03/Step_2.png",
+                        "step": "  - openUrl('https://www.invisalign.com.cn/find-a-doctor')",
+                        "result": ""
+                    },
+                    "3": {
+                        "index": 3,
+                        "status": true,
+                        "duration": "3.01",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/action/search_action03/Step_3.png",
+                        "step": "  - sleep(3)",
+                        "result": ""
+                    },
+                    "1": {
+                        "index": 1,
+                        "status": true,
+                        "duration": "6.94",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/action/search_action03/Step_1.png",
+                        "step": "- call CommonTest()",
+                        "result": ""
+                    },
+                    "4": {
+                        "index": 4,
+                        "status": true,
+                        "duration": "0.64",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/action/search_action03/Step_4.png",
+                        "step": "- click('xpath=//*[@id=\"__next\"]/div[2]/div/div/div/div[1]/div/div/div[2]/div/div/div/p/a')",
+                        "result": ""
+                    },
+                    "5": {
+                        "index": 5,
+                        "status": true,
+                        "duration": "0.06",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/action/search_action03/Step_5.png",
+                        "step": "- ${element_class} = $.getElement('class=dl-error-msg')",
+                        "result": "{selenium.webdriver.remote.webelement.WebElement (session=\"f02672b85d1fc1b6b87d3819b14830b1\", element=\"ff27d117-f872-44c2-a6b5-a2c0260bc09e\")}"
+                    },
+                    "6": {
+                        "index": 6,
+                        "status": true,
+                        "duration": "0.09",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/action/search_action03/Step_6.png",
+                        "step": "- ${text} = $.getText(${element_class})",
+                        "result": "\u8bf7\u8f93\u5165\u5730\u5740\u6216\u63d0\u4f9b\u8005/\u8bca\u6240\u540d\u79f0\u3002"
+                    },
+                    "7": {
+                        "index": 7,
+                        "status": true,
+                        "duration": "0.00",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/action/search_action03/Step_7.png",
+                        "step": "- assert '\u8bf7\u8f93\u5165\u5730\u5740\u6216\u63d0\u4f9b\u8005/\u8bca\u6240\u540d\u79f0\u3002' == \"\u8bf7\u8f93\u5165\u5730\u5740\u6216\u63d0\u4f9b\u8005/\u8bca\u6240\u540d\u79f0\u3002\"",
+                        "result": ""
+                    }
+                }
+            }
+        ],
+        "page": [
+            {
+                "caseName": "jump_page01",
+                "casePath": "./TestCase/page/jump_page01.yaml",
+                "dataId": "jump_page01",
+                "description": "\u9875\u9762\u8df3\u8f6c-1",
+                "moduleName": "page",
+                "report": "./Report/chrome_20220702143431_MainThread",
+                "snapshotDir": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page01",
+                "startTime": "2022-07-02 14:35:20",
+                "duration": "14s",
+                "status": 0,
+                "err": null,
+                "steps": {
+                    "2": {
+                        "index": 2,
+                        "status": true,
+                        "duration": "6.34",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page01/Step_2.png",
+                        "step": "  - openUrl('https://www.invisalign.com.cn/find-a-doctor')",
+                        "result": ""
+                    },
+                    "3": {
+                        "index": 3,
+                        "status": true,
+                        "duration": "3.01",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page01/Step_3.png",
+                        "step": "  - sleep(3)",
+                        "result": ""
+                    },
+                    "1": {
+                        "index": 1,
+                        "status": true,
+                        "duration": "9.34",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page01/Step_1.png",
+                        "step": "- call CommonTest()",
+                        "result": ""
+                    },
+                    "4": {
+                        "index": 4,
+                        "status": true,
+                        "duration": "1.90",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page01/Step_4.png",
+                        "step": "- click('xpath=//*[@id=\"__next\"]/div[1]/div/div/div/div[2]/nav/a/img')",
+                        "result": ""
+                    },
+                    "5": {
+                        "index": 5,
+                        "status": true,
+                        "duration": "0.03",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page01/Step_5.png",
+                        "step": "- ${title} = $.getTitle()",
+                        "result": "Invisalign\u9690\u9002\u7f8e\u4e2d\u56fd\u5b98\u7f51|\u9690\u5f62\u77eb\u6b63\u7259\u9f7f"
+                    },
+                    "6": {
+                        "index": 6,
+                        "status": true,
+                        "duration": "0.00",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page01/Step_6.png",
+                        "step": "- assert 'Invisalign\u9690\u9002\u7f8e\u4e2d\u56fd\u5b98\u7f51|\u9690\u5f62\u77eb\u6b63\u7259\u9f7f' in \"Invisalign\u9690\u9002\u7f8e\u4e2d\u56fd\u5b98\u7f51|\u9690\u5f62\u77eb\u6b63\u7259\u9f7f\"",
+                        "result": ""
+                    }
+                }
+            },
+            {
+                "caseName": "jump_page02",
+                "casePath": "./TestCase/page/jump_page02.yaml",
+                "dataId": "jump_page02",
+                "description": "\u9875\u9762\u8df3\u8f6c-2",
+                "moduleName": "page",
+                "report": "./Report/chrome_20220702143431_MainThread",
+                "snapshotDir": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page02",
+                "startTime": "2022-07-02 14:35:34",
+                "duration": "15s",
+                "status": 0,
+                "err": null,
+                "steps": {
+                    "2": {
+                        "index": 2,
+                        "status": true,
+                        "duration": "5.67",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page02/Step_2.png",
+                        "step": "  - openUrl('https://www.invisalign.com.cn/find-a-doctor')",
+                        "result": ""
+                    },
+                    "3": {
+                        "index": 3,
+                        "status": true,
+                        "duration": "3.00",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page02/Step_3.png",
+                        "step": "  - sleep(3)",
+                        "result": ""
+                    },
+                    "1": {
+                        "index": 1,
+                        "status": true,
+                        "duration": "8.68",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page02/Step_1.png",
+                        "step": "- call CommonTest()",
+                        "result": ""
+                    },
+                    "4": {
+                        "index": 4,
+                        "status": true,
+                        "duration": "1.55",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page02/Step_4.png",
+                        "step": "- click('xpath=//*[@id=\"__next\"]/div[3]/div/div/div[1]/div[1]/a')",
+                        "result": ""
+                    },
+                    "5": {
+                        "index": 5,
+                        "status": true,
+                        "duration": "0.05",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page02/Step_5.png",
+                        "step": "- ${title} = $.getTitle()",
+                        "result": "\u95dc\u65bc\u9690\u9002\u7f8e | \u9690\u5f62\u7259\u5957 - Invisalign \u9690\u9002\u7f8e\u4e2d\u56fd"
+                    },
+                    "6": {
+                        "index": 6,
+                        "status": true,
+                        "duration": "0.00",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page02/Step_6.png",
+                        "step": "- assert '\u95dc\u65bc\u9690\u9002\u7f8e | \u9690\u5f62\u7259\u5957 - Invisalign \u9690\u9002\u7f8e\u4e2d\u56fd' in \"\u95dc\u65bc\u9690\u9002\u7f8e | \u9690\u5f62\u7259\u5957 - Invisalign \u9690\u9002\u7f8e\u4e2d\u56fd\"",
+                        "result": ""
+                    },
+                    "7": {
+                        "index": 7,
+                        "status": true,
+                        "duration": "1.58",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page02/Step_7.png",
+                        "step": "- back()",
+                        "result": ""
+                    },
+                    "8": {
+                        "index": 8,
+                        "status": true,
+                        "duration": "0.00",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page02/Step_8.png",
+                        "step": "- ${title} = $.getCurrentUrl()",
+                        "result": "https://www.invisalign.com.cn/find-a-doctor"
+                    },
+                    "9": {
+                        "index": 9,
+                        "status": true,
+                        "duration": "0.00",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page02/Step_9.png",
+                        "step": "- assert 'https://www.invisalign.com.cn/find-a-doctor' == \"https://www.invisalign.com.cn/find-a-doctor\"",
+                        "result": ""
+                    }
+                }
+            },
+            {
+                "caseName": "jump_page03",
+                "casePath": "./TestCase/page/jump_page03.yaml",
+                "dataId": "jump_page03",
+                "description": "\u9875\u9762\u8df3\u8f6c-3",
+                "moduleName": "page",
+                "report": "./Report/chrome_20220702143431_MainThread",
+                "snapshotDir": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page03",
+                "startTime": "2022-07-02 14:35:50",
+                "duration": "21s",
+                "status": 0,
+                "err": null,
+                "steps": {
+                    "2": {
+                        "index": 2,
+                        "status": true,
+                        "duration": "5.97",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page03/Step_2.png",
+                        "step": "  - openUrl('https://www.invisalign.com.cn/find-a-doctor')",
+                        "result": ""
+                    },
+                    "3": {
+                        "index": 3,
+                        "status": true,
+                        "duration": "3.01",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page03/Step_3.png",
+                        "step": "  - sleep(3)",
+                        "result": ""
+                    },
+                    "1": {
+                        "index": 1,
+                        "status": true,
+                        "duration": "8.98",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page03/Step_1.png",
+                        "step": "- call CommonTest()",
+                        "result": ""
+                    },
+                    "4": {
+                        "index": 4,
+                        "status": true,
+                        "duration": "2.44",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page03/Step_4.png",
+                        "step": "- click('class=footer-link-header ')",
+                        "result": ""
+                    },
+                    "5": {
+                        "index": 5,
+                        "status": true,
+                        "duration": "1.08",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page03/Step_5.png",
+                        "step": "- back()",
+                        "result": ""
+                    },
+                    "6": {
+                        "index": 6,
+                        "status": true,
+                        "duration": "1.25",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page03/Step_6.png",
+                        "step": "- click('xpath=//*[@id=\"__next\"]/div[3]/div/div/div[1]/div[2]/ul/li[1]/a')",
+                        "result": ""
+                    },
+                    "7": {
+                        "index": 7,
+                        "status": true,
+                        "duration": "0.02",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page03/Step_7.png",
+                        "step": "- ${element_class} = $.getElement('class=btn-blue')",
+                        "result": "{selenium.webdriver.remote.webelement.WebElement (session=\"c3ebb960bf4ec5d7b7650f6c08833d47\", element=\"47d075aa-53d8-4ccd-99c5-3e3eafbe0238\")}"
+                    },
+                    "8": {
+                        "index": 8,
+                        "status": true,
+                        "duration": "0.03",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page03/Step_8.png",
+                        "step": "- ${text} = $.getText(${element_class})",
+                        "result": "\u9752\u5c11\u5e74"
+                    },
+                    "9": {
+                        "index": 9,
+                        "status": true,
+                        "duration": "0.00",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page03/Step_9.png",
+                        "step": "- assert '\u9752\u5c11\u5e74' in \"\u9752\u5c11\u5e74\"",
+                        "result": ""
+                    },
+                    "10": {
+                        "index": 10,
+                        "status": true,
+                        "duration": "1.41",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page03/Step_10.png",
+                        "step": "- back()",
+                        "result": ""
+                    },
+                    "11": {
+                        "index": 11,
+                        "status": true,
+                        "duration": "0.00",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page03/Step_11.png",
+                        "step": "- ${title} = $.getCurrentUrl()",
+                        "result": "https://www.invisalign.com.cn/find-a-doctor"
+                    },
+                    "12": {
+                        "index": 12,
+                        "status": true,
+                        "duration": "0.00",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page03/Step_12.png",
+                        "step": "- assert 'https://www.invisalign.com.cn/find-a-doctor' == \"https://www.invisalign.com.cn/find-a-doctor\"",
+                        "result": ""
+                    },
+                    "13": {
+                        "index": 13,
+                        "status": true,
+                        "duration": "0.91",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page03/Step_13.png",
+                        "step": "- click('xpath=//*[@id=\"__next\"]/div[3]/div/div/div[1]/div[2]/ul/li[2]/a')",
+                        "result": ""
+                    },
+                    "14": {
+                        "index": 14,
+                        "status": true,
+                        "duration": "0.01",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page03/Step_14.png",
+                        "step": "- ${element_class} = $.getElement('class=btn-blue')",
+                        "result": "{selenium.webdriver.remote.webelement.WebElement (session=\"c3ebb960bf4ec5d7b7650f6c08833d47\", element=\"5a17cb97-f951-4254-a913-eb716892b73d\")}"
+                    },
+                    "15": {
+                        "index": 15,
+                        "status": true,
+                        "duration": "0.01",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page03/Step_15.png",
+                        "step": "- ${text} = $.getText(${element_class})",
+                        "result": "\u7236\u6bcd"
+                    },
+                    "16": {
+                        "index": 16,
+                        "status": true,
+                        "duration": "0.00",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page03/Step_16.png",
+                        "step": "- assert '\u7236\u6bcd' in \"\u7236\u6bcd\"",
+                        "result": ""
+                    },
+                    "17": {
+                        "index": 17,
+                        "status": true,
+                        "duration": "0.50",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page03/Step_17.png",
+                        "step": "- back()",
+                        "result": ""
+                    },
+                    "18": {
+                        "index": 18,
+                        "status": true,
+                        "duration": "0.02",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page03/Step_18.png",
+                        "step": "- ${title} = $.getCurrentUrl()",
+                        "result": "https://www.invisalign.com.cn/find-a-doctor"
+                    },
+                    "19": {
+                        "index": 19,
+                        "status": true,
+                        "duration": "0.00",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page03/Step_19.png",
+                        "step": "- assert 'https://www.invisalign.com.cn/find-a-doctor' == \"https://www.invisalign.com.cn/find-a-doctor\"",
+                        "result": ""
+                    },
+                    "20": {
+                        "index": 20,
+                        "status": true,
+                        "duration": "0.65",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page03/Step_20.png",
+                        "step": "- click('xpath=//*[@id=\"__next\"]/div[3]/div/div/div[1]/div[2]/ul/li[3]/a')",
+                        "result": ""
+                    },
+                    "21": {
+                        "index": 21,
+                        "status": true,
+                        "duration": "0.01",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page03/Step_21.png",
+                        "step": "- ${element_class} = $.getElement('class=btn-blue')",
+                        "result": "{selenium.webdriver.remote.webelement.WebElement (session=\"c3ebb960bf4ec5d7b7650f6c08833d47\", element=\"92ddd20c-b007-4992-9d2c-052ebeffa8e9\")}"
+                    },
+                    "22": {
+                        "index": 22,
+                        "status": true,
+                        "duration": "0.01",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page03/Step_22.png",
+                        "step": "- ${text} = $.getText(${element_class})",
+                        "result": "\u6210\u5e74\u4eba"
+                    },
+                    "23": {
+                        "index": 23,
+                        "status": true,
+                        "duration": "0.00",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page03/Step_23.png",
+                        "step": "- assert '\u6210\u5e74\u4eba' in \"\u6210\u5e74\u4eba\"",
+                        "result": ""
+                    },
+                    "24": {
+                        "index": 24,
+                        "status": true,
+                        "duration": "0.94",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page03/Step_24.png",
+                        "step": "- back()",
+                        "result": ""
+                    },
+                    "25": {
+                        "index": 25,
+                        "status": true,
+                        "duration": "0.00",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page03/Step_25.png",
+                        "step": "- ${title} = $.getCurrentUrl()",
+                        "result": "https://www.invisalign.com.cn/find-a-doctor"
+                    },
+                    "26": {
+                        "index": 26,
+                        "status": true,
+                        "duration": "0.00",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page03/Step_26.png",
+                        "step": "- assert 'https://www.invisalign.com.cn/find-a-doctor' == \"https://www.invisalign.com.cn/find-a-doctor\"",
+                        "result": ""
+                    }
+                }
+            },
+            {
+                "caseName": "jump_page04",
+                "casePath": "./TestCase/page/jump_page04.yaml",
+                "dataId": "jump_page04",
+                "description": "\u9875\u9762\u8df3\u8f6c-4",
+                "moduleName": "page",
+                "report": "./Report/chrome_20220702143431_MainThread",
+                "snapshotDir": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page04",
+                "startTime": "2022-07-02 14:36:11",
+                "duration": "19s",
+                "status": 0,
+                "err": null,
+                "steps": {
+                    "2": {
+                        "index": 2,
+                        "status": true,
+                        "duration": "6.07",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page04/Step_2.png",
+                        "step": "  - openUrl('https://www.invisalign.com.cn/find-a-doctor')",
+                        "result": ""
+                    },
+                    "3": {
+                        "index": 3,
+                        "status": true,
+                        "duration": "3.01",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page04/Step_3.png",
+                        "step": "  - sleep(3)",
+                        "result": ""
+                    },
+                    "1": {
+                        "index": 1,
+                        "status": true,
+                        "duration": "9.08",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page04/Step_1.png",
+                        "step": "- call CommonTest()",
+                        "result": ""
+                    },
+                    "4": {
+                        "index": 4,
+                        "status": true,
+                        "duration": "5.36",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page04/Step_4.png",
+                        "step": "- click('xpath=//*[@id=\"__next\"]/div[3]/div/div/div[1]/div[3]/a')",
+                        "result": ""
+                    },
+                    "5": {
+                        "index": 5,
+                        "status": true,
+                        "duration": "0.02",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page04/Step_5.png",
+                        "step": "- ${element_class} = $.getElement('class=clr-blue')",
+                        "result": "{selenium.webdriver.remote.webelement.WebElement (session=\"adf31c5eaaad12fd1e5e102ffe1975bf\", element=\"de4531f5-9f1a-4b5b-b241-7a502a4cf77b\")}"
+                    },
+                    "6": {
+                        "index": 6,
+                        "status": true,
+                        "duration": "0.03",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page04/Step_6.png",
+                        "step": "- ${text} = $.getText(${element_class})",
+                        "result": "Invisalign\u9690\u9002\u7f8e\u7684\u5de5\u4f5c\u539f\u7406\u662f\u4ec0\u4e48\uff1f"
+                    },
+                    "7": {
+                        "index": 7,
+                        "status": true,
+                        "duration": "0.00",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page04/Step_7.png",
+                        "step": "- assert 'Invisalign\u9690\u9002\u7f8e\u7684\u5de5\u4f5c\u539f\u7406\u662f\u4ec0\u4e48\uff1f' in \"Invisalign\u9690\u9002\u7f8e\u7684\u5de5\u4f5c\u539f\u7406\u662f\u4ec0\u4e48\uff1f\"",
+                        "result": ""
+                    },
+                    "8": {
+                        "index": 8,
+                        "status": true,
+                        "duration": "1.92",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page04/Step_8.png",
+                        "step": "- back()",
+                        "result": ""
+                    },
+                    "9": {
+                        "index": 9,
+                        "status": true,
+                        "duration": "0.00",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page04/Step_9.png",
+                        "step": "- ${title} = $.getCurrentUrl()",
+                        "result": "https://www.invisalign.com.cn/find-a-doctor"
+                    },
+                    "10": {
+                        "index": 10,
+                        "status": true,
+                        "duration": "0.00",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page04/Step_10.png",
+                        "step": "- assert 'https://www.invisalign.com.cn/find-a-doctor' == \"https://www.invisalign.com.cn/find-a-doctor\"",
+                        "result": ""
+                    }
+                }
+            },
+            {
+                "caseName": "jump_page05",
+                "casePath": "./TestCase/page/jump_page05.yaml",
+                "dataId": "jump_page05",
+                "description": "\u9875\u9762\u8df3\u8f6c-5",
+                "moduleName": "page",
+                "report": "./Report/chrome_20220702143431_MainThread",
+                "snapshotDir": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page05",
+                "startTime": "2022-07-02 14:36:31",
+                "duration": "15s",
+                "status": 0,
+                "err": null,
+                "steps": {
+                    "2": {
+                        "index": 2,
+                        "status": true,
+                        "duration": "5.85",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page05/Step_2.png",
+                        "step": "  - openUrl('https://www.invisalign.com.cn/find-a-doctor')",
+                        "result": ""
+                    },
+                    "3": {
+                        "index": 3,
+                        "status": true,
+                        "duration": "3.01",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page05/Step_3.png",
+                        "step": "  - sleep(3)",
+                        "result": ""
+                    },
+                    "1": {
+                        "index": 1,
+                        "status": true,
+                        "duration": "8.86",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page05/Step_1.png",
+                        "step": "- call CommonTest()",
+                        "result": ""
+                    },
+                    "4": {
+                        "index": 4,
+                        "status": true,
+                        "duration": "1.56",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page05/Step_4.png",
+                        "step": "- click('xpath=//*[@id=\"__next\"]/div[3]/div/div/div[1]/div[4]/a')",
+                        "result": ""
+                    },
+                    "5": {
+                        "index": 5,
+                        "status": true,
+                        "duration": "0.03",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page05/Step_5.png",
+                        "step": "- ${element_class} = $.getElement('class=treatable-cases-hero')",
+                        "result": "{selenium.webdriver.remote.webelement.WebElement (session=\"2266bf378f1f3a10758b3af546b0d7a9\", element=\"2f930a4a-d8cd-4068-bde3-4c9841686e1c\")}"
+                    },
+                    "6": {
+                        "index": 6,
+                        "status": true,
+                        "duration": "0.03",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page05/Step_6.png",
+                        "step": "- ${text} = $.getText(${element_class})",
+                        "result": "\u7ed9\u81ea\u4fe1\u52a0\u5206\n\u7cbe\u5f69\u751f\u6d3b \u4ece\u5d2d\u65b0\u7b11\u5bb9\u5f00\u59cb"
+                    },
+                    "7": {
+                        "index": 7,
+                        "status": true,
+                        "duration": "0.00",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page05/Step_7.png",
+                        "step": "- assert '\u7ed9\u81ea\u4fe1\u52a0\u5206' in \"\u7ed9\u81ea\u4fe1\u52a0\u5206\n\u7cbe\u5f69\u751f\u6d3b \u4ece\u5d2d\u65b0\u7b11\u5bb9\u5f00\u59cb\"",
+                        "result": ""
+                    },
+                    "8": {
+                        "index": 8,
+                        "status": true,
+                        "duration": "1.34",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page05/Step_8.png",
+                        "step": "- back()",
+                        "result": ""
+                    },
+                    "9": {
+                        "index": 9,
+                        "status": true,
+                        "duration": "0.01",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page05/Step_9.png",
+                        "step": "- ${title} = $.getCurrentUrl()",
+                        "result": "https://www.invisalign.com.cn/find-a-doctor"
+                    },
+                    "10": {
+                        "index": 10,
+                        "status": true,
+                        "duration": "0.00",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page05/Step_10.png",
+                        "step": "- assert 'https://www.invisalign.com.cn/find-a-doctor' == \"https://www.invisalign.com.cn/find-a-doctor\"",
+                        "result": ""
+                    }
+                }
+            },
+            {
+                "caseName": "jump_page06",
+                "casePath": "./TestCase/page/jump_page06.yaml",
+                "dataId": "jump_page06",
+                "description": "\u9875\u9762\u8df3\u8f6c-6",
+                "moduleName": "page",
+                "report": "./Report/chrome_20220702143431_MainThread",
+                "snapshotDir": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page06",
+                "startTime": "2022-07-02 14:36:46",
+                "duration": "22s",
+                "status": 0,
+                "err": null,
+                "steps": {
+                    "2": {
+                        "index": 2,
+                        "status": true,
+                        "duration": "6.01",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page06/Step_2.png",
+                        "step": "  - openUrl('https://www.invisalign.com.cn/find-a-doctor')",
+                        "result": ""
+                    },
+                    "3": {
+                        "index": 3,
+                        "status": true,
+                        "duration": "3.01",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page06/Step_3.png",
+                        "step": "  - sleep(3)",
+                        "result": ""
+                    },
+                    "1": {
+                        "index": 1,
+                        "status": true,
+                        "duration": "9.02",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page06/Step_1.png",
+                        "step": "- call CommonTest()",
+                        "result": ""
+                    },
+                    "4": {
+                        "index": 4,
+                        "status": true,
+                        "duration": "2.31",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page06/Step_4.png",
+                        "step": "- click('xpath=//*[@id=\"__next\"]/div[3]/div/div/div[1]/div[5]/ul/li[1]/a')",
+                        "result": ""
+                    },
+                    "5": {
+                        "index": 5,
+                        "status": true,
+                        "duration": "0.11",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page06/Step_5.png",
+                        "step": "- ${element_class} = $.getElement('class=btn-blue')",
+                        "result": "{selenium.webdriver.remote.webelement.WebElement (session=\"53b4fa882019f1308cbf464798455d12\", element=\"9c4fd3b2-6ad6-46e4-ac66-d36d318b7fa7\")}"
+                    },
+                    "6": {
+                        "index": 6,
+                        "status": true,
+                        "duration": "0.02",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page06/Step_6.png",
+                        "step": "- ${text} = $.getText(${element_class})",
+                        "result": "\u5bfb\u627e\u9690\u9002\u7f8e\u6cbb\u7597\u673a\u6784"
+                    },
+                    "7": {
+                        "index": 7,
+                        "status": true,
+                        "duration": "0.00",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page06/Step_7.png",
+                        "step": "- assert '\u5bfb\u627e\u9690\u9002\u7f8e\u6cbb\u7597\u673a\u6784' in \"\u5bfb\u627e\u9690\u9002\u7f8e\u6cbb\u7597\u673a\u6784\"",
+                        "result": ""
+                    },
+                    "8": {
+                        "index": 8,
+                        "status": true,
+                        "duration": "1.21",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page06/Step_8.png",
+                        "step": "- back()",
+                        "result": ""
+                    },
+                    "9": {
+                        "index": 9,
+                        "status": true,
+                        "duration": "0.00",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page06/Step_9.png",
+                        "step": "- ${title} = $.getCurrentUrl()",
+                        "result": "https://www.invisalign.com.cn/find-a-doctor"
+                    },
+                    "10": {
+                        "index": 10,
+                        "status": true,
+                        "duration": "0.00",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page06/Step_10.png",
+                        "step": "- assert 'https://www.invisalign.com.cn/find-a-doctor' == \"https://www.invisalign.com.cn/find-a-doctor\"",
+                        "result": ""
+                    },
+                    "11": {
+                        "index": 11,
+                        "status": true,
+                        "duration": "1.34",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page06/Step_11.png",
+                        "step": "- click('xpath=//*[@id=\"__next\"]/div[3]/div/div/div[1]/div[5]/ul/li[2]/a')",
+                        "result": ""
+                    },
+                    "12": {
+                        "index": 12,
+                        "status": true,
+                        "duration": "0.05",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page06/Step_12.png",
+                        "step": "- ${element_class} = $.getElement('class=dl-welcome-header')",
+                        "result": "{selenium.webdriver.remote.webelement.WebElement (session=\"53b4fa882019f1308cbf464798455d12\", element=\"677c3f9f-94ff-4aa2-9964-33b773f07ee6\")}"
+                    },
+                    "13": {
+                        "index": 13,
+                        "status": true,
+                        "duration": "0.01",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page06/Step_13.png",
+                        "step": "- ${text} = $.getText(${element_class})",
+                        "result": "\u67e5\u627e\u9644\u8fd1\u7684 Invisalign \u9690\u9002\u7f8e\u6cbb\u7597\u673a\u6784"
+                    },
+                    "14": {
+                        "index": 14,
+                        "status": true,
+                        "duration": "0.00",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page06/Step_14.png",
+                        "step": "- assert '\u67e5\u627e\u9644\u8fd1\u7684 Invisalign \u9690\u9002\u7f8e\u6cbb\u7597\u673a\u6784' in \"\u67e5\u627e\u9644\u8fd1\u7684 Invisalign \u9690\u9002\u7f8e\u6cbb\u7597\u673a\u6784\"",
+                        "result": ""
+                    },
+                    "15": {
+                        "index": 15,
+                        "status": true,
+                        "duration": "0.00",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page06/Step_15.png",
+                        "step": "- ${title} = $.getCurrentUrl()",
+                        "result": "https://www.invisalign.com.cn/find-a-doctor"
+                    },
+                    "16": {
+                        "index": 16,
+                        "status": true,
+                        "duration": "0.00",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page06/Step_16.png",
+                        "step": "- assert 'https://www.invisalign.com.cn/find-a-doctor' == \"https://www.invisalign.com.cn/find-a-doctor\"",
+                        "result": ""
+                    },
+                    "17": {
+                        "index": 17,
+                        "status": true,
+                        "duration": "3.25",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page06/Step_17.png",
+                        "step": "- click('xpath=//*[@id=\"__next\"]/div[3]/div/div/div[1]/div[5]/ul/li[3]/a')",
+                        "result": ""
+                    },
+                    "18": {
+                        "index": 18,
+                        "status": true,
+                        "duration": "0.04",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page06/Step_18.png",
+                        "step": "- ${element_xpath} = $.getElement('xpath=//*[@id=\"step-container\"]/div[1]/div/div[1]/div/h1')",
+                        "result": "{selenium.webdriver.remote.webelement.WebElement (session=\"53b4fa882019f1308cbf464798455d12\", element=\"c6c14099-636e-43db-836f-6d42cd94350f\")}"
+                    },
+                    "19": {
+                        "index": 19,
+                        "status": true,
+                        "duration": "0.01",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page06/Step_19.png",
+                        "step": "- ${text} = $.getText(${element_xpath})",
+                        "result": "\u5f00\u542f\u5fae\u7b11\u6d4b\u8bd5"
+                    },
+                    "20": {
+                        "index": 20,
+                        "status": true,
+                        "duration": "0.00",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page06/Step_20.png",
+                        "step": "- assert '\u5f00\u542f\u5fae\u7b11\u6d4b\u8bd5' in \"\u5f00\u542f\u5fae\u7b11\u6d4b\u8bd5\"",
+                        "result": ""
+                    },
+                    "21": {
+                        "index": 21,
+                        "status": true,
+                        "duration": "1.85",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page06/Step_21.png",
+                        "step": "- click('xpath=//*[@id=\"__next\"]/div[3]/div/div/div[1]/div[5]/ul/li[4]/a')",
+                        "result": ""
+                    },
+                    "22": {
+                        "index": 22,
+                        "status": true,
+                        "duration": "0.01",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page06/Step_22.png",
+                        "step": "- ${element_xpath} = $.getElement('xpath=//*[@id=\"__next\"]/div[2]/div/div/div[1]/div/div/div/div/div/h1')",
+                        "result": "{selenium.webdriver.remote.webelement.WebElement (session=\"53b4fa882019f1308cbf464798455d12\", element=\"87d16daa-c7df-4f2c-a840-86c91e72126c\")}"
+                    },
+                    "23": {
+                        "index": 23,
+                        "status": true,
+                        "duration": "0.01",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page06/Step_23.png",
+                        "step": "- ${text} = $.getText(${element_xpath})",
+                        "result": "\u6709\u5173\u4e8e\u6211\u4eec\u7684\u95ee\u9898\uff1f "
+                    },
+                    "24": {
+                        "index": 24,
+                        "status": true,
+                        "duration": "0.00",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page06/Step_24.png",
+                        "step": "- assert '\u6709\u5173\u4e8e\u6211\u4eec\u7684\u95ee\u9898\uff1f' in \"\u6709\u5173\u4e8e\u6211\u4eec\u7684\u95ee\u9898\uff1f \"",
+                        "result": ""
+                    }
+                }
+            },
+            {
+                "caseName": "jump_page07",
+                "casePath": "./TestCase/page/jump_page07.yaml",
+                "dataId": "jump_page07",
+                "description": "\u9875\u9762\u8df3\u8f6c-7",
+                "moduleName": "page",
+                "report": "./Report/chrome_20220702143431_MainThread",
+                "snapshotDir": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page07",
+                "startTime": "2022-07-02 14:37:08",
+                "duration": "18s",
+                "status": 0,
+                "err": null,
+                "steps": {
+                    "2": {
+                        "index": 2,
+                        "status": true,
+                        "duration": "6.21",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page07/Step_2.png",
+                        "step": "  - openUrl('https://www.invisalign.com.cn/find-a-doctor')",
+                        "result": ""
+                    },
+                    "3": {
+                        "index": 3,
+                        "status": true,
+                        "duration": "3.01",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page07/Step_3.png",
+                        "step": "  - sleep(3)",
+                        "result": ""
+                    },
+                    "1": {
+                        "index": 1,
+                        "status": true,
+                        "duration": "9.21",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page07/Step_1.png",
+                        "step": "- call CommonTest()",
+                        "result": ""
+                    },
+                    "4": {
+                        "index": 4,
+                        "status": true,
+                        "duration": "2.01",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page07/Step_4.png",
+                        "step": "- sleep(2)",
+                        "result": ""
+                    },
+                    "5": {
+                        "index": 5,
+                        "status": true,
+                        "duration": "3.76",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page07/Step_5.png",
+                        "step": "- click('xpath=//*[@id=\"basic-navbar-nav\"]/div/div[6]/div/a')",
+                        "result": ""
+                    },
+                    "6": {
+                        "index": 6,
+                        "status": true,
+                        "duration": "0.02",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page07/Step_6.png",
+                        "step": "- ${element_xpath} = $.getElement('xpath=//*[@id=\"__next\"]/div[2]/div[1]/div/div/div[2]/div/div/h2')",
+                        "result": "{selenium.webdriver.remote.webelement.WebElement (session=\"df79c8da645cef92e9ed090a7582170e\", element=\"9b3ee6fa-dd57-4661-852e-753b9a8ba0aa\")}"
+                    },
+                    "7": {
+                        "index": 7,
+                        "status": true,
+                        "duration": "0.02",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page07/Step_7.png",
+                        "step": "- ${text} = $.getText(${element_xpath})",
+                        "result": "\u4e0a\u6d77\u9690\u9002\u7f8e\u4f53\u9a8c\u4e2d\u5fc3"
+                    },
+                    "8": {
+                        "index": 8,
+                        "status": true,
+                        "duration": "0.00",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page07/Step_8.png",
+                        "step": "- assert '\u4e0a\u6d77\u9690\u9002\u7f8e\u4f53\u9a8c\u4e2d\u5fc3' in \"\u4e0a\u6d77\u9690\u9002\u7f8e\u4f53\u9a8c\u4e2d\u5fc3\"",
+                        "result": ""
+                    }
+                }
+            },
+            {
+                "caseName": "jump_page08",
+                "casePath": "./TestCase/page/jump_page08.yaml",
+                "dataId": "jump_page08",
+                "description": "\u9875\u9762\u8df3\u8f6c-8",
+                "moduleName": "page",
+                "report": "./Report/chrome_20220702143431_MainThread",
+                "snapshotDir": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page08",
+                "startTime": "2022-07-02 14:37:26",
+                "duration": "18s",
+                "status": 0,
+                "err": null,
+                "steps": {
+                    "2": {
+                        "index": 2,
+                        "status": true,
+                        "duration": "6.47",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page08/Step_2.png",
+                        "step": "  - openUrl('https://www.invisalign.com.cn/find-a-doctor')",
+                        "result": ""
+                    },
+                    "3": {
+                        "index": 3,
+                        "status": true,
+                        "duration": "3.01",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page08/Step_3.png",
+                        "step": "  - sleep(3)",
+                        "result": ""
+                    },
+                    "1": {
+                        "index": 1,
+                        "status": true,
+                        "duration": "9.47",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page08/Step_1.png",
+                        "step": "- call CommonTest()",
+                        "result": ""
+                    },
+                    "4": {
+                        "index": 4,
+                        "status": true,
+                        "duration": "2.01",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page08/Step_4.png",
+                        "step": "- sleep(2)",
+                        "result": ""
+                    },
+                    "5": {
+                        "index": 5,
+                        "status": true,
+                        "duration": "3.85",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page08/Step_5.png",
+                        "step": "- click('xpath=//*[@id=\"__next\"]/div[1]/div/div/div/div[1]/div[2]/a[1]')",
+                        "result": ""
+                    },
+                    "6": {
+                        "index": 6,
+                        "status": true,
+                        "duration": "0.01",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page08/Step_6.png",
+                        "step": "- ${element_xpath} = $.getElement('xpath=//*[@id=\"step-container\"]/div[1]/div/div[1]/div/h1')",
+                        "result": "{selenium.webdriver.remote.webelement.WebElement (session=\"a07454128e48c847bbadae7b94b1c791\", element=\"b5fc0ea8-3712-4ab3-9762-9c5fb9b1959a\")}"
+                    },
+                    "7": {
+                        "index": 7,
+                        "status": true,
+                        "duration": "0.02",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page08/Step_7.png",
+                        "step": "- ${text} = $.getText(${element_xpath})",
+                        "result": "\u5f00\u542f\u5fae\u7b11\u6d4b\u8bd5"
+                    },
+                    "8": {
+                        "index": 8,
+                        "status": true,
+                        "duration": "0.00",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page08/Step_8.png",
+                        "step": "- assert '\u5f00\u542f\u5fae\u7b11\u6d4b\u8bd5' in \"\u5f00\u542f\u5fae\u7b11\u6d4b\u8bd5\"",
+                        "result": ""
+                    }
+                }
+            },
+            {
+                "caseName": "jump_page09",
+                "casePath": "./TestCase/page/jump_page09.yaml",
+                "dataId": "jump_page09",
+                "description": "\u9875\u9762\u8df3\u8f6c-9",
+                "moduleName": "page",
+                "report": "./Report/chrome_20220702143431_MainThread",
+                "snapshotDir": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page09",
+                "startTime": "2022-07-02 14:37:45",
+                "duration": "13s",
+                "status": 0,
+                "err": null,
+                "steps": {
+                    "2": {
+                        "index": 2,
+                        "status": true,
+                        "duration": "3.69",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page09/Step_2.png",
+                        "step": "  - openUrl('https://www.invisalign.com.cn/find-a-doctor')",
+                        "result": ""
+                    },
+                    "3": {
+                        "index": 3,
+                        "status": true,
+                        "duration": "3.01",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page09/Step_3.png",
+                        "step": "  - sleep(3)",
+                        "result": ""
+                    },
+                    "1": {
+                        "index": 1,
+                        "status": true,
+                        "duration": "6.69",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page09/Step_1.png",
+                        "step": "- call CommonTest()",
+                        "result": ""
+                    },
+                    "4": {
+                        "index": 4,
+                        "status": true,
+                        "duration": "3.71",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page09/Step_4.png",
+                        "step": "- click('class=fad-link')",
+                        "result": ""
+                    },
+                    "5": {
+                        "index": 5,
+                        "status": true,
+                        "duration": "0.03",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page09/Step_5.png",
+                        "step": "- ${element_class} = $.getElement('class=dl-welcome-header')",
+                        "result": "{selenium.webdriver.remote.webelement.WebElement (session=\"86e8819c0935a38bd951afa1c32bd5fc\", element=\"047d242c-0c7e-40d2-aa8f-e146cc21f71b\")}"
+                    },
+                    "6": {
+                        "index": 6,
+                        "status": true,
+                        "duration": "0.05",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page09/Step_6.png",
+                        "step": "- ${text} = $.getText(${element_class})",
+                        "result": "\u67e5\u627e\u9644\u8fd1\u7684 Invisalign \u9690\u9002\u7f8e\u6cbb\u7597\u673a\u6784"
+                    },
+                    "7": {
+                        "index": 7,
+                        "status": true,
+                        "duration": "0.00",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page09/Step_7.png",
+                        "step": "- assert '\u67e5\u627e\u9644\u8fd1\u7684 Invisalign \u9690\u9002\u7f8e\u6cbb\u7597\u673a\u6784' in \"\u67e5\u627e\u9644\u8fd1\u7684 Invisalign \u9690\u9002\u7f8e\u6cbb\u7597\u673a\u6784\"",
+                        "result": ""
+                    }
+                }
+            },
+            {
+                "caseName": "jump_page10",
+                "casePath": "./TestCase/page/jump_page10.yaml",
+                "dataId": "jump_page10",
+                "description": "\u9875\u9762\u8df3\u8f6c-10",
+                "moduleName": "page",
+                "report": "./Report/chrome_20220702143431_MainThread",
+                "snapshotDir": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page10",
+                "startTime": "2022-07-02 14:37:59",
+                "duration": "17s",
+                "status": 0,
+                "err": null,
+                "steps": {
+                    "2": {
+                        "index": 2,
+                        "status": true,
+                        "duration": "6.74",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page10/Step_2.png",
+                        "step": "  - openUrl('https://www.invisalign.com.cn/find-a-doctor')",
+                        "result": ""
+                    },
+                    "3": {
+                        "index": 3,
+                        "status": true,
+                        "duration": "3.01",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page10/Step_3.png",
+                        "step": "  - sleep(3)",
+                        "result": ""
+                    },
+                    "1": {
+                        "index": 1,
+                        "status": true,
+                        "duration": "9.74",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page10/Step_1.png",
+                        "step": "- call CommonTest()",
+                        "result": ""
+                    },
+                    "4": {
+                        "index": 4,
+                        "status": true,
+                        "duration": "2.00",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page10/Step_4.png",
+                        "step": "- sleep(2)",
+                        "result": ""
+                    },
+                    "5": {
+                        "index": 5,
+                        "status": true,
+                        "duration": "2.31",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page10/Step_5.png",
+                        "step": "- click('xpath=//*[@id=\"__next\"]/div[1]/div/div/div/div[1]/div[2]/a[2]')",
+                        "result": ""
+                    },
+                    "6": {
+                        "index": 6,
+                        "status": true,
+                        "duration": "0.06",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page10/Step_6.png",
+                        "step": "- ${element_xpath} = $.getElement('xpath=//*[@id=\"__next\"]/div[2]/div/div/div/div[1]/div/div/div[2]/div/div/div/p/a')",
+                        "result": "{selenium.webdriver.remote.webelement.WebElement (session=\"305d124440d3e000808de516cb617b2e\", element=\"e2ca663e-1ebf-45c3-84a5-b79450236d6f\")}"
+                    },
+                    "7": {
+                        "index": 7,
+                        "status": true,
+                        "duration": "0.02",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page10/Step_7.png",
+                        "step": "- ${text} = $.getText(${element_xpath})",
+                        "result": "\u5bfb\u627e\u9690\u9002\u7f8e\u6cbb\u7597\u673a\u6784"
+                    },
+                    "8": {
+                        "index": 8,
+                        "status": true,
+                        "duration": "0.00",
+                        "snapshot": "./Report/chrome_20220702143431_MainThread/Steps/page/jump_page10/Step_8.png",
+                        "step": "- assert '\u5bfb\u627e\u9690\u9002\u7f8e\u6cbb\u7597\u673a\u6784' in \"\u5bfb\u627e\u9690\u9002\u7f8e\u6cbb\u7597\u673a\u6784\"",
+                        "result": ""
+                    }
+                }
+            }
+        ]
+    },
+    "errorsList": [],
+    "failuresList": []
+}

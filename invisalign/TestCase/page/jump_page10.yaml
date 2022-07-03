@@ -1,0 +1,14 @@
+module: page
+skip: false
+description: 页面跳转-10
+steps:
+  # 调用公共方法：打开浏览器目标地址
+  - call CommonTest()
+  - sleep(2)
+  # 点击‘寻找隐适美治疗机构button’
+  - click('xpath=//*[@id="__next"]/div[1]/div/div/div/div[1]/div[2]/a[2]')
+  # ⻚⾯跳转后断⾔新⻚⾯中的元素
+  - ${element_xpath} = $.getElement('xpath=//*[@id="__next"]/div[2]/div/div/div/div[1]/div/div/div[2]/div/div/div/p/a')
+  - ${text} = $.getText(${element_xpath})
+  # 定位当前⻚⾯元素并断⾔
+  - assert '寻找隐适美治疗机构' in ${text}

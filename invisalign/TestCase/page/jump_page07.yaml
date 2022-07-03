@@ -1,0 +1,13 @@
+module: page
+skip: false
+description: 页面跳转-7
+steps:
+  # 调用公共方法：打开浏览器目标地址
+  - call CommonTest()
+  - sleep(2)
+  # 点击‘隐适美体验中⼼button’
+  - click('xpath=//*[@id="basic-navbar-nav"]/div/div[6]/div/a')
+  # ⻚⾯跳转后断⾔新⻚⾯中的元素
+  - ${element_xpath} = $.getElement('xpath=//*[@id="__next"]/div[2]/div[1]/div/div/div[2]/div/div/h2')
+  - ${text} = $.getText(${element_xpath})
+  - assert '上海隐适美体验中心' in ${text}

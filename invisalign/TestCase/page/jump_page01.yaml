@@ -1,0 +1,12 @@
+
+module: page
+skip: false
+description: 页面跳转-1
+steps:
+  # 调用公共方法：打开浏览器目标地址
+  - call CommonTest()
+  # 点击左上⻆logo
+  - click('xpath=//*[@id="__next"]/div[1]/div/div/div/div[2]/nav/a/img')
+  # ⻚⾯跳转后断⾔新⻚⾯中的元素
+  - ${title} = $.getTitle()
+  - assert 'Invisalign隐适美中国官网|隐形矫正牙齿' in ${title}

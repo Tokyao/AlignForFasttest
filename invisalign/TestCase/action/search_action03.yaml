@@ -1,0 +1,13 @@
+module: action
+skip: false
+description: 搜索case-3
+input: [keywords]
+steps:
+  # 调用公共方法：打开浏览器目标地址
+  - call CommonTest()
+  # 点击‘寻找隐适美治疗机构’
+  - click('xpath=//*[@id="__next"]/div[2]/div/div/div/div[1]/div/div/div[2]/div/div/div/p/a')
+  # 断⾔错误提示‘请输⼊地址/或提供者/诊所名 称。’
+  - ${element_class} = $.getElement('class=dl-error-msg')
+  - ${text} = $.getText(${element_class})
+  - assert '请输入地址或提供者/诊所名称。' == ${text}

@@ -1,0 +1,167 @@
+2022-07-02 14:29:03 INFO :******************* analytical config *******************
+2022-07-02 14:29:03 INFO : driver: selenium
+2022-07-02 14:29:03 INFO : reStart: True
+2022-07-02 14:29:03 INFO : saveScreenshot: False
+2022-07-02 14:29:03 INFO : timeOut: 5
+2022-07-02 14:29:03 INFO : desiredCapabilities: {'browser': 'chrome', 'maxWindow': True, 'chrome': {'driver': 'Resource/chromedriver', 'options': ['--dissble-gpu']}}
+2022-07-02 14:29:03 INFO : testcase: ['TestCase/action']
+2022-07-02 14:29:03 INFO :******************* analytical testcase *******************
+2022-07-02 14:29:03 INFO : case: 3
+2022-07-02 14:29:03 INFO : /Users/yaohongchang/invisalign/invisalign/TestCase/action/search_action01.yaml
+2022-07-02 14:29:03 INFO : /Users/yaohongchang/invisalign/invisalign/TestCase/action/search_action02.yaml
+2022-07-02 14:29:03 INFO : /Users/yaohongchang/invisalign/invisalign/TestCase/action/search_action03.yaml
+2022-07-02 14:29:03 INFO :******************* analytical common *******************
+2022-07-02 14:29:03 INFO : CommonTest: {'description': '公共方法', 'input': [], 'output': [], 'steps': ["openUrl('https://www.invisalign.com.cn/find-a-doctor')", 'sleep(3)']}
+2022-07-02 14:29:03 INFO :******************* register variable *******************
+2022-07-02 14:29:03 INFO : keywords: 西单
+2022-07-02 14:29:03 INFO :******************* register resource *******************
+2022-07-02 14:29:03 INFO :******************* register keywords *******************
+2022-07-02 14:29:03 INFO : ScriptsTest
+2022-07-02 14:29:03 INFO :******************* analytical desired capabilities *******************
+2022-07-02 14:29:03 INFO :******************* TestCase 搜索case-1 Start *******************
+2022-07-02 14:29:32 INFO : c不喝咖啡会死星人 邀请您参加腾讯会议
+2022-07-02 14:29:32 INFO : 会议主题：不喝咖啡会死星人的快速会议
+2022-07-02 14:29:32 INFO : 会议时间：2022/07/02 14:25-15:25 (GMT+08:00) 中国标准时间 - 北京
+2022-07-02 14:29:32 INFO : 点击链接直接加入会议：
+2022-07-02 14:29:33 INFO : https://meeting.tencent.com/dm/UxWkxuoTyutH
+2022-07-02 14:29:33 INFO : #腾讯会议：337-117-187
+2022-07-02 14:29:44 INFO : 复制该信息，打开手机腾讯会议即可参与call CommonTest()
+2022-07-02 14:29:57 INFO : call CommonTest()
+2022-07-02 14:29:57 INFO : --> key: call
+2022-07-02 14:29:57 INFO : --> value: []
+2022-07-02 14:29:57 INFO : openUrl('https://www.invisalign.com.cn/find-a-doctor')
+2022-07-02 14:29:57 INFO : --> key: openUrl
+2022-07-02 14:29:57 INFO : --> value: ['https://www.invisalign.com.cn/find-a-doctor']
+2022-07-02 14:30:03 INFO : sleep(3)
+2022-07-02 14:30:03 INFO : --> key: sleep
+2022-07-02 14:30:03 INFO : --> value: [3]
+2022-07-02 14:30:09 INFO : check('id=amap-city-input')
+2022-07-02 14:30:09 INFO : --> key: check
+2022-07-02 14:30:09 INFO : --> value: ['id=amap-city-input']
+2022-07-02 14:30:14 INFO : click('id=amap-city-input')
+2022-07-02 14:30:14 INFO : --> key: click
+2022-07-02 14:30:14 INFO : --> value: ['id=amap-city-input']
+2022-07-02 14:30:18 INFO : sendKeys('name=location', ${keywords})
+2022-07-02 14:30:18 INFO : --> key: sendKeys
+2022-07-02 14:30:18 INFO : --> value: ['name=location', '西单']
+2022-07-02 14:30:23 INFO : ${element_id} = $.getElement('id=amap-sug0')
+2022-07-02 14:30:23 INFO : --> key: variable
+2022-07-02 14:30:23 INFO : --> value: ['id=amap-sug0']
+2022-07-02 14:30:23 INFO : <-- element_id: <class 'selenium.webdriver.remote.webelement.WebElement'> <selenium.webdriver.remote.webelement.WebElement (session="0f03745c5347de605d7c0593785c5140", element="711c46d9-cdd4-4445-9327-b30aa26c73b6")>
+2022-07-02 14:30:30 INFO : ${text} = $.getText(${element_id})
+2022-07-02 14:30:30 INFO : --> key: variable
+2022-07-02 14:30:30 INFO : --> value: [<selenium.webdriver.remote.webelement.WebElement (session="0f03745c5347de605d7c0593785c5140", element="711c46d9-cdd4-4445-9327-b30aa26c73b6")>]
+2022-07-02 14:30:30 INFO : <-- text: <class 'str'> dippin dots ICE GREAM(西单大悦城)北京市西城区
+2022-07-02 14:30:35 INFO : assert '西' in ${text}
+2022-07-02 14:30:35 INFO : --> key: assert
+2022-07-02 14:30:35 INFO : --> value: ['\'西\' in "dippin dots ICE GREAM(西单大悦城)北京市西城区"']
+2022-07-02 14:30:35 INFO : <-- True
+2022-07-02 14:30:46 INFO :******************* TestCase 搜索case-2 Start *******************
+2022-07-02 14:30:49 INFO : call CommonTest()
+2022-07-02 14:30:49 INFO : --> key: call
+2022-07-02 14:30:49 INFO : --> value: []
+2022-07-02 14:30:49 INFO : openUrl('https://www.invisalign.com.cn/find-a-doctor')
+2022-07-02 14:30:49 INFO : --> key: openUrl
+2022-07-02 14:30:49 INFO : --> value: ['https://www.invisalign.com.cn/find-a-doctor']
+2022-07-02 14:30:51 INFO : sleep(3)
+2022-07-02 14:30:51 INFO : --> key: sleep
+2022-07-02 14:30:51 INFO : --> value: [3]
+2022-07-02 14:30:54 INFO : check('id=amap-city-input')
+2022-07-02 14:30:54 INFO : --> key: check
+2022-07-02 14:30:54 INFO : --> value: ['id=amap-city-input']
+2022-07-02 14:30:54 ERROR :no such window: window was already closed
+  (Session info: chrome=103.0.5060.53)
+2022-07-02 14:30:54 ERROR :no such window: window was already closed
+  (Session info: chrome=103.0.5060.53)
+2022-07-02 14:30:54 ERROR :no such window: window was already closed
+  (Session info: chrome=103.0.5060.53)
+2022-07-02 14:30:54 ERROR :no such window: window was already closed
+  (Session info: chrome=103.0.5060.53)
+2022-07-02 14:30:54 ERROR :no such window: window was already closed
+  (Session info: chrome=103.0.5060.53)
+2022-07-02 14:30:54 ERROR :no such window: window was already closed
+  (Session info: chrome=103.0.5060.53)
+2022-07-02 14:30:54 ERROR :no such window: window was already closed
+  (Session info: chrome=103.0.5060.53)
+2022-07-02 14:30:54 ERROR :no such window: window was already closed
+  (Session info: chrome=103.0.5060.53)
+2022-07-02 14:30:54 ERROR :no such window: window was already closed
+  (Session info: chrome=103.0.5060.53)
+2022-07-02 14:30:54 ERROR :no such window: window was already closed
+  (Session info: chrome=103.0.5060.53)
+2022-07-02 14:30:54 ERROR : screenshot failed!
+2022-07-02 14:30:54 ERROR : case: /Users/yaohongchang/invisalign/invisalign/TestCase/action/search_action02.yaml
+2022-07-02 14:30:54 ERROR :Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/runner/run_case.py", line 21, in testCase
+    case.iteration(self.steps)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/runner/case_analysis.py", line 29, in iteration
+    self.case_executor(step, style, common, iterating_var)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/runner/case_analysis.py", line 111, in case_executor
+    result = self.action_nalysis.action_analysis(step, style, common, iterating_var)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/runner/action_analysis.py", line 301, in action_analysis
+    result = self.executor_keywords(action_dict, style)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/common/decorator.py", line 116, in wrapper
+    raise exception
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/common/decorator.py", line 70, in wrapper
+    result = func(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/runner/action_analysis.py", line 279, in executor_keywords
+    raise e
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/runner/action_analysis.py", line 268, in executor_keywords
+    result = self.action_executor._action_executor(action)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/runner/action_executor_base.py", line 245, in _action_executor
+    result = func(action)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/common/check.py", line 22, in wrapper
+    raise e
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/common/check.py", line 14, in wrapper
+    result = func(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/runner/action_executor_web.py", line 123, in _check
+    self._getElement(action)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/runner/action_executor_web.py", line 542, in _getElement
+    element = DriverBaseWeb.get_element(key, value, Var.time_out)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/drivers/driver_base_web.py", line 642, in get_element
+    raise e
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/drivers/driver_base_web.py", line 629, in get_element
+    element = Var.instance.find_element(by[type], text)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 1251, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 430, in execute
+    self.error_handler.check_response(response)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: window was already closed
+  (Session info: chrome=103.0.5060.53)
+Stacktrace:
+0   chromedriver                        0x0000000102d5a079 chromedriver + 4444281
+1   chromedriver                        0x0000000102ce6403 chromedriver + 3970051
+2   chromedriver                        0x0000000102981038 chromedriver + 409656
+3   chromedriver                        0x0000000102971599 chromedriver + 345497
+4   chromedriver                        0x00000001029729b2 chromedriver + 350642
+5   chromedriver                        0x000000010296b32c chromedriver + 320300
+6   chromedriver                        0x0000000102982452 chromedriver + 414802
+7   chromedriver                        0x00000001029e68db chromedriver + 825563
+8   chromedriver                        0x00000001029d4683 chromedriver + 751235
+9   chromedriver                        0x00000001029aaa45 chromedriver + 580165
+10  chromedriver                        0x00000001029aba95 chromedriver + 584341
+11  chromedriver                        0x0000000102d2b55d chromedriver + 4253021
+12  chromedriver                        0x0000000102d303a1 chromedriver + 4273057
+13  chromedriver                        0x0000000102d3516f chromedriver + 4292975
+14  chromedriver                        0x0000000102d30dea chromedriver + 4275690
+15  chromedriver                        0x0000000102d0a54f chromedriver + 4117839
+16  chromedriver                        0x0000000102d4aed8 chromedriver + 4382424
+17  chromedriver                        0x0000000102d4b05f chromedriver + 4382815
+18  chromedriver                        0x0000000102d618d5 chromedriver + 4475093
+19  libsystem_pthread.dylib             0x00007fff204268fc _pthread_start + 224
+20  libsystem_pthread.dylib             0x00007fff20422443 thread_start + 15
+
+
+2022-07-02 14:30:54 INFO :******************* Total: 2, Success: 0, Failed: 0, Error: 1, Skipped: 0 ********************
+
+2022-07-02 14:30:54 INFO :******************* TestCase 搜索case-3 Start *******************
+2022-07-02 14:30:58 INFO : call CommonTest()
+2022-07-02 14:30:58 INFO : --> key: call
+2022-07-02 14:30:58 INFO : --> value: []
+2022-07-02 14:30:58 INFO : openUrl('https://www.invisalign.com.cn/find-a-doctor')
+2022-07-02 14:30:58 INFO : --> key: openUrl
+2022-07-02 14:30:58 INFO : --> value: ['https://www.invisalign.com.cn/find-a-doctor']
+2022-07-02 14:30:58 INFO : Error case:
+2022-07-02 14:30:58 ERROR :/Users/yaohongchang/invisalign/invisalign/TestCase/action/search_action02.yaml

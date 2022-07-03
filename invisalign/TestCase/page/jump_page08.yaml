@@ -1,0 +1,14 @@
+module: page
+skip: false
+description: 页面跳转-8
+steps:
+  # 调用公共方法：打开浏览器目标地址
+  - call CommonTest()
+  - sleep(2)
+  # 点击‘开启微笑测试button’
+  - click('xpath=//*[@id="__next"]/div[1]/div/div/div/div[1]/div[2]/a[1]')
+  # ⻚⾯跳转后断⾔新⻚⾯中的元素
+  - ${element_xpath} = $.getElement('xpath=//*[@id="step-container"]/div[1]/div/div[1]/div/h1')
+  - ${text} = $.getText(${element_xpath})
+  # 定位当前⻚⾯元素并断⾔
+  - assert '开启微笑测试' in ${text}

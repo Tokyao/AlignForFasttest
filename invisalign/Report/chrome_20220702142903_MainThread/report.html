@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试报告</title>
+    <link rel="stylesheet" type="text/css" href="resource/css.css">
+    <script type="text/javascript" src="http://libs.baidu.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="resource/js.js"></script>
+</head>
+<body>
+<div class="root">
+    
+        <div class="result_css_title">
+            <h2 style="color: white;text-align: center;line-height: 65px">Test Results</h2>
+        </div>
+        <div class="result_css_head" style="height: 240px">
+            <div class="result_css_head_title">Summarization</div>
+            <div style="height: 210px;border: 1px solid rgb(220,220,220); background-color: white">
+                <p class="result_css_text">Total：3</p>
+                <p class="result_css_text">Success：0</p>
+                <p class="result_css_text">Failure：0</p>
+                <p class="result_css_text">Error：1</p>
+                <p class="result_css_text">Skipped：0</p>
+                <p class="result_css_text">StartTime：2022-07-02 14:29:03</p>
+                <p class="result_css_text">Duration：115s</p>
+            </div>
+        </div>
+        
+    
+        <div class="result_css_tabdiv" style="height: auto">
+        <div class="result_css_head_title">Details</div>
+        <div style="height:auto;border: 1px solid rgb(220,220,220); background-color: white">
+            <table class="result_css_table" cellspacing="0">
+                <tr>
+                    <th class="result_css_th" width="20%%">CaseName</th>
+                    <th class="result_css_th" width="30%%">Description</th>
+                    <th class="result_css_th" width="20%%">StartTime</th>
+                    <th class="result_css_th" width="10%%">Duration</th>
+                    <th class="result_css_th" width="10%%">Status</th>
+                    <th class="result_css_th" width="10%%">Open/Close</th>
+                </tr>
+                
+                <tr>
+                    <td class="result_css_module_td" colspan="2" style=" text-align:left; text-indent: 10px;">action</td>
+                    <td class="result_css_module_td" colspan="3"><span class="result_css_success result_css_status">&nbsp;success:0&nbsp;</span> | <span class="result_css_failure result_css_status">&nbsp;failure:0&nbsp;</span> | <span class="result_css_error result_css_status">&nbsp;error:1&nbsp;</span> | <span class="result_css_skipped result_css_status">&nbsp;skipped:0&nbsp;</span></td>
+                    <td class="result_css_module_name" data-tag='module_name_action'>Open</td>
+                </tr>
+    
+                <tr module-data-tag='module_name_action' style="display: none">
+                    <td class="result_css_module_td result_css_error" style=" text-align:left; text-indent: 20px;">search_action02</td>
+                    <td class="result_css_module_td result_css_error" style=" text-align:left; text-indent: 5px;">搜索case-2</td>
+                    <td class="result_css_module_td result_css_error">2022-07-02 14:30:46</td>
+                    <td class="result_css_module_td result_css_error">8s</td>
+                    <td class="result_css_module_td result_css_error">error</td>
+                    <td class="result_css_module_td_view result_css_error" data-tag='module_td_view_action_search_action02'>Open</td>
+                </tr>
+    
+                <tr module-td-data-tag="module_td_view_action_search_action02" style="display: none">
+                    <td class="result_css_module_deta" colspan="6" style="border-right: 0">
+                        <div class="result_css_errordiv">
+                            <h3 style="margin-bottom: 10px">Steps</h3>
+                            
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">5.40 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- call CommonTest()</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">2.39 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">  - openUrl('https://www.invisalign.com.cn/find-a-doctor')</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">3.01 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">  - sleep(3)</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.06 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_errorfont">- check('id=amap-city-input')</pre>
+                                </div>
+                                <div class="img_errorp" style="display: none;">
+                                    <pre class="result_css_errorp" style="white-space: pre-wrap;overflow-wrap: break-word;">
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/runner/run_case.py", line 21, in testCase
+    case.iteration(self.steps)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/runner/case_analysis.py", line 29, in iteration
+    self.case_executor(step, style, common, iterating_var)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/runner/case_analysis.py", line 111, in case_executor
+    result = self.action_nalysis.action_analysis(step, style, common, iterating_var)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/runner/action_analysis.py", line 301, in action_analysis
+    result = self.executor_keywords(action_dict, style)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/common/decorator.py", line 116, in wrapper
+    raise exception
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/common/decorator.py", line 70, in wrapper
+    result = func(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/runner/action_analysis.py", line 279, in executor_keywords
+    raise e
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/runner/action_analysis.py", line 268, in executor_keywords
+    result = self.action_executor._action_executor(action)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/runner/action_executor_base.py", line 245, in _action_executor
+    result = func(action)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/common/check.py", line 22, in wrapper
+    raise e
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/common/check.py", line 14, in wrapper
+    result = func(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/runner/action_executor_web.py", line 123, in _check
+    self._getElement(action)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/runner/action_executor_web.py", line 542, in _getElement
+    element = DriverBaseWeb.get_element(key, value, Var.time_out)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/drivers/driver_base_web.py", line 642, in get_element
+    raise e
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/drivers/driver_base_web.py", line 629, in get_element
+    element = Var.instance.find_element(by[type], text)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 1251, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 430, in execute
+    self.error_handler.check_response(response)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: window was already closed
+  (Session info: chrome=103.0.5060.53)
+Stacktrace:
+0   chromedriver                        0x0000000102d5a079 chromedriver + 4444281
+1   chromedriver                        0x0000000102ce6403 chromedriver + 3970051
+2   chromedriver                        0x0000000102981038 chromedriver + 409656
+3   chromedriver                        0x0000000102971599 chromedriver + 345497
+4   chromedriver                        0x00000001029729b2 chromedriver + 350642
+5   chromedriver                        0x000000010296b32c chromedriver + 320300
+6   chromedriver                        0x0000000102982452 chromedriver + 414802
+7   chromedriver                        0x00000001029e68db chromedriver + 825563
+8   chromedriver                        0x00000001029d4683 chromedriver + 751235
+9   chromedriver                        0x00000001029aaa45 chromedriver + 580165
+10  chromedriver                        0x00000001029aba95 chromedriver + 584341
+11  chromedriver                        0x0000000102d2b55d chromedriver + 4253021
+12  chromedriver                        0x0000000102d303a1 chromedriver + 4273057
+13  chromedriver                        0x0000000102d3516f chromedriver + 4292975
+14  chromedriver                        0x0000000102d30dea chromedriver + 4275690
+15  chromedriver                        0x0000000102d0a54f chromedriver + 4117839
+16  chromedriver                        0x0000000102d4aed8 chromedriver + 4382424
+17  chromedriver                        0x0000000102d4b05f chromedriver + 4382815
+18  chromedriver                        0x0000000102d618d5 chromedriver + 4475093
+19  libsystem_pthread.dylib             0x00007fff204268fc _pthread_start + 224
+20  libsystem_pthread.dylib             0x00007fff20422443 thread_start + 15
+
+</pre>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </td>
+                </tr>
+    
+            </table>
+        </div>
+        </div>
+    
+</div>
+</body>
+</html>
+    

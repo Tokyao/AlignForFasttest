@@ -1,0 +1,65 @@
+{
+    "report": "/Users/yaohongchang/invisalign/invisalign/Report/chrome_20220702142903_MainThread",
+    "total": 3,
+    "successes": 0,
+    "failures": 0,
+    "errors": 1,
+    "skipped": 0,
+    "startTime": "2022-07-02 14:29:03",
+    "duration": "115s",
+    "result": {
+        "action": [
+            {
+                "caseName": "search_action02",
+                "casePath": "/Users/yaohongchang/invisalign/invisalign/TestCase/action/search_action02.yaml",
+                "dataId": "search_action02",
+                "description": "\u641c\u7d22case-2",
+                "moduleName": "action",
+                "report": "/Users/yaohongchang/invisalign/invisalign/Report/chrome_20220702142903_MainThread",
+                "snapshotDir": "/Users/yaohongchang/invisalign/invisalign/Report/chrome_20220702142903_MainThread/Steps/action/search_action02",
+                "startTime": "2022-07-02 14:30:46",
+                "duration": "8s",
+                "status": 2,
+                "err": "Traceback (most recent call last):\n  File \"/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/runner/run_case.py\", line 21, in testCase\n    case.iteration(self.steps)\n  File \"/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/runner/case_analysis.py\", line 29, in iteration\n    self.case_executor(step, style, common, iterating_var)\n  File \"/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/runner/case_analysis.py\", line 111, in case_executor\n    result = self.action_nalysis.action_analysis(step, style, common, iterating_var)\n  File \"/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/runner/action_analysis.py\", line 301, in action_analysis\n    result = self.executor_keywords(action_dict, style)\n  File \"/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/common/decorator.py\", line 116, in wrapper\n    raise exception\n  File \"/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/common/decorator.py\", line 70, in wrapper\n    result = func(*args, **kwds)\n  File \"/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/runner/action_analysis.py\", line 279, in executor_keywords\n    raise e\n  File \"/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/runner/action_analysis.py\", line 268, in executor_keywords\n    result = self.action_executor._action_executor(action)\n  File \"/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/runner/action_executor_base.py\", line 245, in _action_executor\n    result = func(action)\n  File \"/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/common/check.py\", line 22, in wrapper\n    raise e\n  File \"/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/common/check.py\", line 14, in wrapper\n    result = func(*args, **kwds)\n  File \"/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/runner/action_executor_web.py\", line 123, in _check\n    self._getElement(action)\n  File \"/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/runner/action_executor_web.py\", line 542, in _getElement\n    element = DriverBaseWeb.get_element(key, value, Var.time_out)\n  File \"/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/drivers/driver_base_web.py\", line 642, in get_element\n    raise e\n  File \"/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/drivers/driver_base_web.py\", line 629, in get_element\n    element = Var.instance.find_element(by[type], text)\n  File \"/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py\", line 1251, in find_element\n    return self.execute(Command.FIND_ELEMENT, {\n  File \"/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py\", line 430, in execute\n    self.error_handler.check_response(response)\n  File \"/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py\", line 247, in check_response\n    raise exception_class(message, screen, stacktrace)\nselenium.common.exceptions.NoSuchWindowException: Message: no such window: window was already closed\n  (Session info: chrome=103.0.5060.53)\nStacktrace:\n0   chromedriver                        0x0000000102d5a079 chromedriver + 4444281\n1   chromedriver                        0x0000000102ce6403 chromedriver + 3970051\n2   chromedriver                        0x0000000102981038 chromedriver + 409656\n3   chromedriver                        0x0000000102971599 chromedriver + 345497\n4   chromedriver                        0x00000001029729b2 chromedriver + 350642\n5   chromedriver                        0x000000010296b32c chromedriver + 320300\n6   chromedriver                        0x0000000102982452 chromedriver + 414802\n7   chromedriver                        0x00000001029e68db chromedriver + 825563\n8   chromedriver                        0x00000001029d4683 chromedriver + 751235\n9   chromedriver                        0x00000001029aaa45 chromedriver + 580165\n10  chromedriver                        0x00000001029aba95 chromedriver + 584341\n11  chromedriver                        0x0000000102d2b55d chromedriver + 4253021\n12  chromedriver                        0x0000000102d303a1 chromedriver + 4273057\n13  chromedriver                        0x0000000102d3516f chromedriver + 4292975\n14  chromedriver                        0x0000000102d30dea chromedriver + 4275690\n15  chromedriver                        0x0000000102d0a54f chromedriver + 4117839\n16  chromedriver                        0x0000000102d4aed8 chromedriver + 4382424\n17  chromedriver                        0x0000000102d4b05f chromedriver + 4382815\n18  chromedriver                        0x0000000102d618d5 chromedriver + 4475093\n19  libsystem_pthread.dylib             0x00007fff204268fc _pthread_start + 224\n20  libsystem_pthread.dylib             0x00007fff20422443 thread_start + 15\n\n",
+                "steps": {
+                    "2": {
+                        "index": 2,
+                        "status": true,
+                        "duration": "2.39",
+                        "snapshot": "/Users/yaohongchang/invisalign/invisalign/Report/chrome_20220702142903_MainThread/Steps/action/search_action02/Step_2.png",
+                        "step": "  - openUrl('https://www.invisalign.com.cn/find-a-doctor')",
+                        "result": ""
+                    },
+                    "3": {
+                        "index": 3,
+                        "status": true,
+                        "duration": "3.01",
+                        "snapshot": "/Users/yaohongchang/invisalign/invisalign/Report/chrome_20220702142903_MainThread/Steps/action/search_action02/Step_3.png",
+                        "step": "  - sleep(3)",
+                        "result": ""
+                    },
+                    "1": {
+                        "index": 1,
+                        "status": true,
+                        "duration": "5.40",
+                        "snapshot": "/Users/yaohongchang/invisalign/invisalign/Report/chrome_20220702142903_MainThread/Steps/action/search_action02/Step_1.png",
+                        "step": "- call CommonTest()",
+                        "result": ""
+                    },
+                    "4": {
+                        "index": 4,
+                        "status": false,
+                        "duration": "0.06",
+                        "snapshot": "/Users/yaohongchang/invisalign/invisalign/Report/chrome_20220702142903_MainThread/Steps/action/search_action02/Step_4.png",
+                        "step": "- check('id=amap-city-input')",
+                        "result": ""
+                    }
+                }
+            }
+        ]
+    },
+    "errorsList": [
+        "/Users/yaohongchang/invisalign/invisalign/TestCase/action/search_action02.yaml"
+    ],
+    "failuresList": []
+}

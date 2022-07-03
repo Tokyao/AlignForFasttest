@@ -1,0 +1,375 @@
+{
+    "report": "./Report/chrome_20220702143124_MainThread",
+    "total": 3,
+    "successes": 2,
+    "failures": 0,
+    "errors": 1,
+    "skipped": 0,
+    "startTime": "2022-07-02 14:31:24",
+    "duration": "50s",
+    "result": {
+        "action": [
+            {
+                "caseName": "search_action01",
+                "casePath": "./TestCase/action/search_action01.yaml",
+                "dataId": "search_action01",
+                "description": "\u641c\u7d22case-1",
+                "moduleName": "action",
+                "report": "./Report/chrome_20220702143124_MainThread",
+                "snapshotDir": "./Report/chrome_20220702143124_MainThread/Steps/action/search_action01",
+                "startTime": "2022-07-02 14:31:24",
+                "duration": "16s",
+                "status": 2,
+                "err": "Traceback (most recent call last):\n  File \"/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/runner/run_case.py\", line 21, in testCase\n    case.iteration(self.steps)\n  File \"/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/runner/case_analysis.py\", line 29, in iteration\n    self.case_executor(step, style, common, iterating_var)\n  File \"/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/runner/case_analysis.py\", line 111, in case_executor\n    result = self.action_nalysis.action_analysis(step, style, common, iterating_var)\n  File \"/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/runner/action_analysis.py\", line 301, in action_analysis\n    result = self.executor_keywords(action_dict, style)\n  File \"/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/common/decorator.py\", line 116, in wrapper\n    raise exception\n  File \"/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/common/decorator.py\", line 70, in wrapper\n    result = func(*args, **kwds)\n  File \"/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/runner/action_analysis.py\", line 279, in executor_keywords\n    raise e\n  File \"/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/runner/action_analysis.py\", line 268, in executor_keywords\n    result = self.action_executor._action_executor(action)\n  File \"/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/runner/action_executor_base.py\", line 245, in _action_executor\n    result = func(action)\n  File \"/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/runner/action_executor_base.py\", line 230, in _variable\n    raise e\n  File \"/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/runner/action_executor_base.py\", line 222, in _variable\n    result = func_(action)\n  File \"/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/runner/action_executor_web.py\", line 542, in _getElement\n    element = DriverBaseWeb.get_element(key, value, Var.time_out)\n  File \"/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/drivers/driver_base_web.py\", line 642, in get_element\n    raise e\n  File \"/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/drivers/driver_base_web.py\", line 630, in get_element\n    if element.is_enabled():\n  File \"/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py\", line 169, in is_enabled\n    return self._execute(Command.IS_ELEMENT_ENABLED)['value']\n  File \"/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py\", line 740, in _execute\n    return self._parent.execute(command, params)\n  File \"/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py\", line 430, in execute\n    self.error_handler.check_response(response)\n  File \"/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py\", line 247, in check_response\n    raise exception_class(message, screen, stacktrace)\nselenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document\n  (Session info: chrome=103.0.5060.53)\nStacktrace:\n0   chromedriver                        0x0000000102ae8079 chromedriver + 4444281\n1   chromedriver                        0x0000000102a74403 chromedriver + 3970051\n2   chromedriver                        0x000000010270f038 chromedriver + 409656\n3   chromedriver                        0x0000000102711ee7 chromedriver + 421607\n4   chromedriver                        0x0000000102711d86 chromedriver + 421254\n5   chromedriver                        0x000000010271204c chromedriver + 421964\n6   chromedriver                        0x00000001027404c5 chromedriver + 611525\n7   chromedriver                        0x0000000102762792 chromedriver + 751506\n8   chromedriver                        0x0000000102739f65 chromedriver + 585573\n9   chromedriver                        0x000000010276289e chromedriver + 751774\n10  chromedriver                        0x0000000102775221 chromedriver + 827937\n11  chromedriver                        0x0000000102762683 chromedriver + 751235\n12  chromedriver                        0x0000000102738a45 chromedriver + 580165\n13  chromedriver                        0x0000000102739a95 chromedriver + 584341\n14  chromedriver                        0x0000000102ab955d chromedriver + 4253021\n15  chromedriver                        0x0000000102abe3a1 chromedriver + 4273057\n16  chromedriver                        0x0000000102ac316f chromedriver + 4292975\n17  chromedriver                        0x0000000102abedea chromedriver + 4275690\n18  chromedriver                        0x0000000102a9854f chromedriver + 4117839\n19  chromedriver                        0x0000000102ad8ed8 chromedriver + 4382424\n20  chromedriver                        0x0000000102ad905f chromedriver + 4382815\n21  chromedriver                        0x0000000102aef8d5 chromedriver + 4475093\n22  libsystem_pthread.dylib             0x00007fff204268fc _pthread_start + 224\n23  libsystem_pthread.dylib             0x00007fff20422443 thread_start + 15\n\n",
+                "steps": {
+                    "2": {
+                        "index": 2,
+                        "status": true,
+                        "duration": "6.59",
+                        "snapshot": "./Report/chrome_20220702143124_MainThread/Steps/action/search_action01/Step_2.png",
+                        "step": "  - openUrl('https://www.invisalign.com.cn/find-a-doctor')",
+                        "result": ""
+                    },
+                    "3": {
+                        "index": 3,
+                        "status": true,
+                        "duration": "3.01",
+                        "snapshot": "./Report/chrome_20220702143124_MainThread/Steps/action/search_action01/Step_3.png",
+                        "step": "  - sleep(3)",
+                        "result": ""
+                    },
+                    "1": {
+                        "index": 1,
+                        "status": true,
+                        "duration": "9.60",
+                        "snapshot": "./Report/chrome_20220702143124_MainThread/Steps/action/search_action01/Step_1.png",
+                        "step": "- call CommonTest()",
+                        "result": ""
+                    },
+                    "4": {
+                        "index": 4,
+                        "status": true,
+                        "duration": "0.12",
+                        "snapshot": "./Report/chrome_20220702143124_MainThread/Steps/action/search_action01/Step_4.png",
+                        "step": "- check('id=amap-city-input')",
+                        "result": ""
+                    },
+                    "5": {
+                        "index": 5,
+                        "status": true,
+                        "duration": "0.55",
+                        "snapshot": "./Report/chrome_20220702143124_MainThread/Steps/action/search_action01/Step_5.png",
+                        "step": "- click('id=amap-city-input')",
+                        "result": ""
+                    },
+                    "6": {
+                        "index": 6,
+                        "status": true,
+                        "duration": "1.49",
+                        "snapshot": "./Report/chrome_20220702143124_MainThread/Steps/action/search_action01/Step_6.png",
+                        "step": "- sendKeys('name=location', ${keywords})",
+                        "result": ""
+                    },
+                    "7": {
+                        "index": 7,
+                        "status": false,
+                        "duration": "1.45",
+                        "snapshot": "./Report/chrome_20220702143124_MainThread/Steps/action/search_action01/Step_7.png",
+                        "step": "- ${element_id} = $.getElement('id=amap-sug0')",
+                        "result": ""
+                    }
+                }
+            },
+            {
+                "caseName": "search_action02",
+                "casePath": "./TestCase/action/search_action02.yaml",
+                "dataId": "search_action02",
+                "description": "\u641c\u7d22case-2",
+                "moduleName": "action",
+                "report": "./Report/chrome_20220702143124_MainThread",
+                "snapshotDir": "./Report/chrome_20220702143124_MainThread/Steps/action/search_action02",
+                "startTime": "2022-07-02 14:31:41",
+                "duration": "21s",
+                "status": 0,
+                "err": null,
+                "steps": {
+                    "2": {
+                        "index": 2,
+                        "status": true,
+                        "duration": "5.90",
+                        "snapshot": "./Report/chrome_20220702143124_MainThread/Steps/action/search_action02/Step_2.png",
+                        "step": "  - openUrl('https://www.invisalign.com.cn/find-a-doctor')",
+                        "result": ""
+                    },
+                    "3": {
+                        "index": 3,
+                        "status": true,
+                        "duration": "3.01",
+                        "snapshot": "./Report/chrome_20220702143124_MainThread/Steps/action/search_action02/Step_3.png",
+                        "step": "  - sleep(3)",
+                        "result": ""
+                    },
+                    "1": {
+                        "index": 1,
+                        "status": true,
+                        "duration": "8.91",
+                        "snapshot": "./Report/chrome_20220702143124_MainThread/Steps/action/search_action02/Step_1.png",
+                        "step": "- call CommonTest()",
+                        "result": ""
+                    },
+                    "4": {
+                        "index": 4,
+                        "status": true,
+                        "duration": "0.14",
+                        "snapshot": "./Report/chrome_20220702143124_MainThread/Steps/action/search_action02/Step_4.png",
+                        "step": "- check('id=amap-city-input')",
+                        "result": ""
+                    },
+                    "5": {
+                        "index": 5,
+                        "status": true,
+                        "duration": "0.53",
+                        "snapshot": "./Report/chrome_20220702143124_MainThread/Steps/action/search_action02/Step_5.png",
+                        "step": "- click('id=amap-city-input')",
+                        "result": ""
+                    },
+                    "6": {
+                        "index": 6,
+                        "status": true,
+                        "duration": "1.15",
+                        "snapshot": "./Report/chrome_20220702143124_MainThread/Steps/action/search_action02/Step_6.png",
+                        "step": "- sendKeys('name=location', ${keywords})",
+                        "result": ""
+                    },
+                    "7": {
+                        "index": 7,
+                        "status": true,
+                        "duration": "0.92",
+                        "snapshot": "./Report/chrome_20220702143124_MainThread/Steps/action/search_action02/Step_7.png",
+                        "step": "- click('class=dl-white')",
+                        "result": ""
+                    },
+                    "8": {
+                        "index": 8,
+                        "status": true,
+                        "duration": "0.01",
+                        "snapshot": "./Report/chrome_20220702143124_MainThread/Steps/action/search_action02/Step_8.png",
+                        "step": "- ${element_name} = $.getElement('name=practicename')",
+                        "result": "{selenium.webdriver.remote.webelement.WebElement (session=\"c4787fec9ad0cfef6e903472c857d42e\", element=\"0dd25ed1-1908-4583-b0f5-96d507e45db0\")}"
+                    },
+                    "9": {
+                        "index": 9,
+                        "status": true,
+                        "duration": "0.02",
+                        "snapshot": "./Report/chrome_20220702143124_MainThread/Steps/action/search_action02/Step_9.png",
+                        "step": "- ${attribute} = $.getAttribute(${element_name}, 'placeholder')",
+                        "result": "\u8bca\u6240"
+                    },
+                    "10": {
+                        "index": 10,
+                        "status": true,
+                        "duration": "0.00",
+                        "snapshot": "./Report/chrome_20220702143124_MainThread/Steps/action/search_action02/Step_10.png",
+                        "step": "- assert '\u8bca\u6240' == \"\u8bca\u6240\"",
+                        "result": ""
+                    },
+                    "11": {
+                        "index": 11,
+                        "status": true,
+                        "duration": "0.02",
+                        "snapshot": "./Report/chrome_20220702143124_MainThread/Steps/action/search_action02/Step_11.png",
+                        "step": "- ${element_name} = $.getElement('name=radius')",
+                        "result": "{selenium.webdriver.remote.webelement.WebElement (session=\"c4787fec9ad0cfef6e903472c857d42e\", element=\"afd37e93-5d83-42d1-b7cd-ce6cb0ca7c89\")}"
+                    },
+                    "12": {
+                        "index": 12,
+                        "status": true,
+                        "duration": "0.01",
+                        "snapshot": "./Report/chrome_20220702143124_MainThread/Steps/action/search_action02/Step_12.png",
+                        "step": "- ${attribute} = $.getAttribute(${element_name}, 'value')",
+                        "result": "10"
+                    },
+                    "13": {
+                        "index": 13,
+                        "status": true,
+                        "duration": "0.00",
+                        "snapshot": "./Report/chrome_20220702143124_MainThread/Steps/action/search_action02/Step_13.png",
+                        "step": "- assert '10' in \"10\"",
+                        "result": ""
+                    },
+                    "14": {
+                        "index": 14,
+                        "status": true,
+                        "duration": "0.17",
+                        "snapshot": "./Report/chrome_20220702143124_MainThread/Steps/action/search_action02/Step_14.png",
+                        "step": "- sendKeys('name=practicename', '\u513f\u7ae5')",
+                        "result": ""
+                    },
+                    "15": {
+                        "index": 15,
+                        "status": true,
+                        "duration": "0.50",
+                        "snapshot": "./Report/chrome_20220702143124_MainThread/Steps/action/search_action02/Step_15.png",
+                        "step": "- ${element_name} = $.getElement('name=radius')",
+                        "result": "{selenium.webdriver.remote.webelement.WebElement (session=\"c4787fec9ad0cfef6e903472c857d42e\", element=\"afd37e93-5d83-42d1-b7cd-ce6cb0ca7c89\")}"
+                    },
+                    "16": {
+                        "index": 16,
+                        "status": true,
+                        "duration": "0.00",
+                        "snapshot": "./Report/chrome_20220702143124_MainThread/Steps/action/search_action02/Step_16.png",
+                        "step": "- ${tag} = $.getTagName(${element_name})",
+                        "result": "select"
+                    },
+                    "17": {
+                        "index": 17,
+                        "status": true,
+                        "duration": "0.44",
+                        "snapshot": "./Report/chrome_20220702143124_MainThread/Steps/action/search_action02/Step_17.png",
+                        "step": "- click('xpath=//*[@id=\"__next\"]/div[2]/div/div/div/div[1]/div/div/div[2]/div/div/div/div[2]/div/div/div[3]/div/label/span')",
+                        "result": ""
+                    },
+                    "18": {
+                        "index": 18,
+                        "status": true,
+                        "duration": "0.14",
+                        "snapshot": "./Report/chrome_20220702143124_MainThread/Steps/action/search_action02/Step_18.png",
+                        "step": "- click('xpath=//*[@id=\"__next\"]/div[2]/div/div/div/div[1]/div/div/div[2]/div/div/div/p/a')",
+                        "result": ""
+                    },
+                    "19": {
+                        "index": 19,
+                        "status": true,
+                        "duration": "3.01",
+                        "snapshot": "./Report/chrome_20220702143124_MainThread/Steps/action/search_action02/Step_19.png",
+                        "step": "- sleep(3)",
+                        "result": ""
+                    },
+                    "20": {
+                        "index": 20,
+                        "status": true,
+                        "duration": "1.99",
+                        "snapshot": "./Report/chrome_20220702143124_MainThread/Steps/action/search_action02/Step_20.png",
+                        "step": "- ${element_class} = $.getElement('class=col-8')",
+                        "result": "{selenium.webdriver.remote.webelement.WebElement (session=\"c4787fec9ad0cfef6e903472c857d42e\", element=\"33f0b91d-22d9-4319-a5ff-684a24a264f1\")}"
+                    },
+                    "21": {
+                        "index": 21,
+                        "status": true,
+                        "duration": "0.02",
+                        "snapshot": "./Report/chrome_20220702143124_MainThread/Steps/action/search_action02/Step_21.png",
+                        "step": "- ${text} = $.getText(${element_class})",
+                        "result": "\u9996\u90fd\u533b\u79d1\u5927\u5b66\u9644\u5c5e\u5317\u4eac\u513f\u7ae5\u533b\u9662"
+                    },
+                    "22": {
+                        "index": 22,
+                        "status": true,
+                        "duration": "0.00",
+                        "snapshot": "./Report/chrome_20220702143124_MainThread/Steps/action/search_action02/Step_22.png",
+                        "step": "- assert '\u9996\u90fd\u533b\u79d1\u5927\u5b66\u9644\u5c5e\u5317\u4eac\u513f\u7ae5\u533b\u9662' == \"\u9996\u90fd\u533b\u79d1\u5927\u5b66\u9644\u5c5e\u5317\u4eac\u513f\u7ae5\u533b\u9662\"",
+                        "result": ""
+                    },
+                    "23": {
+                        "index": 23,
+                        "status": true,
+                        "duration": "0.21",
+                        "snapshot": "./Report/chrome_20220702143124_MainThread/Steps/action/search_action02/Step_23.png",
+                        "step": "- back()",
+                        "result": ""
+                    },
+                    "24": {
+                        "index": 24,
+                        "status": true,
+                        "duration": "0.02",
+                        "snapshot": "./Report/chrome_20220702143124_MainThread/Steps/action/search_action02/Step_24.png",
+                        "step": "- ${title} = $.getCurrentUrl()",
+                        "result": "https://www.invisalign.com.cn/find-a-doctor"
+                    },
+                    "25": {
+                        "index": 25,
+                        "status": true,
+                        "duration": "0.00",
+                        "snapshot": "./Report/chrome_20220702143124_MainThread/Steps/action/search_action02/Step_25.png",
+                        "step": "- assert 'https://www.invisalign.com.cn/find-a-doctor' == \"https://www.invisalign.com.cn/find-a-doctor\"",
+                        "result": ""
+                    }
+                }
+            },
+            {
+                "caseName": "search_action03",
+                "casePath": "./TestCase/action/search_action03.yaml",
+                "dataId": "search_action03",
+                "description": "\u641c\u7d22case-3",
+                "moduleName": "action",
+                "report": "./Report/chrome_20220702143124_MainThread",
+                "snapshotDir": "./Report/chrome_20220702143124_MainThread/Steps/action/search_action03",
+                "startTime": "2022-07-02 14:32:02",
+                "duration": "12s",
+                "status": 0,
+                "err": null,
+                "steps": {
+                    "2": {
+                        "index": 2,
+                        "status": true,
+                        "duration": "5.58",
+                        "snapshot": "./Report/chrome_20220702143124_MainThread/Steps/action/search_action03/Step_2.png",
+                        "step": "  - openUrl('https://www.invisalign.com.cn/find-a-doctor')",
+                        "result": ""
+                    },
+                    "3": {
+                        "index": 3,
+                        "status": true,
+                        "duration": "3.01",
+                        "snapshot": "./Report/chrome_20220702143124_MainThread/Steps/action/search_action03/Step_3.png",
+                        "step": "  - sleep(3)",
+                        "result": ""
+                    },
+                    "1": {
+                        "index": 1,
+                        "status": true,
+                        "duration": "8.58",
+                        "snapshot": "./Report/chrome_20220702143124_MainThread/Steps/action/search_action03/Step_1.png",
+                        "step": "- call CommonTest()",
+                        "result": ""
+                    },
+                    "4": {
+                        "index": 4,
+                        "status": true,
+                        "duration": "0.73",
+                        "snapshot": "./Report/chrome_20220702143124_MainThread/Steps/action/search_action03/Step_4.png",
+                        "step": "- click('xpath=//*[@id=\"__next\"]/div[2]/div/div/div/div[1]/div/div/div[2]/div/div/div/p/a')",
+                        "result": ""
+                    },
+                    "5": {
+                        "index": 5,
+                        "status": true,
+                        "duration": "0.06",
+                        "snapshot": "./Report/chrome_20220702143124_MainThread/Steps/action/search_action03/Step_5.png",
+                        "step": "- ${element_class} = $.getElement('class=dl-error-msg')",
+                        "result": "{selenium.webdriver.remote.webelement.WebElement (session=\"f80baf47d8aa610114ee2e70cdfe3db8\", element=\"75382b3c-61ad-42eb-ae48-ae29e810b728\")}"
+                    },
+                    "6": {
+                        "index": 6,
+                        "status": true,
+                        "duration": "0.03",
+                        "snapshot": "./Report/chrome_20220702143124_MainThread/Steps/action/search_action03/Step_6.png",
+                        "step": "- ${text} = $.getText(${element_class})",
+                        "result": "\u8bf7\u8f93\u5165\u5730\u5740\u6216\u63d0\u4f9b\u8005/\u8bca\u6240\u540d\u79f0\u3002"
+                    },
+                    "7": {
+                        "index": 7,
+                        "status": true,
+                        "duration": "0.00",
+                        "snapshot": "./Report/chrome_20220702143124_MainThread/Steps/action/search_action03/Step_7.png",
+                        "step": "- assert '\u8bf7\u8f93\u5165\u5730\u5740\u6216\u63d0\u4f9b\u8005/\u8bca\u6240\u540d\u79f0\u3002' == \"\u8bf7\u8f93\u5165\u5730\u5740\u6216\u63d0\u4f9b\u8005/\u8bca\u6240\u540d\u79f0\u3002\"",
+                        "result": ""
+                    }
+                }
+            }
+        ]
+    },
+    "errorsList": [
+        "./TestCase/action/search_action01.yaml"
+    ],
+    "failuresList": []
+}

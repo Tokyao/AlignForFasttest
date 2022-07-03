@@ -1,0 +1,16 @@
+module: page
+skip: false
+description: 页面跳转-2
+steps:
+  # 调用公共方法：打开浏览器目标地址
+  - call CommonTest()
+  # 点击‘关于隐适美button’
+  - click('xpath=//*[@id="__next"]/div[3]/div/div/div[1]/div[1]/a')
+  # ⻚⾯跳转后断⾔新⻚⾯中的元素
+  - ${title} = $.getTitle()
+  - assert '關於隐适美 | 隐形牙套 - Invisalign 隐适美中国' in ${title}
+  # 点击返回
+  - back()
+  # 定位当前⻚⾯元素是否在https://www. invisalign.com.cn/find-a-doctor
+  - ${title} = $.getCurrentUrl()
+  - assert 'https://www.invisalign.com.cn/find-a-doctor' == ${title}

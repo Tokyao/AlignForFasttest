@@ -1,0 +1,13 @@
+module: test_module
+skip: False
+description: 'this is a test case'
+steps:
+    - ${t1} = $.id(1+2*3)
+
+    - ${t2} = 6
+
+    - assert ${t1} > ${t2}
+
+    - ${ls} = ScriptsTest(${t2})
+
+    - call CommonTest(${ls})

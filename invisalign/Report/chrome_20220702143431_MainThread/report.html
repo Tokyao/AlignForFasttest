@@ -1,0 +1,1403 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试报告</title>
+    <link rel="stylesheet" type="text/css" href="resource/css.css">
+    <script type="text/javascript" src="http://libs.baidu.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="resource/js.js"></script>
+</head>
+<body>
+<div class="root">
+    
+        <div class="result_css_title">
+            <h2 style="color: white;text-align: center;line-height: 65px">Test Results</h2>
+        </div>
+        <div class="result_css_head" style="height: 240px">
+            <div class="result_css_head_title">Summarization</div>
+            <div style="height: 210px;border: 1px solid rgb(220,220,220); background-color: white">
+                <p class="result_css_text">Total：13</p>
+                <p class="result_css_text">Success：13</p>
+                <p class="result_css_text">Failure：0</p>
+                <p class="result_css_text">Error：0</p>
+                <p class="result_css_text">Skipped：0</p>
+                <p class="result_css_text">StartTime：2022-07-02 14:34:31</p>
+                <p class="result_css_text">Duration：224s</p>
+            </div>
+        </div>
+        
+    
+        <div class="result_css_tabdiv" style="height: auto">
+        <div class="result_css_head_title">Details</div>
+        <div style="height:auto;border: 1px solid rgb(220,220,220); background-color: white">
+            <table class="result_css_table" cellspacing="0">
+                <tr>
+                    <th class="result_css_th" width="20%%">CaseName</th>
+                    <th class="result_css_th" width="30%%">Description</th>
+                    <th class="result_css_th" width="20%%">StartTime</th>
+                    <th class="result_css_th" width="10%%">Duration</th>
+                    <th class="result_css_th" width="10%%">Status</th>
+                    <th class="result_css_th" width="10%%">Open/Close</th>
+                </tr>
+                
+                <tr>
+                    <td class="result_css_module_td" colspan="2" style=" text-align:left; text-indent: 10px;">action</td>
+                    <td class="result_css_module_td" colspan="3"><span class="result_css_success result_css_status">&nbsp;success:3&nbsp;</span> | <span class="result_css_failure result_css_status">&nbsp;failure:0&nbsp;</span> | <span class="result_css_error result_css_status">&nbsp;error:0&nbsp;</span> | <span class="result_css_skipped result_css_status">&nbsp;skipped:0&nbsp;</span></td>
+                    <td class="result_css_module_name" data-tag='module_name_action'>Open</td>
+                </tr>
+    
+                <tr module-data-tag='module_name_action' style="display: none">
+                    <td class="result_css_module_td result_css_success" style=" text-align:left; text-indent: 20px;">search_action01</td>
+                    <td class="result_css_module_td result_css_success" style=" text-align:left; text-indent: 5px;">搜索case-1</td>
+                    <td class="result_css_module_td result_css_success">2022-07-02 14:34:31</td>
+                    <td class="result_css_module_td result_css_success">16s</td>
+                    <td class="result_css_module_td result_css_success">success</td>
+                    <td class="result_css_module_td_view result_css_success" data-tag='module_td_view_action_search_action01'>Open</td>
+                </tr>
+    
+                <tr module-td-data-tag="module_td_view_action_search_action01" style="display: none">
+                    <td class="result_css_module_deta" colspan="6" style="border-right: 0">
+                        <div class="result_css_errordiv">
+                            <h3 style="margin-bottom: 10px">Steps</h3>
+                            
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">9.07 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- call CommonTest()</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">6.07 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">  - openUrl('https://www.invisalign.com.cn/find-a-doctor')</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">3.01 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">  - sleep(3)</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.14 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- check('id=amap-city-input')</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.45 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- click('id=amap-city-input')</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">1.64 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- sendKeys('name=location', ${keywords})</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">2.01 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- sleep(2)</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.03 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${element_id} = $.getElement('id=amap-sug0') --> {selenium.webdriver.remote.webelement.WebElement (session="b86d8e8d21cd55bb7ce89fe486de90f5", element="961b9979-2f67-4237-9ab1-d5c403af2893")}</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.03 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${text} = $.getText(${element_id}) --> 爱回收(北京西单大悦城店)北京市西城区</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.00 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- assert '西' in "爱回收(北京西单大悦城店)北京市西城区"</pre>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </td>
+                </tr>
+    
+                <tr module-data-tag='module_name_action' style="display: none">
+                    <td class="result_css_module_td result_css_success" style=" text-align:left; text-indent: 20px;">search_action02</td>
+                    <td class="result_css_module_td result_css_success" style=" text-align:left; text-indent: 5px;">搜索case-2</td>
+                    <td class="result_css_module_td result_css_success">2022-07-02 14:34:48</td>
+                    <td class="result_css_module_td result_css_success">21s</td>
+                    <td class="result_css_module_td result_css_success">success</td>
+                    <td class="result_css_module_td_view result_css_success" data-tag='module_td_view_action_search_action02'>Open</td>
+                </tr>
+    
+                <tr module-td-data-tag="module_td_view_action_search_action02" style="display: none">
+                    <td class="result_css_module_deta" colspan="6" style="border-right: 0">
+                        <div class="result_css_errordiv">
+                            <h3 style="margin-bottom: 10px">Steps</h3>
+                            
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">9.41 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- call CommonTest()</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">6.40 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">  - openUrl('https://www.invisalign.com.cn/find-a-doctor')</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">3.01 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">  - sleep(3)</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.14 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- check('id=amap-city-input')</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.41 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- click('id=amap-city-input')</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">1.04 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- sendKeys('name=location', ${keywords})</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.88 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- click('class=dl-white')</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.01 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${element_name} = $.getElement('name=practicename') --> {selenium.webdriver.remote.webelement.WebElement (session="280b40b5dada8d5c579d0dcdc5e5c99d", element="93cd26d8-7590-4c3e-b1b5-338b0cf5ce24")}</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.04 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${attribute} = $.getAttribute(${element_name}, 'placeholder') --> 诊所</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.00 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- assert '诊所' == "诊所"</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.02 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${element_name} = $.getElement('name=radius') --> {selenium.webdriver.remote.webelement.WebElement (session="280b40b5dada8d5c579d0dcdc5e5c99d", element="a5f65a4d-d3df-4c6c-a866-8907010a87e5")}</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.04 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${attribute} = $.getAttribute(${element_name}, 'value') --> 10</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.00 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- assert '10' in "10"</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.37 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- sendKeys('name=practicename', '儿童')</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.12 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${element_name} = $.getElement('name=radius') --> {selenium.webdriver.remote.webelement.WebElement (session="280b40b5dada8d5c579d0dcdc5e5c99d", element="a5f65a4d-d3df-4c6c-a866-8907010a87e5")}</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.00 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${tag} = $.getTagName(${element_name}) --> select</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.40 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- click('xpath=//*[@id="__next"]/div[2]/div/div/div/div[1]/div/div/div[2]/div/div/div/div[2]/div/div/div[3]/div/label/span')</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.36 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- click('xpath=//*[@id="__next"]/div[2]/div/div/div/div[1]/div/div/div[2]/div/div/div/p/a')</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">3.00 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- sleep(3)</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">1.02 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${element_class} = $.getElement('class=col-8') --> {selenium.webdriver.remote.webelement.WebElement (session="280b40b5dada8d5c579d0dcdc5e5c99d", element="c1bcb720-56e6-4acb-aadc-75480c4d7a96")}</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.05 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${text} = $.getText(${element_class}) --> 首都医科大学附属北京儿童医院</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.00 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- assert '首都医科大学附属北京儿童医院' == "首都医科大学附属北京儿童医院"</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.43 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- back()</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.19 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${title} = $.getCurrentUrl() --> https://www.invisalign.com.cn/find-a-doctor</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.00 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- assert 'https://www.invisalign.com.cn/find-a-doctor' == "https://www.invisalign.com.cn/find-a-doctor"</pre>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </td>
+                </tr>
+    
+                <tr module-data-tag='module_name_action' style="display: none">
+                    <td class="result_css_module_td result_css_success" style=" text-align:left; text-indent: 20px;">search_action03</td>
+                    <td class="result_css_module_td result_css_success" style=" text-align:left; text-indent: 5px;">搜索case-3</td>
+                    <td class="result_css_module_td result_css_success">2022-07-02 14:35:09</td>
+                    <td class="result_css_module_td result_css_success">10s</td>
+                    <td class="result_css_module_td result_css_success">success</td>
+                    <td class="result_css_module_td_view result_css_success" data-tag='module_td_view_action_search_action03'>Open</td>
+                </tr>
+    
+                <tr module-td-data-tag="module_td_view_action_search_action03" style="display: none">
+                    <td class="result_css_module_deta" colspan="6" style="border-right: 0">
+                        <div class="result_css_errordiv">
+                            <h3 style="margin-bottom: 10px">Steps</h3>
+                            
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">6.94 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- call CommonTest()</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">3.94 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">  - openUrl('https://www.invisalign.com.cn/find-a-doctor')</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">3.01 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">  - sleep(3)</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.64 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- click('xpath=//*[@id="__next"]/div[2]/div/div/div/div[1]/div/div/div[2]/div/div/div/p/a')</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.06 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${element_class} = $.getElement('class=dl-error-msg') --> {selenium.webdriver.remote.webelement.WebElement (session="f02672b85d1fc1b6b87d3819b14830b1", element="ff27d117-f872-44c2-a6b5-a2c0260bc09e")}</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.09 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${text} = $.getText(${element_class}) --> 请输入地址或提供者/诊所名称。</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.00 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- assert '请输入地址或提供者/诊所名称。' == "请输入地址或提供者/诊所名称。"</pre>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td class="result_css_module_td" colspan="2" style=" text-align:left; text-indent: 10px;">page</td>
+                    <td class="result_css_module_td" colspan="3"><span class="result_css_success result_css_status">&nbsp;success:10&nbsp;</span> | <span class="result_css_failure result_css_status">&nbsp;failure:0&nbsp;</span> | <span class="result_css_error result_css_status">&nbsp;error:0&nbsp;</span> | <span class="result_css_skipped result_css_status">&nbsp;skipped:0&nbsp;</span></td>
+                    <td class="result_css_module_name" data-tag='module_name_page'>Open</td>
+                </tr>
+    
+                <tr module-data-tag='module_name_page' style="display: none">
+                    <td class="result_css_module_td result_css_success" style=" text-align:left; text-indent: 20px;">jump_page01</td>
+                    <td class="result_css_module_td result_css_success" style=" text-align:left; text-indent: 5px;">页面跳转-1</td>
+                    <td class="result_css_module_td result_css_success">2022-07-02 14:35:20</td>
+                    <td class="result_css_module_td result_css_success">14s</td>
+                    <td class="result_css_module_td result_css_success">success</td>
+                    <td class="result_css_module_td_view result_css_success" data-tag='module_td_view_page_jump_page01'>Open</td>
+                </tr>
+    
+                <tr module-td-data-tag="module_td_view_page_jump_page01" style="display: none">
+                    <td class="result_css_module_deta" colspan="6" style="border-right: 0">
+                        <div class="result_css_errordiv">
+                            <h3 style="margin-bottom: 10px">Steps</h3>
+                            
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">9.34 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- call CommonTest()</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">6.34 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">  - openUrl('https://www.invisalign.com.cn/find-a-doctor')</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">3.01 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">  - sleep(3)</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">1.90 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- click('xpath=//*[@id="__next"]/div[1]/div/div/div/div[2]/nav/a/img')</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.03 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${title} = $.getTitle() --> Invisalign隐适美中国官网|隐形矫正牙齿</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.00 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- assert 'Invisalign隐适美中国官网|隐形矫正牙齿' in "Invisalign隐适美中国官网|隐形矫正牙齿"</pre>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </td>
+                </tr>
+    
+                <tr module-data-tag='module_name_page' style="display: none">
+                    <td class="result_css_module_td result_css_success" style=" text-align:left; text-indent: 20px;">jump_page02</td>
+                    <td class="result_css_module_td result_css_success" style=" text-align:left; text-indent: 5px;">页面跳转-2</td>
+                    <td class="result_css_module_td result_css_success">2022-07-02 14:35:34</td>
+                    <td class="result_css_module_td result_css_success">15s</td>
+                    <td class="result_css_module_td result_css_success">success</td>
+                    <td class="result_css_module_td_view result_css_success" data-tag='module_td_view_page_jump_page02'>Open</td>
+                </tr>
+    
+                <tr module-td-data-tag="module_td_view_page_jump_page02" style="display: none">
+                    <td class="result_css_module_deta" colspan="6" style="border-right: 0">
+                        <div class="result_css_errordiv">
+                            <h3 style="margin-bottom: 10px">Steps</h3>
+                            
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">8.68 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- call CommonTest()</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">5.67 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">  - openUrl('https://www.invisalign.com.cn/find-a-doctor')</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">3.00 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">  - sleep(3)</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">1.55 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- click('xpath=//*[@id="__next"]/div[3]/div/div/div[1]/div[1]/a')</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.05 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${title} = $.getTitle() --> 關於隐适美 | 隐形牙套 - Invisalign 隐适美中国</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.00 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- assert '關於隐适美 | 隐形牙套 - Invisalign 隐适美中国' in "關於隐适美 | 隐形牙套 - Invisalign 隐适美中国"</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">1.58 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- back()</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.00 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${title} = $.getCurrentUrl() --> https://www.invisalign.com.cn/find-a-doctor</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.00 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- assert 'https://www.invisalign.com.cn/find-a-doctor' == "https://www.invisalign.com.cn/find-a-doctor"</pre>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </td>
+                </tr>
+    
+                <tr module-data-tag='module_name_page' style="display: none">
+                    <td class="result_css_module_td result_css_success" style=" text-align:left; text-indent: 20px;">jump_page03</td>
+                    <td class="result_css_module_td result_css_success" style=" text-align:left; text-indent: 5px;">页面跳转-3</td>
+                    <td class="result_css_module_td result_css_success">2022-07-02 14:35:50</td>
+                    <td class="result_css_module_td result_css_success">21s</td>
+                    <td class="result_css_module_td result_css_success">success</td>
+                    <td class="result_css_module_td_view result_css_success" data-tag='module_td_view_page_jump_page03'>Open</td>
+                </tr>
+    
+                <tr module-td-data-tag="module_td_view_page_jump_page03" style="display: none">
+                    <td class="result_css_module_deta" colspan="6" style="border-right: 0">
+                        <div class="result_css_errordiv">
+                            <h3 style="margin-bottom: 10px">Steps</h3>
+                            
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">8.98 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- call CommonTest()</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">5.97 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">  - openUrl('https://www.invisalign.com.cn/find-a-doctor')</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">3.01 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">  - sleep(3)</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">2.44 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- click('class=footer-link-header ')</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">1.08 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- back()</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">1.25 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- click('xpath=//*[@id="__next"]/div[3]/div/div/div[1]/div[2]/ul/li[1]/a')</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.02 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${element_class} = $.getElement('class=btn-blue') --> {selenium.webdriver.remote.webelement.WebElement (session="c3ebb960bf4ec5d7b7650f6c08833d47", element="47d075aa-53d8-4ccd-99c5-3e3eafbe0238")}</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.03 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${text} = $.getText(${element_class}) --> 青少年</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.00 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- assert '青少年' in "青少年"</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">1.41 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- back()</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.00 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${title} = $.getCurrentUrl() --> https://www.invisalign.com.cn/find-a-doctor</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.00 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- assert 'https://www.invisalign.com.cn/find-a-doctor' == "https://www.invisalign.com.cn/find-a-doctor"</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.91 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- click('xpath=//*[@id="__next"]/div[3]/div/div/div[1]/div[2]/ul/li[2]/a')</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.01 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${element_class} = $.getElement('class=btn-blue') --> {selenium.webdriver.remote.webelement.WebElement (session="c3ebb960bf4ec5d7b7650f6c08833d47", element="5a17cb97-f951-4254-a913-eb716892b73d")}</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.01 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${text} = $.getText(${element_class}) --> 父母</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.00 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- assert '父母' in "父母"</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.50 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- back()</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.02 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${title} = $.getCurrentUrl() --> https://www.invisalign.com.cn/find-a-doctor</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.00 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- assert 'https://www.invisalign.com.cn/find-a-doctor' == "https://www.invisalign.com.cn/find-a-doctor"</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.65 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- click('xpath=//*[@id="__next"]/div[3]/div/div/div[1]/div[2]/ul/li[3]/a')</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.01 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${element_class} = $.getElement('class=btn-blue') --> {selenium.webdriver.remote.webelement.WebElement (session="c3ebb960bf4ec5d7b7650f6c08833d47", element="92ddd20c-b007-4992-9d2c-052ebeffa8e9")}</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.01 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${text} = $.getText(${element_class}) --> 成年人</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.00 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- assert '成年人' in "成年人"</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.94 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- back()</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.00 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${title} = $.getCurrentUrl() --> https://www.invisalign.com.cn/find-a-doctor</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.00 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- assert 'https://www.invisalign.com.cn/find-a-doctor' == "https://www.invisalign.com.cn/find-a-doctor"</pre>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </td>
+                </tr>
+    
+                <tr module-data-tag='module_name_page' style="display: none">
+                    <td class="result_css_module_td result_css_success" style=" text-align:left; text-indent: 20px;">jump_page04</td>
+                    <td class="result_css_module_td result_css_success" style=" text-align:left; text-indent: 5px;">页面跳转-4</td>
+                    <td class="result_css_module_td result_css_success">2022-07-02 14:36:11</td>
+                    <td class="result_css_module_td result_css_success">19s</td>
+                    <td class="result_css_module_td result_css_success">success</td>
+                    <td class="result_css_module_td_view result_css_success" data-tag='module_td_view_page_jump_page04'>Open</td>
+                </tr>
+    
+                <tr module-td-data-tag="module_td_view_page_jump_page04" style="display: none">
+                    <td class="result_css_module_deta" colspan="6" style="border-right: 0">
+                        <div class="result_css_errordiv">
+                            <h3 style="margin-bottom: 10px">Steps</h3>
+                            
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">9.08 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- call CommonTest()</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">6.07 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">  - openUrl('https://www.invisalign.com.cn/find-a-doctor')</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">3.01 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">  - sleep(3)</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">5.36 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- click('xpath=//*[@id="__next"]/div[3]/div/div/div[1]/div[3]/a')</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.02 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${element_class} = $.getElement('class=clr-blue') --> {selenium.webdriver.remote.webelement.WebElement (session="adf31c5eaaad12fd1e5e102ffe1975bf", element="de4531f5-9f1a-4b5b-b241-7a502a4cf77b")}</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.03 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${text} = $.getText(${element_class}) --> Invisalign隐适美的工作原理是什么？</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.00 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- assert 'Invisalign隐适美的工作原理是什么？' in "Invisalign隐适美的工作原理是什么？"</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">1.92 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- back()</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.00 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${title} = $.getCurrentUrl() --> https://www.invisalign.com.cn/find-a-doctor</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.00 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- assert 'https://www.invisalign.com.cn/find-a-doctor' == "https://www.invisalign.com.cn/find-a-doctor"</pre>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </td>
+                </tr>
+    
+                <tr module-data-tag='module_name_page' style="display: none">
+                    <td class="result_css_module_td result_css_success" style=" text-align:left; text-indent: 20px;">jump_page05</td>
+                    <td class="result_css_module_td result_css_success" style=" text-align:left; text-indent: 5px;">页面跳转-5</td>
+                    <td class="result_css_module_td result_css_success">2022-07-02 14:36:31</td>
+                    <td class="result_css_module_td result_css_success">15s</td>
+                    <td class="result_css_module_td result_css_success">success</td>
+                    <td class="result_css_module_td_view result_css_success" data-tag='module_td_view_page_jump_page05'>Open</td>
+                </tr>
+    
+                <tr module-td-data-tag="module_td_view_page_jump_page05" style="display: none">
+                    <td class="result_css_module_deta" colspan="6" style="border-right: 0">
+                        <div class="result_css_errordiv">
+                            <h3 style="margin-bottom: 10px">Steps</h3>
+                            
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">8.86 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- call CommonTest()</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">5.85 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">  - openUrl('https://www.invisalign.com.cn/find-a-doctor')</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">3.01 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">  - sleep(3)</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">1.56 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- click('xpath=//*[@id="__next"]/div[3]/div/div/div[1]/div[4]/a')</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.03 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${element_class} = $.getElement('class=treatable-cases-hero') --> {selenium.webdriver.remote.webelement.WebElement (session="2266bf378f1f3a10758b3af546b0d7a9", element="2f930a4a-d8cd-4068-bde3-4c9841686e1c")}</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.03 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${text} = $.getText(${element_class}) --> 给自信加分精彩生活 从崭新笑容开始</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.00 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- assert '给自信加分' in "给自信加分精彩生活 从崭新笑容开始"</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">1.34 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- back()</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.01 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${title} = $.getCurrentUrl() --> https://www.invisalign.com.cn/find-a-doctor</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.00 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- assert 'https://www.invisalign.com.cn/find-a-doctor' == "https://www.invisalign.com.cn/find-a-doctor"</pre>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </td>
+                </tr>
+    
+                <tr module-data-tag='module_name_page' style="display: none">
+                    <td class="result_css_module_td result_css_success" style=" text-align:left; text-indent: 20px;">jump_page06</td>
+                    <td class="result_css_module_td result_css_success" style=" text-align:left; text-indent: 5px;">页面跳转-6</td>
+                    <td class="result_css_module_td result_css_success">2022-07-02 14:36:46</td>
+                    <td class="result_css_module_td result_css_success">22s</td>
+                    <td class="result_css_module_td result_css_success">success</td>
+                    <td class="result_css_module_td_view result_css_success" data-tag='module_td_view_page_jump_page06'>Open</td>
+                </tr>
+    
+                <tr module-td-data-tag="module_td_view_page_jump_page06" style="display: none">
+                    <td class="result_css_module_deta" colspan="6" style="border-right: 0">
+                        <div class="result_css_errordiv">
+                            <h3 style="margin-bottom: 10px">Steps</h3>
+                            
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">9.02 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- call CommonTest()</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">6.01 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">  - openUrl('https://www.invisalign.com.cn/find-a-doctor')</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">3.01 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">  - sleep(3)</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">2.31 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- click('xpath=//*[@id="__next"]/div[3]/div/div/div[1]/div[5]/ul/li[1]/a')</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.11 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${element_class} = $.getElement('class=btn-blue') --> {selenium.webdriver.remote.webelement.WebElement (session="53b4fa882019f1308cbf464798455d12", element="9c4fd3b2-6ad6-46e4-ac66-d36d318b7fa7")}</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.02 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${text} = $.getText(${element_class}) --> 寻找隐适美治疗机构</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.00 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- assert '寻找隐适美治疗机构' in "寻找隐适美治疗机构"</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">1.21 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- back()</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.00 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${title} = $.getCurrentUrl() --> https://www.invisalign.com.cn/find-a-doctor</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.00 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- assert 'https://www.invisalign.com.cn/find-a-doctor' == "https://www.invisalign.com.cn/find-a-doctor"</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">1.34 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- click('xpath=//*[@id="__next"]/div[3]/div/div/div[1]/div[5]/ul/li[2]/a')</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.05 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${element_class} = $.getElement('class=dl-welcome-header') --> {selenium.webdriver.remote.webelement.WebElement (session="53b4fa882019f1308cbf464798455d12", element="677c3f9f-94ff-4aa2-9964-33b773f07ee6")}</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.01 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${text} = $.getText(${element_class}) --> 查找附近的 Invisalign 隐适美治疗机构</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.00 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- assert '查找附近的 Invisalign 隐适美治疗机构' in "查找附近的 Invisalign 隐适美治疗机构"</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.00 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${title} = $.getCurrentUrl() --> https://www.invisalign.com.cn/find-a-doctor</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.00 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- assert 'https://www.invisalign.com.cn/find-a-doctor' == "https://www.invisalign.com.cn/find-a-doctor"</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">3.25 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- click('xpath=//*[@id="__next"]/div[3]/div/div/div[1]/div[5]/ul/li[3]/a')</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.04 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${element_xpath} = $.getElement('xpath=//*[@id="step-container"]/div[1]/div/div[1]/div/h1') --> {selenium.webdriver.remote.webelement.WebElement (session="53b4fa882019f1308cbf464798455d12", element="c6c14099-636e-43db-836f-6d42cd94350f")}</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.01 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${text} = $.getText(${element_xpath}) --> 开启微笑测试</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.00 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- assert '开启微笑测试' in "开启微笑测试"</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">1.85 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- click('xpath=//*[@id="__next"]/div[3]/div/div/div[1]/div[5]/ul/li[4]/a')</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.01 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${element_xpath} = $.getElement('xpath=//*[@id="__next"]/div[2]/div/div/div[1]/div/div/div/div/div/h1') --> {selenium.webdriver.remote.webelement.WebElement (session="53b4fa882019f1308cbf464798455d12", element="87d16daa-c7df-4f2c-a840-86c91e72126c")}</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.01 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${text} = $.getText(${element_xpath}) --> 有关于我们的问题？ </pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.00 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- assert '有关于我们的问题？' in "有关于我们的问题？ "</pre>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </td>
+                </tr>
+    
+                <tr module-data-tag='module_name_page' style="display: none">
+                    <td class="result_css_module_td result_css_success" style=" text-align:left; text-indent: 20px;">jump_page07</td>
+                    <td class="result_css_module_td result_css_success" style=" text-align:left; text-indent: 5px;">页面跳转-7</td>
+                    <td class="result_css_module_td result_css_success">2022-07-02 14:37:08</td>
+                    <td class="result_css_module_td result_css_success">18s</td>
+                    <td class="result_css_module_td result_css_success">success</td>
+                    <td class="result_css_module_td_view result_css_success" data-tag='module_td_view_page_jump_page07'>Open</td>
+                </tr>
+    
+                <tr module-td-data-tag="module_td_view_page_jump_page07" style="display: none">
+                    <td class="result_css_module_deta" colspan="6" style="border-right: 0">
+                        <div class="result_css_errordiv">
+                            <h3 style="margin-bottom: 10px">Steps</h3>
+                            
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">9.21 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- call CommonTest()</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">6.21 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">  - openUrl('https://www.invisalign.com.cn/find-a-doctor')</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">3.01 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">  - sleep(3)</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">2.01 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- sleep(2)</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">3.76 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- click('xpath=//*[@id="basic-navbar-nav"]/div/div[6]/div/a')</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.02 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${element_xpath} = $.getElement('xpath=//*[@id="__next"]/div[2]/div[1]/div/div/div[2]/div/div/h2') --> {selenium.webdriver.remote.webelement.WebElement (session="df79c8da645cef92e9ed090a7582170e", element="9b3ee6fa-dd57-4661-852e-753b9a8ba0aa")}</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.02 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${text} = $.getText(${element_xpath}) --> 上海隐适美体验中心</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.00 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- assert '上海隐适美体验中心' in "上海隐适美体验中心"</pre>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </td>
+                </tr>
+    
+                <tr module-data-tag='module_name_page' style="display: none">
+                    <td class="result_css_module_td result_css_success" style=" text-align:left; text-indent: 20px;">jump_page08</td>
+                    <td class="result_css_module_td result_css_success" style=" text-align:left; text-indent: 5px;">页面跳转-8</td>
+                    <td class="result_css_module_td result_css_success">2022-07-02 14:37:26</td>
+                    <td class="result_css_module_td result_css_success">18s</td>
+                    <td class="result_css_module_td result_css_success">success</td>
+                    <td class="result_css_module_td_view result_css_success" data-tag='module_td_view_page_jump_page08'>Open</td>
+                </tr>
+    
+                <tr module-td-data-tag="module_td_view_page_jump_page08" style="display: none">
+                    <td class="result_css_module_deta" colspan="6" style="border-right: 0">
+                        <div class="result_css_errordiv">
+                            <h3 style="margin-bottom: 10px">Steps</h3>
+                            
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">9.47 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- call CommonTest()</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">6.47 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">  - openUrl('https://www.invisalign.com.cn/find-a-doctor')</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">3.01 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">  - sleep(3)</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">2.01 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- sleep(2)</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">3.85 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- click('xpath=//*[@id="__next"]/div[1]/div/div/div/div[1]/div[2]/a[1]')</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.01 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${element_xpath} = $.getElement('xpath=//*[@id="step-container"]/div[1]/div/div[1]/div/h1') --> {selenium.webdriver.remote.webelement.WebElement (session="a07454128e48c847bbadae7b94b1c791", element="b5fc0ea8-3712-4ab3-9762-9c5fb9b1959a")}</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.02 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${text} = $.getText(${element_xpath}) --> 开启微笑测试</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.00 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- assert '开启微笑测试' in "开启微笑测试"</pre>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </td>
+                </tr>
+    
+                <tr module-data-tag='module_name_page' style="display: none">
+                    <td class="result_css_module_td result_css_success" style=" text-align:left; text-indent: 20px;">jump_page09</td>
+                    <td class="result_css_module_td result_css_success" style=" text-align:left; text-indent: 5px;">页面跳转-9</td>
+                    <td class="result_css_module_td result_css_success">2022-07-02 14:37:45</td>
+                    <td class="result_css_module_td result_css_success">13s</td>
+                    <td class="result_css_module_td result_css_success">success</td>
+                    <td class="result_css_module_td_view result_css_success" data-tag='module_td_view_page_jump_page09'>Open</td>
+                </tr>
+    
+                <tr module-td-data-tag="module_td_view_page_jump_page09" style="display: none">
+                    <td class="result_css_module_deta" colspan="6" style="border-right: 0">
+                        <div class="result_css_errordiv">
+                            <h3 style="margin-bottom: 10px">Steps</h3>
+                            
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">6.69 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- call CommonTest()</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">3.69 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">  - openUrl('https://www.invisalign.com.cn/find-a-doctor')</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">3.01 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">  - sleep(3)</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">3.71 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- click('class=fad-link')</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.03 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${element_class} = $.getElement('class=dl-welcome-header') --> {selenium.webdriver.remote.webelement.WebElement (session="86e8819c0935a38bd951afa1c32bd5fc", element="047d242c-0c7e-40d2-aa8f-e146cc21f71b")}</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.05 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${text} = $.getText(${element_class}) --> 查找附近的 Invisalign 隐适美治疗机构</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.00 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- assert '查找附近的 Invisalign 隐适美治疗机构' in "查找附近的 Invisalign 隐适美治疗机构"</pre>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </td>
+                </tr>
+    
+                <tr module-data-tag='module_name_page' style="display: none">
+                    <td class="result_css_module_td result_css_success" style=" text-align:left; text-indent: 20px;">jump_page10</td>
+                    <td class="result_css_module_td result_css_success" style=" text-align:left; text-indent: 5px;">页面跳转-10</td>
+                    <td class="result_css_module_td result_css_success">2022-07-02 14:37:59</td>
+                    <td class="result_css_module_td result_css_success">17s</td>
+                    <td class="result_css_module_td result_css_success">success</td>
+                    <td class="result_css_module_td_view result_css_success" data-tag='module_td_view_page_jump_page10'>Open</td>
+                </tr>
+    
+                <tr module-td-data-tag="module_td_view_page_jump_page10" style="display: none">
+                    <td class="result_css_module_deta" colspan="6" style="border-right: 0">
+                        <div class="result_css_errordiv">
+                            <h3 style="margin-bottom: 10px">Steps</h3>
+                            
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">9.74 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- call CommonTest()</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">6.74 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">  - openUrl('https://www.invisalign.com.cn/find-a-doctor')</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">3.01 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">  - sleep(3)</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">2.00 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- sleep(2)</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">2.31 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- click('xpath=//*[@id="__next"]/div[1]/div/div/div/div[1]/div[2]/a[2]')</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.06 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${element_xpath} = $.getElement('xpath=//*[@id="__next"]/div[2]/div/div/div/div[1]/div/div/div[2]/div/div/div/p/a') --> {selenium.webdriver.remote.webelement.WebElement (session="305d124440d3e000808de516cb617b2e", element="e2ca663e-1ebf-45c3-84a5-b79450236d6f")}</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.02 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${text} = $.getText(${element_xpath}) --> 寻找隐适美治疗机构</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.00 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- assert '寻找隐适美治疗机构' in "寻找隐适美治疗机构"</pre>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </td>
+                </tr>
+    
+            </table>
+        </div>
+        </div>
+    
+</div>
+</body>
+</html>
+    

@@ -1,0 +1,19 @@
+module: action
+skip: false
+description: 搜索case-1
+input: [keywords]
+steps:
+  # 调用公共方法：打开浏览器目标地址
+  - call CommonTest()
+  # 检查地址输入框
+  - check('id=amap-city-input')
+  # 点击地址输⼊框
+  - click('id=amap-city-input')
+  # 输入keywords=西单
+  - sendKeys('name=location', ${keywords})
+  # 等待s时间
+  - sleep(2)
+  # 断言方式2：判断输入元素是否存在
+  - ${element_id} = $.getElement('id=amap-sug0')
+  - ${text} = $.getText(${element_id})
+  - assert '西' in ${text}

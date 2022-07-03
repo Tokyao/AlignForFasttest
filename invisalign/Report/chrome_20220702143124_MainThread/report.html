@@ -1,0 +1,454 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试报告</title>
+    <link rel="stylesheet" type="text/css" href="resource/css.css">
+    <script type="text/javascript" src="http://libs.baidu.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="resource/js.js"></script>
+</head>
+<body>
+<div class="root">
+    
+        <div class="result_css_title">
+            <h2 style="color: white;text-align: center;line-height: 65px">Test Results</h2>
+        </div>
+        <div class="result_css_head" style="height: 240px">
+            <div class="result_css_head_title">Summarization</div>
+            <div style="height: 210px;border: 1px solid rgb(220,220,220); background-color: white">
+                <p class="result_css_text">Total：3</p>
+                <p class="result_css_text">Success：2</p>
+                <p class="result_css_text">Failure：0</p>
+                <p class="result_css_text">Error：1</p>
+                <p class="result_css_text">Skipped：0</p>
+                <p class="result_css_text">StartTime：2022-07-02 14:31:24</p>
+                <p class="result_css_text">Duration：50s</p>
+            </div>
+        </div>
+        
+    
+        <div class="result_css_tabdiv" style="height: auto">
+        <div class="result_css_head_title">Details</div>
+        <div style="height:auto;border: 1px solid rgb(220,220,220); background-color: white">
+            <table class="result_css_table" cellspacing="0">
+                <tr>
+                    <th class="result_css_th" width="20%%">CaseName</th>
+                    <th class="result_css_th" width="30%%">Description</th>
+                    <th class="result_css_th" width="20%%">StartTime</th>
+                    <th class="result_css_th" width="10%%">Duration</th>
+                    <th class="result_css_th" width="10%%">Status</th>
+                    <th class="result_css_th" width="10%%">Open/Close</th>
+                </tr>
+                
+                <tr>
+                    <td class="result_css_module_td" colspan="2" style=" text-align:left; text-indent: 10px;">action</td>
+                    <td class="result_css_module_td" colspan="3"><span class="result_css_success result_css_status">&nbsp;success:2&nbsp;</span> | <span class="result_css_failure result_css_status">&nbsp;failure:0&nbsp;</span> | <span class="result_css_error result_css_status">&nbsp;error:1&nbsp;</span> | <span class="result_css_skipped result_css_status">&nbsp;skipped:0&nbsp;</span></td>
+                    <td class="result_css_module_name" data-tag='module_name_action'>Open</td>
+                </tr>
+    
+                <tr module-data-tag='module_name_action' style="display: none">
+                    <td class="result_css_module_td result_css_error" style=" text-align:left; text-indent: 20px;">search_action01</td>
+                    <td class="result_css_module_td result_css_error" style=" text-align:left; text-indent: 5px;">搜索case-1</td>
+                    <td class="result_css_module_td result_css_error">2022-07-02 14:31:24</td>
+                    <td class="result_css_module_td result_css_error">16s</td>
+                    <td class="result_css_module_td result_css_error">error</td>
+                    <td class="result_css_module_td_view result_css_error" data-tag='module_td_view_action_search_action01'>Open</td>
+                </tr>
+    
+                <tr module-td-data-tag="module_td_view_action_search_action01" style="display: none">
+                    <td class="result_css_module_deta" colspan="6" style="border-right: 0">
+                        <div class="result_css_errordiv">
+                            <h3 style="margin-bottom: 10px">Steps</h3>
+                            
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">9.60 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- call CommonTest()</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">6.59 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">  - openUrl('https://www.invisalign.com.cn/find-a-doctor')</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">3.01 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">  - sleep(3)</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.12 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- check('id=amap-city-input')</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.55 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- click('id=amap-city-input')</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">1.49 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- sendKeys('name=location', ${keywords})</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">1.45 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_errorfont">- ${element_id} = $.getElement('id=amap-sug0')</pre>
+                                </div>
+                                <div class="img_errorp" style="display: none;">
+                                    <img class="result_css_img" src="Steps/action/search_action01/Step_7.png">
+                                    <pre class="result_css_errorp" style="white-space: pre-wrap;overflow-wrap: break-word;">
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/runner/run_case.py", line 21, in testCase
+    case.iteration(self.steps)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/runner/case_analysis.py", line 29, in iteration
+    self.case_executor(step, style, common, iterating_var)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/runner/case_analysis.py", line 111, in case_executor
+    result = self.action_nalysis.action_analysis(step, style, common, iterating_var)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/runner/action_analysis.py", line 301, in action_analysis
+    result = self.executor_keywords(action_dict, style)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/common/decorator.py", line 116, in wrapper
+    raise exception
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/common/decorator.py", line 70, in wrapper
+    result = func(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/runner/action_analysis.py", line 279, in executor_keywords
+    raise e
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/runner/action_analysis.py", line 268, in executor_keywords
+    result = self.action_executor._action_executor(action)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/runner/action_executor_base.py", line 245, in _action_executor
+    result = func(action)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/runner/action_executor_base.py", line 230, in _variable
+    raise e
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/runner/action_executor_base.py", line 222, in _variable
+    result = func_(action)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/runner/action_executor_web.py", line 542, in _getElement
+    element = DriverBaseWeb.get_element(key, value, Var.time_out)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/drivers/driver_base_web.py", line 642, in get_element
+    raise e
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/fasttest-1.0.1-py3.10.egg/fasttest/drivers/driver_base_web.py", line 630, in get_element
+    if element.is_enabled():
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 169, in is_enabled
+    return self._execute(Command.IS_ELEMENT_ENABLED)['value']
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 740, in _execute
+    return self._parent.execute(command, params)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 430, in execute
+    self.error_handler.check_response(response)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=103.0.5060.53)
+Stacktrace:
+0   chromedriver                        0x0000000102ae8079 chromedriver + 4444281
+1   chromedriver                        0x0000000102a74403 chromedriver + 3970051
+2   chromedriver                        0x000000010270f038 chromedriver + 409656
+3   chromedriver                        0x0000000102711ee7 chromedriver + 421607
+4   chromedriver                        0x0000000102711d86 chromedriver + 421254
+5   chromedriver                        0x000000010271204c chromedriver + 421964
+6   chromedriver                        0x00000001027404c5 chromedriver + 611525
+7   chromedriver                        0x0000000102762792 chromedriver + 751506
+8   chromedriver                        0x0000000102739f65 chromedriver + 585573
+9   chromedriver                        0x000000010276289e chromedriver + 751774
+10  chromedriver                        0x0000000102775221 chromedriver + 827937
+11  chromedriver                        0x0000000102762683 chromedriver + 751235
+12  chromedriver                        0x0000000102738a45 chromedriver + 580165
+13  chromedriver                        0x0000000102739a95 chromedriver + 584341
+14  chromedriver                        0x0000000102ab955d chromedriver + 4253021
+15  chromedriver                        0x0000000102abe3a1 chromedriver + 4273057
+16  chromedriver                        0x0000000102ac316f chromedriver + 4292975
+17  chromedriver                        0x0000000102abedea chromedriver + 4275690
+18  chromedriver                        0x0000000102a9854f chromedriver + 4117839
+19  chromedriver                        0x0000000102ad8ed8 chromedriver + 4382424
+20  chromedriver                        0x0000000102ad905f chromedriver + 4382815
+21  chromedriver                        0x0000000102aef8d5 chromedriver + 4475093
+22  libsystem_pthread.dylib             0x00007fff204268fc _pthread_start + 224
+23  libsystem_pthread.dylib             0x00007fff20422443 thread_start + 15
+
+</pre>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </td>
+                </tr>
+    
+                <tr module-data-tag='module_name_action' style="display: none">
+                    <td class="result_css_module_td result_css_success" style=" text-align:left; text-indent: 20px;">search_action02</td>
+                    <td class="result_css_module_td result_css_success" style=" text-align:left; text-indent: 5px;">搜索case-2</td>
+                    <td class="result_css_module_td result_css_success">2022-07-02 14:31:41</td>
+                    <td class="result_css_module_td result_css_success">21s</td>
+                    <td class="result_css_module_td result_css_success">success</td>
+                    <td class="result_css_module_td_view result_css_success" data-tag='module_td_view_action_search_action02'>Open</td>
+                </tr>
+    
+                <tr module-td-data-tag="module_td_view_action_search_action02" style="display: none">
+                    <td class="result_css_module_deta" colspan="6" style="border-right: 0">
+                        <div class="result_css_errordiv">
+                            <h3 style="margin-bottom: 10px">Steps</h3>
+                            
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">8.91 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- call CommonTest()</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">5.90 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">  - openUrl('https://www.invisalign.com.cn/find-a-doctor')</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">3.01 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">  - sleep(3)</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.14 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- check('id=amap-city-input')</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.53 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- click('id=amap-city-input')</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">1.15 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- sendKeys('name=location', ${keywords})</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.92 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- click('class=dl-white')</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.01 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${element_name} = $.getElement('name=practicename') --> {selenium.webdriver.remote.webelement.WebElement (session="c4787fec9ad0cfef6e903472c857d42e", element="0dd25ed1-1908-4583-b0f5-96d507e45db0")}</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.02 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${attribute} = $.getAttribute(${element_name}, 'placeholder') --> 诊所</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.00 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- assert '诊所' == "诊所"</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.02 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${element_name} = $.getElement('name=radius') --> {selenium.webdriver.remote.webelement.WebElement (session="c4787fec9ad0cfef6e903472c857d42e", element="afd37e93-5d83-42d1-b7cd-ce6cb0ca7c89")}</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.01 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${attribute} = $.getAttribute(${element_name}, 'value') --> 10</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.00 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- assert '10' in "10"</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.17 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- sendKeys('name=practicename', '儿童')</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.50 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${element_name} = $.getElement('name=radius') --> {selenium.webdriver.remote.webelement.WebElement (session="c4787fec9ad0cfef6e903472c857d42e", element="afd37e93-5d83-42d1-b7cd-ce6cb0ca7c89")}</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.00 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${tag} = $.getTagName(${element_name}) --> select</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.44 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- click('xpath=//*[@id="__next"]/div[2]/div/div/div/div[1]/div/div/div[2]/div/div/div/div[2]/div/div/div[3]/div/label/span')</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.14 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- click('xpath=//*[@id="__next"]/div[2]/div/div/div/div[1]/div/div/div[2]/div/div/div/p/a')</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">3.01 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- sleep(3)</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">1.99 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${element_class} = $.getElement('class=col-8') --> {selenium.webdriver.remote.webelement.WebElement (session="c4787fec9ad0cfef6e903472c857d42e", element="33f0b91d-22d9-4319-a5ff-684a24a264f1")}</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.02 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${text} = $.getText(${element_class}) --> 首都医科大学附属北京儿童医院</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.00 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- assert '首都医科大学附属北京儿童医院' == "首都医科大学附属北京儿童医院"</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.21 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- back()</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.02 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${title} = $.getCurrentUrl() --> https://www.invisalign.com.cn/find-a-doctor</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.00 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- assert 'https://www.invisalign.com.cn/find-a-doctor' == "https://www.invisalign.com.cn/find-a-doctor"</pre>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </td>
+                </tr>
+    
+                <tr module-data-tag='module_name_action' style="display: none">
+                    <td class="result_css_module_td result_css_success" style=" text-align:left; text-indent: 20px;">search_action03</td>
+                    <td class="result_css_module_td result_css_success" style=" text-align:left; text-indent: 5px;">搜索case-3</td>
+                    <td class="result_css_module_td result_css_success">2022-07-02 14:32:02</td>
+                    <td class="result_css_module_td result_css_success">12s</td>
+                    <td class="result_css_module_td result_css_success">success</td>
+                    <td class="result_css_module_td_view result_css_success" data-tag='module_td_view_action_search_action03'>Open</td>
+                </tr>
+    
+                <tr module-td-data-tag="module_td_view_action_search_action03" style="display: none">
+                    <td class="result_css_module_deta" colspan="6" style="border-right: 0">
+                        <div class="result_css_errordiv">
+                            <h3 style="margin-bottom: 10px">Steps</h3>
+                            
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">8.58 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- call CommonTest()</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">5.58 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">  - openUrl('https://www.invisalign.com.cn/find-a-doctor')</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">3.01 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">  - sleep(3)</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.73 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- click('xpath=//*[@id="__next"]/div[2]/div/div/div/div[1]/div/div/div[2]/div/div/div/p/a')</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.06 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${element_class} = $.getElement('class=dl-error-msg') --> {selenium.webdriver.remote.webelement.WebElement (session="f80baf47d8aa610114ee2e70cdfe3db8", element="75382b3c-61ad-42eb-ae48-ae29e810b728")}</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.03 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- ${text} = $.getText(${element_class}) --> 请输入地址或提供者/诊所名称。</pre>
+                                </div>
+                            </div>
+    
+                            <div class="result_css_Stepsdetails">
+                                <div class="result_css_steps" style="display: inline-block">
+                                        <pre class="result_css_StepsdetailsPre_duration">0.00 | </pre>
+                                        <pre class="result_css_StepsdetailsPre result_css_successfont">- assert '请输入地址或提供者/诊所名称。' == "请输入地址或提供者/诊所名称。"</pre>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </td>
+                </tr>
+    
+            </table>
+        </div>
+        </div>
+    
+</div>
+</body>
+</html>
+    

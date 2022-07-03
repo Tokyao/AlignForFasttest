@@ -1,0 +1,622 @@
+2022-07-02 14:34:31 INFO :******************* analytical config *******************
+2022-07-02 14:34:31 INFO : driver: selenium
+2022-07-02 14:34:31 INFO : reStart: True
+2022-07-02 14:34:31 INFO : saveScreenshot: False
+2022-07-02 14:34:31 INFO : timeOut: 5
+2022-07-02 14:34:31 INFO : desiredCapabilities: {'browser': 'chrome', 'maxWindow': True, 'chrome': {'driver': 'Resource/chromedriver', 'options': ['--dissble-gpu']}}
+2022-07-02 14:34:31 INFO : testcase: ['TestCase/action', 'TestCase/page']
+2022-07-02 14:34:31 INFO :******************* analytical testcase *******************
+2022-07-02 14:34:31 INFO : case: 13
+2022-07-02 14:34:31 INFO : ./TestCase/action/search_action01.yaml
+2022-07-02 14:34:31 INFO : ./TestCase/action/search_action02.yaml
+2022-07-02 14:34:31 INFO : ./TestCase/action/search_action03.yaml
+2022-07-02 14:34:31 INFO : ./TestCase/page/jump_page01.yaml
+2022-07-02 14:34:31 INFO : ./TestCase/page/jump_page02.yaml
+2022-07-02 14:34:31 INFO : ./TestCase/page/jump_page03.yaml
+2022-07-02 14:34:31 INFO : ./TestCase/page/jump_page04.yaml
+2022-07-02 14:34:31 INFO : ./TestCase/page/jump_page05.yaml
+2022-07-02 14:34:31 INFO : ./TestCase/page/jump_page06.yaml
+2022-07-02 14:34:31 INFO : ./TestCase/page/jump_page07.yaml
+2022-07-02 14:34:31 INFO : ./TestCase/page/jump_page08.yaml
+2022-07-02 14:34:31 INFO : ./TestCase/page/jump_page09.yaml
+2022-07-02 14:34:31 INFO : ./TestCase/page/jump_page10.yaml
+2022-07-02 14:34:31 INFO :******************* analytical common *******************
+2022-07-02 14:34:31 INFO : CommonTest: {'description': '公共方法', 'input': [], 'output': [], 'steps': ["openUrl('https://www.invisalign.com.cn/find-a-doctor')", 'sleep(3)']}
+2022-07-02 14:34:31 INFO :******************* register variable *******************
+2022-07-02 14:34:31 INFO : keywords: 西单
+2022-07-02 14:34:31 INFO :******************* register resource *******************
+2022-07-02 14:34:31 INFO :******************* register keywords *******************
+2022-07-02 14:34:31 INFO : ScriptsTest
+2022-07-02 14:34:31 INFO :******************* analytical desired capabilities *******************
+2022-07-02 14:34:31 INFO :******************* TestCase 搜索case-1 Start *******************
+2022-07-02 14:34:35 INFO : call CommonTest()
+2022-07-02 14:34:35 INFO : --> key: call
+2022-07-02 14:34:35 INFO : --> value: []
+2022-07-02 14:34:35 INFO : openUrl('https://www.invisalign.com.cn/find-a-doctor')
+2022-07-02 14:34:35 INFO : --> key: openUrl
+2022-07-02 14:34:35 INFO : --> value: ['https://www.invisalign.com.cn/find-a-doctor']
+2022-07-02 14:34:41 INFO : sleep(3)
+2022-07-02 14:34:41 INFO : --> key: sleep
+2022-07-02 14:34:41 INFO : --> value: [3]
+2022-07-02 14:34:44 INFO : check('id=amap-city-input')
+2022-07-02 14:34:44 INFO : --> key: check
+2022-07-02 14:34:44 INFO : --> value: ['id=amap-city-input']
+2022-07-02 14:34:44 INFO : click('id=amap-city-input')
+2022-07-02 14:34:44 INFO : --> key: click
+2022-07-02 14:34:44 INFO : --> value: ['id=amap-city-input']
+2022-07-02 14:34:44 INFO : sendKeys('name=location', ${keywords})
+2022-07-02 14:34:44 INFO : --> key: sendKeys
+2022-07-02 14:34:44 INFO : --> value: ['name=location', '西单']
+2022-07-02 14:34:46 INFO : sleep(2)
+2022-07-02 14:34:46 INFO : --> key: sleep
+2022-07-02 14:34:46 INFO : --> value: [2]
+2022-07-02 14:34:48 INFO : ${element_id} = $.getElement('id=amap-sug0')
+2022-07-02 14:34:48 INFO : --> key: variable
+2022-07-02 14:34:48 INFO : --> value: ['id=amap-sug0']
+2022-07-02 14:34:48 INFO : <-- element_id: <class 'selenium.webdriver.remote.webelement.WebElement'> <selenium.webdriver.remote.webelement.WebElement (session="b86d8e8d21cd55bb7ce89fe486de90f5", element="961b9979-2f67-4237-9ab1-d5c403af2893")>
+2022-07-02 14:34:48 INFO : ${text} = $.getText(${element_id})
+2022-07-02 14:34:48 INFO : --> key: variable
+2022-07-02 14:34:48 INFO : --> value: [<selenium.webdriver.remote.webelement.WebElement (session="b86d8e8d21cd55bb7ce89fe486de90f5", element="961b9979-2f67-4237-9ab1-d5c403af2893")>]
+2022-07-02 14:34:48 INFO : <-- text: <class 'str'> 爱回收(北京西单大悦城店)北京市西城区
+2022-07-02 14:34:48 INFO : assert '西' in ${text}
+2022-07-02 14:34:48 INFO : --> key: assert
+2022-07-02 14:34:48 INFO : --> value: ['\'西\' in "爱回收(北京西单大悦城店)北京市西城区"']
+2022-07-02 14:34:48 INFO : <-- True
+2022-07-02 14:34:48 INFO :******************* Total: 1, Success: 1, Failed: 0, Error: 0, Skipped: 0 ********************
+
+2022-07-02 14:34:48 INFO :******************* TestCase 搜索case-2 Start *******************
+2022-07-02 14:34:51 INFO : call CommonTest()
+2022-07-02 14:34:51 INFO : --> key: call
+2022-07-02 14:34:51 INFO : --> value: []
+2022-07-02 14:34:51 INFO : openUrl('https://www.invisalign.com.cn/find-a-doctor')
+2022-07-02 14:34:51 INFO : --> key: openUrl
+2022-07-02 14:34:51 INFO : --> value: ['https://www.invisalign.com.cn/find-a-doctor']
+2022-07-02 14:34:58 INFO : sleep(3)
+2022-07-02 14:34:58 INFO : --> key: sleep
+2022-07-02 14:34:58 INFO : --> value: [3]
+2022-07-02 14:35:01 INFO : check('id=amap-city-input')
+2022-07-02 14:35:01 INFO : --> key: check
+2022-07-02 14:35:01 INFO : --> value: ['id=amap-city-input']
+2022-07-02 14:35:01 INFO : click('id=amap-city-input')
+2022-07-02 14:35:01 INFO : --> key: click
+2022-07-02 14:35:01 INFO : --> value: ['id=amap-city-input']
+2022-07-02 14:35:01 INFO : sendKeys('name=location', ${keywords})
+2022-07-02 14:35:01 INFO : --> key: sendKeys
+2022-07-02 14:35:01 INFO : --> value: ['name=location', '西单']
+2022-07-02 14:35:02 INFO : click('class=dl-white')
+2022-07-02 14:35:02 INFO : --> key: click
+2022-07-02 14:35:02 INFO : --> value: ['class=dl-white']
+2022-07-02 14:35:03 INFO : ${element_name} = $.getElement('name=practicename')
+2022-07-02 14:35:03 INFO : --> key: variable
+2022-07-02 14:35:03 INFO : --> value: ['name=practicename']
+2022-07-02 14:35:03 INFO : <-- element_name: <class 'selenium.webdriver.remote.webelement.WebElement'> <selenium.webdriver.remote.webelement.WebElement (session="280b40b5dada8d5c579d0dcdc5e5c99d", element="93cd26d8-7590-4c3e-b1b5-338b0cf5ce24")>
+2022-07-02 14:35:03 INFO : ${attribute} = $.getAttribute(${element_name}, 'placeholder')
+2022-07-02 14:35:03 INFO : --> key: variable
+2022-07-02 14:35:03 INFO : --> value: [<selenium.webdriver.remote.webelement.WebElement (session="280b40b5dada8d5c579d0dcdc5e5c99d", element="93cd26d8-7590-4c3e-b1b5-338b0cf5ce24")>, 'placeholder']
+2022-07-02 14:35:03 INFO : <-- attribute: <class 'str'> 诊所
+2022-07-02 14:35:03 INFO : assert '诊所' == ${attribute}
+2022-07-02 14:35:03 INFO : --> key: assert
+2022-07-02 14:35:03 INFO : --> value: ['\'诊所\' == "诊所"']
+2022-07-02 14:35:03 INFO : <-- True
+2022-07-02 14:35:03 INFO : ${element_name} = $.getElement('name=radius')
+2022-07-02 14:35:03 INFO : --> key: variable
+2022-07-02 14:35:03 INFO : --> value: ['name=radius']
+2022-07-02 14:35:03 INFO : <-- element_name: <class 'selenium.webdriver.remote.webelement.WebElement'> <selenium.webdriver.remote.webelement.WebElement (session="280b40b5dada8d5c579d0dcdc5e5c99d", element="a5f65a4d-d3df-4c6c-a866-8907010a87e5")>
+2022-07-02 14:35:03 INFO : ${attribute} = $.getAttribute(${element_name}, 'value')
+2022-07-02 14:35:03 INFO : --> key: variable
+2022-07-02 14:35:03 INFO : --> value: [<selenium.webdriver.remote.webelement.WebElement (session="280b40b5dada8d5c579d0dcdc5e5c99d", element="a5f65a4d-d3df-4c6c-a866-8907010a87e5")>, 'value']
+2022-07-02 14:35:03 INFO : <-- attribute: <class 'str'> 10
+2022-07-02 14:35:03 INFO : assert '10' in ${attribute}
+2022-07-02 14:35:03 INFO : --> key: assert
+2022-07-02 14:35:03 INFO : --> value: ['\'10\' in "10"']
+2022-07-02 14:35:03 INFO : <-- True
+2022-07-02 14:35:03 INFO : sendKeys('name=practicename', '儿童')
+2022-07-02 14:35:03 INFO : --> key: sendKeys
+2022-07-02 14:35:03 INFO : --> value: ['name=practicename', '儿童']
+2022-07-02 14:35:03 INFO : ${element_name} = $.getElement('name=radius')
+2022-07-02 14:35:03 INFO : --> key: variable
+2022-07-02 14:35:03 INFO : --> value: ['name=radius']
+2022-07-02 14:35:04 INFO : <-- element_name: <class 'selenium.webdriver.remote.webelement.WebElement'> <selenium.webdriver.remote.webelement.WebElement (session="280b40b5dada8d5c579d0dcdc5e5c99d", element="a5f65a4d-d3df-4c6c-a866-8907010a87e5")>
+2022-07-02 14:35:04 INFO : ${tag} = $.getTagName(${element_name})
+2022-07-02 14:35:04 INFO : --> key: variable
+2022-07-02 14:35:04 INFO : --> value: [<selenium.webdriver.remote.webelement.WebElement (session="280b40b5dada8d5c579d0dcdc5e5c99d", element="a5f65a4d-d3df-4c6c-a866-8907010a87e5")>]
+2022-07-02 14:35:04 INFO : <-- tag: <class 'str'> select
+2022-07-02 14:35:04 INFO : click('xpath=//*[@id="__next"]/div[2]/div/div/div/div[1]/div/div/div[2]/div/div/div/div[2]/div/div/div[3]/div/label/span')
+2022-07-02 14:35:04 INFO : --> key: click
+2022-07-02 14:35:04 INFO : --> value: ['xpath=//*[@id="__next"]/div[2]/div/div/div/div[1]/div/div/div[2]/div/div/div/div[2]/div/div/div[3]/div/label/span']
+2022-07-02 14:35:04 INFO : click('xpath=//*[@id="__next"]/div[2]/div/div/div/div[1]/div/div/div[2]/div/div/div/p/a')
+2022-07-02 14:35:04 INFO : --> key: click
+2022-07-02 14:35:04 INFO : --> value: ['xpath=//*[@id="__next"]/div[2]/div/div/div/div[1]/div/div/div[2]/div/div/div/p/a']
+2022-07-02 14:35:04 INFO : sleep(3)
+2022-07-02 14:35:04 INFO : --> key: sleep
+2022-07-02 14:35:04 INFO : --> value: [3]
+2022-07-02 14:35:07 INFO : ${element_class} = $.getElement('class=col-8')
+2022-07-02 14:35:07 INFO : --> key: variable
+2022-07-02 14:35:07 INFO : --> value: ['class=col-8']
+2022-07-02 14:35:08 INFO : <-- element_class: <class 'selenium.webdriver.remote.webelement.WebElement'> <selenium.webdriver.remote.webelement.WebElement (session="280b40b5dada8d5c579d0dcdc5e5c99d", element="c1bcb720-56e6-4acb-aadc-75480c4d7a96")>
+2022-07-02 14:35:08 INFO : ${text} = $.getText(${element_class})
+2022-07-02 14:35:08 INFO : --> key: variable
+2022-07-02 14:35:08 INFO : --> value: [<selenium.webdriver.remote.webelement.WebElement (session="280b40b5dada8d5c579d0dcdc5e5c99d", element="c1bcb720-56e6-4acb-aadc-75480c4d7a96")>]
+2022-07-02 14:35:08 INFO : <-- text: <class 'str'> 首都医科大学附属北京儿童医院
+2022-07-02 14:35:08 INFO : assert '首都医科大学附属北京儿童医院' == ${text}
+2022-07-02 14:35:08 INFO : --> key: assert
+2022-07-02 14:35:08 INFO : --> value: ['\'首都医科大学附属北京儿童医院\' == "首都医科大学附属北京儿童医院"']
+2022-07-02 14:35:08 INFO : <-- True
+2022-07-02 14:35:08 INFO : back()
+2022-07-02 14:35:08 INFO : --> key: back
+2022-07-02 14:35:08 INFO : --> value: []
+2022-07-02 14:35:09 INFO : ${title} = $.getCurrentUrl()
+2022-07-02 14:35:09 INFO : --> key: variable
+2022-07-02 14:35:09 INFO : --> value: []
+2022-07-02 14:35:09 INFO : <-- title: <class 'str'> https://www.invisalign.com.cn/find-a-doctor
+2022-07-02 14:35:09 INFO : assert 'https://www.invisalign.com.cn/find-a-doctor' == ${title}
+2022-07-02 14:35:09 INFO : --> key: assert
+2022-07-02 14:35:09 INFO : --> value: ['\'https://www.invisalign.com.cn/find-a-doctor\' == "https://www.invisalign.com.cn/find-a-doctor"']
+2022-07-02 14:35:09 INFO : <-- True
+2022-07-02 14:35:09 INFO :******************* Total: 2, Success: 2, Failed: 0, Error: 0, Skipped: 0 ********************
+
+2022-07-02 14:35:09 INFO :******************* TestCase 搜索case-3 Start *******************
+2022-07-02 14:35:12 INFO : call CommonTest()
+2022-07-02 14:35:12 INFO : --> key: call
+2022-07-02 14:35:12 INFO : --> value: []
+2022-07-02 14:35:12 INFO : openUrl('https://www.invisalign.com.cn/find-a-doctor')
+2022-07-02 14:35:12 INFO : --> key: openUrl
+2022-07-02 14:35:12 INFO : --> value: ['https://www.invisalign.com.cn/find-a-doctor']
+2022-07-02 14:35:16 INFO : sleep(3)
+2022-07-02 14:35:16 INFO : --> key: sleep
+2022-07-02 14:35:16 INFO : --> value: [3]
+2022-07-02 14:35:19 INFO : click('xpath=//*[@id="__next"]/div[2]/div/div/div/div[1]/div/div/div[2]/div/div/div/p/a')
+2022-07-02 14:35:19 INFO : --> key: click
+2022-07-02 14:35:19 INFO : --> value: ['xpath=//*[@id="__next"]/div[2]/div/div/div/div[1]/div/div/div[2]/div/div/div/p/a']
+2022-07-02 14:35:20 INFO : ${element_class} = $.getElement('class=dl-error-msg')
+2022-07-02 14:35:20 INFO : --> key: variable
+2022-07-02 14:35:20 INFO : --> value: ['class=dl-error-msg']
+2022-07-02 14:35:20 INFO : <-- element_class: <class 'selenium.webdriver.remote.webelement.WebElement'> <selenium.webdriver.remote.webelement.WebElement (session="f02672b85d1fc1b6b87d3819b14830b1", element="ff27d117-f872-44c2-a6b5-a2c0260bc09e")>
+2022-07-02 14:35:20 INFO : ${text} = $.getText(${element_class})
+2022-07-02 14:35:20 INFO : --> key: variable
+2022-07-02 14:35:20 INFO : --> value: [<selenium.webdriver.remote.webelement.WebElement (session="f02672b85d1fc1b6b87d3819b14830b1", element="ff27d117-f872-44c2-a6b5-a2c0260bc09e")>]
+2022-07-02 14:35:20 INFO : <-- text: <class 'str'> 请输入地址或提供者/诊所名称。
+2022-07-02 14:35:20 INFO : assert '请输入地址或提供者/诊所名称。' == ${text}
+2022-07-02 14:35:20 INFO : --> key: assert
+2022-07-02 14:35:20 INFO : --> value: ['\'请输入地址或提供者/诊所名称。\' == "请输入地址或提供者/诊所名称。"']
+2022-07-02 14:35:20 INFO : <-- True
+2022-07-02 14:35:20 INFO :******************* Total: 3, Success: 3, Failed: 0, Error: 0, Skipped: 0 ********************
+
+2022-07-02 14:35:20 INFO :******************* TestCase 页面跳转-1 Start *******************
+2022-07-02 14:35:23 INFO : call CommonTest()
+2022-07-02 14:35:23 INFO : --> key: call
+2022-07-02 14:35:23 INFO : --> value: []
+2022-07-02 14:35:23 INFO : openUrl('https://www.invisalign.com.cn/find-a-doctor')
+2022-07-02 14:35:23 INFO : --> key: openUrl
+2022-07-02 14:35:23 INFO : --> value: ['https://www.invisalign.com.cn/find-a-doctor']
+2022-07-02 14:35:29 INFO : sleep(3)
+2022-07-02 14:35:29 INFO : --> key: sleep
+2022-07-02 14:35:29 INFO : --> value: [3]
+2022-07-02 14:35:32 INFO : click('xpath=//*[@id="__next"]/div[1]/div/div/div/div[2]/nav/a/img')
+2022-07-02 14:35:32 INFO : --> key: click
+2022-07-02 14:35:32 INFO : --> value: ['xpath=//*[@id="__next"]/div[1]/div/div/div/div[2]/nav/a/img']
+2022-07-02 14:35:34 INFO : ${title} = $.getTitle()
+2022-07-02 14:35:34 INFO : --> key: variable
+2022-07-02 14:35:34 INFO : --> value: []
+2022-07-02 14:35:34 INFO : <-- title: <class 'str'> Invisalign隐适美中国官网|隐形矫正牙齿
+2022-07-02 14:35:34 INFO : assert 'Invisalign隐适美中国官网|隐形矫正牙齿' in ${title}
+2022-07-02 14:35:34 INFO : --> key: assert
+2022-07-02 14:35:34 INFO : --> value: ['\'Invisalign隐适美中国官网|隐形矫正牙齿\' in "Invisalign隐适美中国官网|隐形矫正牙齿"']
+2022-07-02 14:35:34 INFO : <-- True
+2022-07-02 14:35:34 INFO :******************* Total: 4, Success: 4, Failed: 0, Error: 0, Skipped: 0 ********************
+
+2022-07-02 14:35:34 INFO :******************* TestCase 页面跳转-2 Start *******************
+2022-07-02 14:35:38 INFO : call CommonTest()
+2022-07-02 14:35:38 INFO : --> key: call
+2022-07-02 14:35:38 INFO : --> value: []
+2022-07-02 14:35:38 INFO : openUrl('https://www.invisalign.com.cn/find-a-doctor')
+2022-07-02 14:35:38 INFO : --> key: openUrl
+2022-07-02 14:35:38 INFO : --> value: ['https://www.invisalign.com.cn/find-a-doctor']
+2022-07-02 14:35:43 INFO : sleep(3)
+2022-07-02 14:35:43 INFO : --> key: sleep
+2022-07-02 14:35:43 INFO : --> value: [3]
+2022-07-02 14:35:46 INFO : click('xpath=//*[@id="__next"]/div[3]/div/div/div[1]/div[1]/a')
+2022-07-02 14:35:46 INFO : --> key: click
+2022-07-02 14:35:46 INFO : --> value: ['xpath=//*[@id="__next"]/div[3]/div/div/div[1]/div[1]/a']
+2022-07-02 14:35:48 INFO : ${title} = $.getTitle()
+2022-07-02 14:35:48 INFO : --> key: variable
+2022-07-02 14:35:48 INFO : --> value: []
+2022-07-02 14:35:48 INFO : <-- title: <class 'str'> 關於隐适美 | 隐形牙套 - Invisalign 隐适美中国
+2022-07-02 14:35:48 INFO : assert '關於隐适美 | 隐形牙套 - Invisalign 隐适美中国' in ${title}
+2022-07-02 14:35:48 INFO : --> key: assert
+2022-07-02 14:35:48 INFO : --> value: ['\'關於隐适美 | 隐形牙套 - Invisalign 隐适美中国\' in "關於隐适美 | 隐形牙套 - Invisalign 隐适美中国"']
+2022-07-02 14:35:48 INFO : <-- True
+2022-07-02 14:35:48 INFO : back()
+2022-07-02 14:35:48 INFO : --> key: back
+2022-07-02 14:35:48 INFO : --> value: []
+2022-07-02 14:35:50 INFO : ${title} = $.getCurrentUrl()
+2022-07-02 14:35:50 INFO : --> key: variable
+2022-07-02 14:35:50 INFO : --> value: []
+2022-07-02 14:35:50 INFO : <-- title: <class 'str'> https://www.invisalign.com.cn/find-a-doctor
+2022-07-02 14:35:50 INFO : assert 'https://www.invisalign.com.cn/find-a-doctor' == ${title}
+2022-07-02 14:35:50 INFO : --> key: assert
+2022-07-02 14:35:50 INFO : --> value: ['\'https://www.invisalign.com.cn/find-a-doctor\' == "https://www.invisalign.com.cn/find-a-doctor"']
+2022-07-02 14:35:50 INFO : <-- True
+2022-07-02 14:35:50 INFO :******************* Total: 5, Success: 5, Failed: 0, Error: 0, Skipped: 0 ********************
+
+2022-07-02 14:35:50 INFO :******************* TestCase 页面跳转-3 Start *******************
+2022-07-02 14:35:53 INFO : call CommonTest()
+2022-07-02 14:35:53 INFO : --> key: call
+2022-07-02 14:35:53 INFO : --> value: []
+2022-07-02 14:35:53 INFO : openUrl('https://www.invisalign.com.cn/find-a-doctor')
+2022-07-02 14:35:53 INFO : --> key: openUrl
+2022-07-02 14:35:53 INFO : --> value: ['https://www.invisalign.com.cn/find-a-doctor']
+2022-07-02 14:35:59 INFO : sleep(3)
+2022-07-02 14:35:59 INFO : --> key: sleep
+2022-07-02 14:35:59 INFO : --> value: [3]
+2022-07-02 14:36:02 INFO : click('class=footer-link-header ')
+2022-07-02 14:36:02 INFO : --> key: click
+2022-07-02 14:36:02 INFO : --> value: ['class=footer-link-header ']
+2022-07-02 14:36:04 INFO : back()
+2022-07-02 14:36:04 INFO : --> key: back
+2022-07-02 14:36:04 INFO : --> value: []
+2022-07-02 14:36:05 INFO : click('xpath=//*[@id="__next"]/div[3]/div/div/div[1]/div[2]/ul/li[1]/a')
+2022-07-02 14:36:05 INFO : --> key: click
+2022-07-02 14:36:05 INFO : --> value: ['xpath=//*[@id="__next"]/div[3]/div/div/div[1]/div[2]/ul/li[1]/a']
+2022-07-02 14:36:06 INFO : ${element_class} = $.getElement('class=btn-blue')
+2022-07-02 14:36:06 INFO : --> key: variable
+2022-07-02 14:36:06 INFO : --> value: ['class=btn-blue']
+2022-07-02 14:36:06 INFO : <-- element_class: <class 'selenium.webdriver.remote.webelement.WebElement'> <selenium.webdriver.remote.webelement.WebElement (session="c3ebb960bf4ec5d7b7650f6c08833d47", element="47d075aa-53d8-4ccd-99c5-3e3eafbe0238")>
+2022-07-02 14:36:06 INFO : ${text} = $.getText(${element_class})
+2022-07-02 14:36:06 INFO : --> key: variable
+2022-07-02 14:36:06 INFO : --> value: [<selenium.webdriver.remote.webelement.WebElement (session="c3ebb960bf4ec5d7b7650f6c08833d47", element="47d075aa-53d8-4ccd-99c5-3e3eafbe0238")>]
+2022-07-02 14:36:06 INFO : <-- text: <class 'str'> 青少年
+2022-07-02 14:36:06 INFO : assert '青少年' in ${text}
+2022-07-02 14:36:06 INFO : --> key: assert
+2022-07-02 14:36:06 INFO : --> value: ['\'青少年\' in "青少年"']
+2022-07-02 14:36:06 INFO : <-- True
+2022-07-02 14:36:06 INFO : back()
+2022-07-02 14:36:06 INFO : --> key: back
+2022-07-02 14:36:06 INFO : --> value: []
+2022-07-02 14:36:08 INFO : ${title} = $.getCurrentUrl()
+2022-07-02 14:36:08 INFO : --> key: variable
+2022-07-02 14:36:08 INFO : --> value: []
+2022-07-02 14:36:08 INFO : <-- title: <class 'str'> https://www.invisalign.com.cn/find-a-doctor
+2022-07-02 14:36:08 INFO : assert 'https://www.invisalign.com.cn/find-a-doctor' == ${title}
+2022-07-02 14:36:08 INFO : --> key: assert
+2022-07-02 14:36:08 INFO : --> value: ['\'https://www.invisalign.com.cn/find-a-doctor\' == "https://www.invisalign.com.cn/find-a-doctor"']
+2022-07-02 14:36:08 INFO : <-- True
+2022-07-02 14:36:08 INFO : click('xpath=//*[@id="__next"]/div[3]/div/div/div[1]/div[2]/ul/li[2]/a')
+2022-07-02 14:36:08 INFO : --> key: click
+2022-07-02 14:36:08 INFO : --> value: ['xpath=//*[@id="__next"]/div[3]/div/div/div[1]/div[2]/ul/li[2]/a']
+2022-07-02 14:36:09 INFO : ${element_class} = $.getElement('class=btn-blue')
+2022-07-02 14:36:09 INFO : --> key: variable
+2022-07-02 14:36:09 INFO : --> value: ['class=btn-blue']
+2022-07-02 14:36:09 INFO : <-- element_class: <class 'selenium.webdriver.remote.webelement.WebElement'> <selenium.webdriver.remote.webelement.WebElement (session="c3ebb960bf4ec5d7b7650f6c08833d47", element="5a17cb97-f951-4254-a913-eb716892b73d")>
+2022-07-02 14:36:09 INFO : ${text} = $.getText(${element_class})
+2022-07-02 14:36:09 INFO : --> key: variable
+2022-07-02 14:36:09 INFO : --> value: [<selenium.webdriver.remote.webelement.WebElement (session="c3ebb960bf4ec5d7b7650f6c08833d47", element="5a17cb97-f951-4254-a913-eb716892b73d")>]
+2022-07-02 14:36:09 INFO : <-- text: <class 'str'> 父母
+2022-07-02 14:36:09 INFO : assert '父母' in ${text}
+2022-07-02 14:36:09 INFO : --> key: assert
+2022-07-02 14:36:09 INFO : --> value: ['\'父母\' in "父母"']
+2022-07-02 14:36:09 INFO : <-- True
+2022-07-02 14:36:09 INFO : back()
+2022-07-02 14:36:09 INFO : --> key: back
+2022-07-02 14:36:09 INFO : --> value: []
+2022-07-02 14:36:09 INFO : ${title} = $.getCurrentUrl()
+2022-07-02 14:36:09 INFO : --> key: variable
+2022-07-02 14:36:09 INFO : --> value: []
+2022-07-02 14:36:09 INFO : <-- title: <class 'str'> https://www.invisalign.com.cn/find-a-doctor
+2022-07-02 14:36:09 INFO : assert 'https://www.invisalign.com.cn/find-a-doctor' == ${title}
+2022-07-02 14:36:09 INFO : --> key: assert
+2022-07-02 14:36:09 INFO : --> value: ['\'https://www.invisalign.com.cn/find-a-doctor\' == "https://www.invisalign.com.cn/find-a-doctor"']
+2022-07-02 14:36:09 INFO : <-- True
+2022-07-02 14:36:09 INFO : click('xpath=//*[@id="__next"]/div[3]/div/div/div[1]/div[2]/ul/li[3]/a')
+2022-07-02 14:36:09 INFO : --> key: click
+2022-07-02 14:36:09 INFO : --> value: ['xpath=//*[@id="__next"]/div[3]/div/div/div[1]/div[2]/ul/li[3]/a']
+2022-07-02 14:36:10 INFO : ${element_class} = $.getElement('class=btn-blue')
+2022-07-02 14:36:10 INFO : --> key: variable
+2022-07-02 14:36:10 INFO : --> value: ['class=btn-blue']
+2022-07-02 14:36:10 INFO : <-- element_class: <class 'selenium.webdriver.remote.webelement.WebElement'> <selenium.webdriver.remote.webelement.WebElement (session="c3ebb960bf4ec5d7b7650f6c08833d47", element="92ddd20c-b007-4992-9d2c-052ebeffa8e9")>
+2022-07-02 14:36:10 INFO : ${text} = $.getText(${element_class})
+2022-07-02 14:36:10 INFO : --> key: variable
+2022-07-02 14:36:10 INFO : --> value: [<selenium.webdriver.remote.webelement.WebElement (session="c3ebb960bf4ec5d7b7650f6c08833d47", element="92ddd20c-b007-4992-9d2c-052ebeffa8e9")>]
+2022-07-02 14:36:10 INFO : <-- text: <class 'str'> 成年人
+2022-07-02 14:36:10 INFO : assert '成年人' in ${text}
+2022-07-02 14:36:10 INFO : --> key: assert
+2022-07-02 14:36:10 INFO : --> value: ['\'成年人\' in "成年人"']
+2022-07-02 14:36:10 INFO : <-- True
+2022-07-02 14:36:10 INFO : back()
+2022-07-02 14:36:10 INFO : --> key: back
+2022-07-02 14:36:10 INFO : --> value: []
+2022-07-02 14:36:11 INFO : ${title} = $.getCurrentUrl()
+2022-07-02 14:36:11 INFO : --> key: variable
+2022-07-02 14:36:11 INFO : --> value: []
+2022-07-02 14:36:11 INFO : <-- title: <class 'str'> https://www.invisalign.com.cn/find-a-doctor
+2022-07-02 14:36:11 INFO : assert 'https://www.invisalign.com.cn/find-a-doctor' == ${title}
+2022-07-02 14:36:11 INFO : --> key: assert
+2022-07-02 14:36:11 INFO : --> value: ['\'https://www.invisalign.com.cn/find-a-doctor\' == "https://www.invisalign.com.cn/find-a-doctor"']
+2022-07-02 14:36:11 INFO : <-- True
+2022-07-02 14:36:11 INFO :******************* Total: 6, Success: 6, Failed: 0, Error: 0, Skipped: 0 ********************
+
+2022-07-02 14:36:11 INFO :******************* TestCase 页面跳转-4 Start *******************
+2022-07-02 14:36:14 INFO : call CommonTest()
+2022-07-02 14:36:14 INFO : --> key: call
+2022-07-02 14:36:14 INFO : --> value: []
+2022-07-02 14:36:14 INFO : openUrl('https://www.invisalign.com.cn/find-a-doctor')
+2022-07-02 14:36:14 INFO : --> key: openUrl
+2022-07-02 14:36:14 INFO : --> value: ['https://www.invisalign.com.cn/find-a-doctor']
+2022-07-02 14:36:20 INFO : sleep(3)
+2022-07-02 14:36:20 INFO : --> key: sleep
+2022-07-02 14:36:20 INFO : --> value: [3]
+2022-07-02 14:36:23 INFO : click('xpath=//*[@id="__next"]/div[3]/div/div/div[1]/div[3]/a')
+2022-07-02 14:36:23 INFO : --> key: click
+2022-07-02 14:36:23 INFO : --> value: ['xpath=//*[@id="__next"]/div[3]/div/div/div[1]/div[3]/a']
+2022-07-02 14:36:29 INFO : ${element_class} = $.getElement('class=clr-blue')
+2022-07-02 14:36:29 INFO : --> key: variable
+2022-07-02 14:36:29 INFO : --> value: ['class=clr-blue']
+2022-07-02 14:36:29 INFO : <-- element_class: <class 'selenium.webdriver.remote.webelement.WebElement'> <selenium.webdriver.remote.webelement.WebElement (session="adf31c5eaaad12fd1e5e102ffe1975bf", element="de4531f5-9f1a-4b5b-b241-7a502a4cf77b")>
+2022-07-02 14:36:29 INFO : ${text} = $.getText(${element_class})
+2022-07-02 14:36:29 INFO : --> key: variable
+2022-07-02 14:36:29 INFO : --> value: [<selenium.webdriver.remote.webelement.WebElement (session="adf31c5eaaad12fd1e5e102ffe1975bf", element="de4531f5-9f1a-4b5b-b241-7a502a4cf77b")>]
+2022-07-02 14:36:29 INFO : <-- text: <class 'str'> Invisalign隐适美的工作原理是什么？
+2022-07-02 14:36:29 INFO : assert 'Invisalign隐适美的工作原理是什么？' in ${text}
+2022-07-02 14:36:29 INFO : --> key: assert
+2022-07-02 14:36:29 INFO : --> value: ['\'Invisalign隐适美的工作原理是什么？\' in "Invisalign隐适美的工作原理是什么？"']
+2022-07-02 14:36:29 INFO : <-- True
+2022-07-02 14:36:29 INFO : back()
+2022-07-02 14:36:29 INFO : --> key: back
+2022-07-02 14:36:29 INFO : --> value: []
+2022-07-02 14:36:31 INFO : ${title} = $.getCurrentUrl()
+2022-07-02 14:36:31 INFO : --> key: variable
+2022-07-02 14:36:31 INFO : --> value: []
+2022-07-02 14:36:31 INFO : <-- title: <class 'str'> https://www.invisalign.com.cn/find-a-doctor
+2022-07-02 14:36:31 INFO : assert 'https://www.invisalign.com.cn/find-a-doctor' == ${title}
+2022-07-02 14:36:31 INFO : --> key: assert
+2022-07-02 14:36:31 INFO : --> value: ['\'https://www.invisalign.com.cn/find-a-doctor\' == "https://www.invisalign.com.cn/find-a-doctor"']
+2022-07-02 14:36:31 INFO : <-- True
+2022-07-02 14:36:31 INFO :******************* Total: 7, Success: 7, Failed: 0, Error: 0, Skipped: 0 ********************
+
+2022-07-02 14:36:31 INFO :******************* TestCase 页面跳转-5 Start *******************
+2022-07-02 14:36:34 INFO : call CommonTest()
+2022-07-02 14:36:34 INFO : --> key: call
+2022-07-02 14:36:34 INFO : --> value: []
+2022-07-02 14:36:34 INFO : openUrl('https://www.invisalign.com.cn/find-a-doctor')
+2022-07-02 14:36:34 INFO : --> key: openUrl
+2022-07-02 14:36:34 INFO : --> value: ['https://www.invisalign.com.cn/find-a-doctor']
+2022-07-02 14:36:40 INFO : sleep(3)
+2022-07-02 14:36:40 INFO : --> key: sleep
+2022-07-02 14:36:40 INFO : --> value: [3]
+2022-07-02 14:36:43 INFO : click('xpath=//*[@id="__next"]/div[3]/div/div/div[1]/div[4]/a')
+2022-07-02 14:36:43 INFO : --> key: click
+2022-07-02 14:36:43 INFO : --> value: ['xpath=//*[@id="__next"]/div[3]/div/div/div[1]/div[4]/a']
+2022-07-02 14:36:44 INFO : ${element_class} = $.getElement('class=treatable-cases-hero')
+2022-07-02 14:36:44 INFO : --> key: variable
+2022-07-02 14:36:44 INFO : --> value: ['class=treatable-cases-hero']
+2022-07-02 14:36:44 INFO : <-- element_class: <class 'selenium.webdriver.remote.webelement.WebElement'> <selenium.webdriver.remote.webelement.WebElement (session="2266bf378f1f3a10758b3af546b0d7a9", element="2f930a4a-d8cd-4068-bde3-4c9841686e1c")>
+2022-07-02 14:36:44 INFO : ${text} = $.getText(${element_class})
+2022-07-02 14:36:44 INFO : --> key: variable
+2022-07-02 14:36:44 INFO : --> value: [<selenium.webdriver.remote.webelement.WebElement (session="2266bf378f1f3a10758b3af546b0d7a9", element="2f930a4a-d8cd-4068-bde3-4c9841686e1c")>]
+2022-07-02 14:36:44 INFO : <-- text: <class 'str'> 给自信加分
+精彩生活 从崭新笑容开始
+2022-07-02 14:36:44 INFO : assert '给自信加分' in ${text}
+2022-07-02 14:36:44 INFO : --> key: assert
+2022-07-02 14:36:44 INFO : --> value: ['\'给自信加分\' in "给自信加分\n精彩生活 从崭新笑容开始"']
+2022-07-02 14:36:44 INFO : <-- True
+2022-07-02 14:36:44 INFO : back()
+2022-07-02 14:36:44 INFO : --> key: back
+2022-07-02 14:36:44 INFO : --> value: []
+2022-07-02 14:36:46 INFO : ${title} = $.getCurrentUrl()
+2022-07-02 14:36:46 INFO : --> key: variable
+2022-07-02 14:36:46 INFO : --> value: []
+2022-07-02 14:36:46 INFO : <-- title: <class 'str'> https://www.invisalign.com.cn/find-a-doctor
+2022-07-02 14:36:46 INFO : assert 'https://www.invisalign.com.cn/find-a-doctor' == ${title}
+2022-07-02 14:36:46 INFO : --> key: assert
+2022-07-02 14:36:46 INFO : --> value: ['\'https://www.invisalign.com.cn/find-a-doctor\' == "https://www.invisalign.com.cn/find-a-doctor"']
+2022-07-02 14:36:46 INFO : <-- True
+2022-07-02 14:36:46 INFO :******************* Total: 8, Success: 8, Failed: 0, Error: 0, Skipped: 0 ********************
+
+2022-07-02 14:36:46 INFO :******************* TestCase 页面跳转-6 Start *******************
+2022-07-02 14:36:49 INFO : call CommonTest()
+2022-07-02 14:36:49 INFO : --> key: call
+2022-07-02 14:36:49 INFO : --> value: []
+2022-07-02 14:36:49 INFO : openUrl('https://www.invisalign.com.cn/find-a-doctor')
+2022-07-02 14:36:49 INFO : --> key: openUrl
+2022-07-02 14:36:49 INFO : --> value: ['https://www.invisalign.com.cn/find-a-doctor']
+2022-07-02 14:36:55 INFO : sleep(3)
+2022-07-02 14:36:55 INFO : --> key: sleep
+2022-07-02 14:36:55 INFO : --> value: [3]
+2022-07-02 14:36:58 INFO : click('xpath=//*[@id="__next"]/div[3]/div/div/div[1]/div[5]/ul/li[1]/a')
+2022-07-02 14:36:58 INFO : --> key: click
+2022-07-02 14:36:58 INFO : --> value: ['xpath=//*[@id="__next"]/div[3]/div/div/div[1]/div[5]/ul/li[1]/a']
+2022-07-02 14:37:00 INFO : ${element_class} = $.getElement('class=btn-blue')
+2022-07-02 14:37:00 INFO : --> key: variable
+2022-07-02 14:37:00 INFO : --> value: ['class=btn-blue']
+2022-07-02 14:37:00 INFO : <-- element_class: <class 'selenium.webdriver.remote.webelement.WebElement'> <selenium.webdriver.remote.webelement.WebElement (session="53b4fa882019f1308cbf464798455d12", element="9c4fd3b2-6ad6-46e4-ac66-d36d318b7fa7")>
+2022-07-02 14:37:00 INFO : ${text} = $.getText(${element_class})
+2022-07-02 14:37:00 INFO : --> key: variable
+2022-07-02 14:37:00 INFO : --> value: [<selenium.webdriver.remote.webelement.WebElement (session="53b4fa882019f1308cbf464798455d12", element="9c4fd3b2-6ad6-46e4-ac66-d36d318b7fa7")>]
+2022-07-02 14:37:00 INFO : <-- text: <class 'str'> 寻找隐适美治疗机构
+2022-07-02 14:37:00 INFO : assert '寻找隐适美治疗机构' in ${text}
+2022-07-02 14:37:00 INFO : --> key: assert
+2022-07-02 14:37:00 INFO : --> value: ['\'寻找隐适美治疗机构\' in "寻找隐适美治疗机构"']
+2022-07-02 14:37:00 INFO : <-- True
+2022-07-02 14:37:00 INFO : back()
+2022-07-02 14:37:00 INFO : --> key: back
+2022-07-02 14:37:00 INFO : --> value: []
+2022-07-02 14:37:02 INFO : ${title} = $.getCurrentUrl()
+2022-07-02 14:37:02 INFO : --> key: variable
+2022-07-02 14:37:02 INFO : --> value: []
+2022-07-02 14:37:02 INFO : <-- title: <class 'str'> https://www.invisalign.com.cn/find-a-doctor
+2022-07-02 14:37:02 INFO : assert 'https://www.invisalign.com.cn/find-a-doctor' == ${title}
+2022-07-02 14:37:02 INFO : --> key: assert
+2022-07-02 14:37:02 INFO : --> value: ['\'https://www.invisalign.com.cn/find-a-doctor\' == "https://www.invisalign.com.cn/find-a-doctor"']
+2022-07-02 14:37:02 INFO : <-- True
+2022-07-02 14:37:02 INFO : click('xpath=//*[@id="__next"]/div[3]/div/div/div[1]/div[5]/ul/li[2]/a')
+2022-07-02 14:37:02 INFO : --> key: click
+2022-07-02 14:37:02 INFO : --> value: ['xpath=//*[@id="__next"]/div[3]/div/div/div[1]/div[5]/ul/li[2]/a']
+2022-07-02 14:37:03 INFO : ${element_class} = $.getElement('class=dl-welcome-header')
+2022-07-02 14:37:03 INFO : --> key: variable
+2022-07-02 14:37:03 INFO : --> value: ['class=dl-welcome-header']
+2022-07-02 14:37:03 INFO : <-- element_class: <class 'selenium.webdriver.remote.webelement.WebElement'> <selenium.webdriver.remote.webelement.WebElement (session="53b4fa882019f1308cbf464798455d12", element="677c3f9f-94ff-4aa2-9964-33b773f07ee6")>
+2022-07-02 14:37:03 INFO : ${text} = $.getText(${element_class})
+2022-07-02 14:37:03 INFO : --> key: variable
+2022-07-02 14:37:03 INFO : --> value: [<selenium.webdriver.remote.webelement.WebElement (session="53b4fa882019f1308cbf464798455d12", element="677c3f9f-94ff-4aa2-9964-33b773f07ee6")>]
+2022-07-02 14:37:03 INFO : <-- text: <class 'str'> 查找附近的 Invisalign 隐适美治疗机构
+2022-07-02 14:37:03 INFO : assert '查找附近的 Invisalign 隐适美治疗机构' in ${text}
+2022-07-02 14:37:03 INFO : --> key: assert
+2022-07-02 14:37:03 INFO : --> value: ['\'查找附近的 Invisalign 隐适美治疗机构\' in "查找附近的 Invisalign 隐适美治疗机构"']
+2022-07-02 14:37:03 INFO : <-- True
+2022-07-02 14:37:03 INFO : ${title} = $.getCurrentUrl()
+2022-07-02 14:37:03 INFO : --> key: variable
+2022-07-02 14:37:03 INFO : --> value: []
+2022-07-02 14:37:03 INFO : <-- title: <class 'str'> https://www.invisalign.com.cn/find-a-doctor
+2022-07-02 14:37:03 INFO : assert 'https://www.invisalign.com.cn/find-a-doctor' == ${title}
+2022-07-02 14:37:03 INFO : --> key: assert
+2022-07-02 14:37:03 INFO : --> value: ['\'https://www.invisalign.com.cn/find-a-doctor\' == "https://www.invisalign.com.cn/find-a-doctor"']
+2022-07-02 14:37:03 INFO : <-- True
+2022-07-02 14:37:03 INFO : click('xpath=//*[@id="__next"]/div[3]/div/div/div[1]/div[5]/ul/li[3]/a')
+2022-07-02 14:37:03 INFO : --> key: click
+2022-07-02 14:37:03 INFO : --> value: ['xpath=//*[@id="__next"]/div[3]/div/div/div[1]/div[5]/ul/li[3]/a']
+2022-07-02 14:37:06 INFO : ${element_xpath} = $.getElement('xpath=//*[@id="step-container"]/div[1]/div/div[1]/div/h1')
+2022-07-02 14:37:06 INFO : --> key: variable
+2022-07-02 14:37:06 INFO : --> value: ['xpath=//*[@id="step-container"]/div[1]/div/div[1]/div/h1']
+2022-07-02 14:37:06 INFO : <-- element_xpath: <class 'selenium.webdriver.remote.webelement.WebElement'> <selenium.webdriver.remote.webelement.WebElement (session="53b4fa882019f1308cbf464798455d12", element="c6c14099-636e-43db-836f-6d42cd94350f")>
+2022-07-02 14:37:06 INFO : ${text} = $.getText(${element_xpath})
+2022-07-02 14:37:06 INFO : --> key: variable
+2022-07-02 14:37:06 INFO : --> value: [<selenium.webdriver.remote.webelement.WebElement (session="53b4fa882019f1308cbf464798455d12", element="c6c14099-636e-43db-836f-6d42cd94350f")>]
+2022-07-02 14:37:06 INFO : <-- text: <class 'str'> 开启微笑测试
+2022-07-02 14:37:06 INFO : assert '开启微笑测试' in ${text}
+2022-07-02 14:37:06 INFO : --> key: assert
+2022-07-02 14:37:06 INFO : --> value: ['\'开启微笑测试\' in "开启微笑测试"']
+2022-07-02 14:37:06 INFO : <-- True
+2022-07-02 14:37:06 INFO : click('xpath=//*[@id="__next"]/div[3]/div/div/div[1]/div[5]/ul/li[4]/a')
+2022-07-02 14:37:06 INFO : --> key: click
+2022-07-02 14:37:06 INFO : --> value: ['xpath=//*[@id="__next"]/div[3]/div/div/div[1]/div[5]/ul/li[4]/a']
+2022-07-02 14:37:08 INFO : ${element_xpath} = $.getElement('xpath=//*[@id="__next"]/div[2]/div/div/div[1]/div/div/div/div/div/h1')
+2022-07-02 14:37:08 INFO : --> key: variable
+2022-07-02 14:37:08 INFO : --> value: ['xpath=//*[@id="__next"]/div[2]/div/div/div[1]/div/div/div/div/div/h1']
+2022-07-02 14:37:08 INFO : <-- element_xpath: <class 'selenium.webdriver.remote.webelement.WebElement'> <selenium.webdriver.remote.webelement.WebElement (session="53b4fa882019f1308cbf464798455d12", element="87d16daa-c7df-4f2c-a840-86c91e72126c")>
+2022-07-02 14:37:08 INFO : ${text} = $.getText(${element_xpath})
+2022-07-02 14:37:08 INFO : --> key: variable
+2022-07-02 14:37:08 INFO : --> value: [<selenium.webdriver.remote.webelement.WebElement (session="53b4fa882019f1308cbf464798455d12", element="87d16daa-c7df-4f2c-a840-86c91e72126c")>]
+2022-07-02 14:37:08 INFO : <-- text: <class 'str'> 有关于我们的问题？ 
+2022-07-02 14:37:08 INFO : assert '有关于我们的问题？' in ${text}
+2022-07-02 14:37:08 INFO : --> key: assert
+2022-07-02 14:37:08 INFO : --> value: ['\'有关于我们的问题？\' in "有关于我们的问题？ "']
+2022-07-02 14:37:08 INFO : <-- True
+2022-07-02 14:37:08 INFO :******************* Total: 9, Success: 9, Failed: 0, Error: 0, Skipped: 0 ********************
+
+2022-07-02 14:37:08 INFO :******************* TestCase 页面跳转-7 Start *******************
+2022-07-02 14:37:11 INFO : call CommonTest()
+2022-07-02 14:37:11 INFO : --> key: call
+2022-07-02 14:37:11 INFO : --> value: []
+2022-07-02 14:37:11 INFO : openUrl('https://www.invisalign.com.cn/find-a-doctor')
+2022-07-02 14:37:11 INFO : --> key: openUrl
+2022-07-02 14:37:11 INFO : --> value: ['https://www.invisalign.com.cn/find-a-doctor']
+2022-07-02 14:37:18 INFO : sleep(3)
+2022-07-02 14:37:18 INFO : --> key: sleep
+2022-07-02 14:37:18 INFO : --> value: [3]
+2022-07-02 14:37:21 INFO : sleep(2)
+2022-07-02 14:37:21 INFO : --> key: sleep
+2022-07-02 14:37:21 INFO : --> value: [2]
+2022-07-02 14:37:23 INFO : click('xpath=//*[@id="basic-navbar-nav"]/div/div[6]/div/a')
+2022-07-02 14:37:23 INFO : --> key: click
+2022-07-02 14:37:23 INFO : --> value: ['xpath=//*[@id="basic-navbar-nav"]/div/div[6]/div/a']
+2022-07-02 14:37:26 INFO : ${element_xpath} = $.getElement('xpath=//*[@id="__next"]/div[2]/div[1]/div/div/div[2]/div/div/h2')
+2022-07-02 14:37:26 INFO : --> key: variable
+2022-07-02 14:37:26 INFO : --> value: ['xpath=//*[@id="__next"]/div[2]/div[1]/div/div/div[2]/div/div/h2']
+2022-07-02 14:37:26 INFO : <-- element_xpath: <class 'selenium.webdriver.remote.webelement.WebElement'> <selenium.webdriver.remote.webelement.WebElement (session="df79c8da645cef92e9ed090a7582170e", element="9b3ee6fa-dd57-4661-852e-753b9a8ba0aa")>
+2022-07-02 14:37:26 INFO : ${text} = $.getText(${element_xpath})
+2022-07-02 14:37:26 INFO : --> key: variable
+2022-07-02 14:37:26 INFO : --> value: [<selenium.webdriver.remote.webelement.WebElement (session="df79c8da645cef92e9ed090a7582170e", element="9b3ee6fa-dd57-4661-852e-753b9a8ba0aa")>]
+2022-07-02 14:37:26 INFO : <-- text: <class 'str'> 上海隐适美体验中心
+2022-07-02 14:37:26 INFO : assert '上海隐适美体验中心' in ${text}
+2022-07-02 14:37:26 INFO : --> key: assert
+2022-07-02 14:37:26 INFO : --> value: ['\'上海隐适美体验中心\' in "上海隐适美体验中心"']
+2022-07-02 14:37:26 INFO : <-- True
+2022-07-02 14:37:26 INFO :******************* Total: 10, Success: 10, Failed: 0, Error: 0, Skipped: 0 ********************
+
+2022-07-02 14:37:26 INFO :******************* TestCase 页面跳转-8 Start *******************
+2022-07-02 14:37:30 INFO : call CommonTest()
+2022-07-02 14:37:30 INFO : --> key: call
+2022-07-02 14:37:30 INFO : --> value: []
+2022-07-02 14:37:30 INFO : openUrl('https://www.invisalign.com.cn/find-a-doctor')
+2022-07-02 14:37:30 INFO : --> key: openUrl
+2022-07-02 14:37:30 INFO : --> value: ['https://www.invisalign.com.cn/find-a-doctor']
+2022-07-02 14:37:36 INFO : sleep(3)
+2022-07-02 14:37:36 INFO : --> key: sleep
+2022-07-02 14:37:36 INFO : --> value: [3]
+2022-07-02 14:37:39 INFO : sleep(2)
+2022-07-02 14:37:39 INFO : --> key: sleep
+2022-07-02 14:37:39 INFO : --> value: [2]
+2022-07-02 14:37:41 INFO : click('xpath=//*[@id="__next"]/div[1]/div/div/div/div[1]/div[2]/a[1]')
+2022-07-02 14:37:41 INFO : --> key: click
+2022-07-02 14:37:41 INFO : --> value: ['xpath=//*[@id="__next"]/div[1]/div/div/div/div[1]/div[2]/a[1]']
+2022-07-02 14:37:45 INFO : ${element_xpath} = $.getElement('xpath=//*[@id="step-container"]/div[1]/div/div[1]/div/h1')
+2022-07-02 14:37:45 INFO : --> key: variable
+2022-07-02 14:37:45 INFO : --> value: ['xpath=//*[@id="step-container"]/div[1]/div/div[1]/div/h1']
+2022-07-02 14:37:45 INFO : <-- element_xpath: <class 'selenium.webdriver.remote.webelement.WebElement'> <selenium.webdriver.remote.webelement.WebElement (session="a07454128e48c847bbadae7b94b1c791", element="b5fc0ea8-3712-4ab3-9762-9c5fb9b1959a")>
+2022-07-02 14:37:45 INFO : ${text} = $.getText(${element_xpath})
+2022-07-02 14:37:45 INFO : --> key: variable
+2022-07-02 14:37:45 INFO : --> value: [<selenium.webdriver.remote.webelement.WebElement (session="a07454128e48c847bbadae7b94b1c791", element="b5fc0ea8-3712-4ab3-9762-9c5fb9b1959a")>]
+2022-07-02 14:37:45 INFO : <-- text: <class 'str'> 开启微笑测试
+2022-07-02 14:37:45 INFO : assert '开启微笑测试' in ${text}
+2022-07-02 14:37:45 INFO : --> key: assert
+2022-07-02 14:37:45 INFO : --> value: ['\'开启微笑测试\' in "开启微笑测试"']
+2022-07-02 14:37:45 INFO : <-- True
+2022-07-02 14:37:45 INFO :******************* Total: 11, Success: 11, Failed: 0, Error: 0, Skipped: 0 ********************
+
+2022-07-02 14:37:45 INFO :******************* TestCase 页面跳转-9 Start *******************
+2022-07-02 14:37:48 INFO : call CommonTest()
+2022-07-02 14:37:48 INFO : --> key: call
+2022-07-02 14:37:48 INFO : --> value: []
+2022-07-02 14:37:48 INFO : openUrl('https://www.invisalign.com.cn/find-a-doctor')
+2022-07-02 14:37:48 INFO : --> key: openUrl
+2022-07-02 14:37:48 INFO : --> value: ['https://www.invisalign.com.cn/find-a-doctor']
+2022-07-02 14:37:52 INFO : sleep(3)
+2022-07-02 14:37:52 INFO : --> key: sleep
+2022-07-02 14:37:52 INFO : --> value: [3]
+2022-07-02 14:37:55 INFO : click('class=fad-link')
+2022-07-02 14:37:55 INFO : --> key: click
+2022-07-02 14:37:55 INFO : --> value: ['class=fad-link']
+2022-07-02 14:37:58 INFO : ${element_class} = $.getElement('class=dl-welcome-header')
+2022-07-02 14:37:58 INFO : --> key: variable
+2022-07-02 14:37:58 INFO : --> value: ['class=dl-welcome-header']
+2022-07-02 14:37:58 INFO : <-- element_class: <class 'selenium.webdriver.remote.webelement.WebElement'> <selenium.webdriver.remote.webelement.WebElement (session="86e8819c0935a38bd951afa1c32bd5fc", element="047d242c-0c7e-40d2-aa8f-e146cc21f71b")>
+2022-07-02 14:37:58 INFO : ${text} = $.getText(${element_class})
+2022-07-02 14:37:58 INFO : --> key: variable
+2022-07-02 14:37:58 INFO : --> value: [<selenium.webdriver.remote.webelement.WebElement (session="86e8819c0935a38bd951afa1c32bd5fc", element="047d242c-0c7e-40d2-aa8f-e146cc21f71b")>]
+2022-07-02 14:37:58 INFO : <-- text: <class 'str'> 查找附近的 Invisalign 隐适美治疗机构
+2022-07-02 14:37:58 INFO : assert '查找附近的 Invisalign 隐适美治疗机构' in ${text}
+2022-07-02 14:37:58 INFO : --> key: assert
+2022-07-02 14:37:58 INFO : --> value: ['\'查找附近的 Invisalign 隐适美治疗机构\' in "查找附近的 Invisalign 隐适美治疗机构"']
+2022-07-02 14:37:58 INFO : <-- True
+2022-07-02 14:37:59 INFO :******************* Total: 12, Success: 12, Failed: 0, Error: 0, Skipped: 0 ********************
+
+2022-07-02 14:37:59 INFO :******************* TestCase 页面跳转-10 Start *******************
+2022-07-02 14:38:02 INFO : call CommonTest()
+2022-07-02 14:38:02 INFO : --> key: call
+2022-07-02 14:38:02 INFO : --> value: []
+2022-07-02 14:38:02 INFO : openUrl('https://www.invisalign.com.cn/find-a-doctor')
+2022-07-02 14:38:02 INFO : --> key: openUrl
+2022-07-02 14:38:02 INFO : --> value: ['https://www.invisalign.com.cn/find-a-doctor']
+2022-07-02 14:38:08 INFO : sleep(3)
+2022-07-02 14:38:08 INFO : --> key: sleep
+2022-07-02 14:38:08 INFO : --> value: [3]
+2022-07-02 14:38:11 INFO : sleep(2)
+2022-07-02 14:38:11 INFO : --> key: sleep
+2022-07-02 14:38:11 INFO : --> value: [2]
+2022-07-02 14:38:13 INFO : click('xpath=//*[@id="__next"]/div[1]/div/div/div/div[1]/div[2]/a[2]')
+2022-07-02 14:38:13 INFO : --> key: click
+2022-07-02 14:38:13 INFO : --> value: ['xpath=//*[@id="__next"]/div[1]/div/div/div/div[1]/div[2]/a[2]']
+2022-07-02 14:38:16 INFO : ${element_xpath} = $.getElement('xpath=//*[@id="__next"]/div[2]/div/div/div/div[1]/div/div/div[2]/div/div/div/p/a')
+2022-07-02 14:38:16 INFO : --> key: variable
+2022-07-02 14:38:16 INFO : --> value: ['xpath=//*[@id="__next"]/div[2]/div/div/div/div[1]/div/div/div[2]/div/div/div/p/a']
+2022-07-02 14:38:16 INFO : <-- element_xpath: <class 'selenium.webdriver.remote.webelement.WebElement'> <selenium.webdriver.remote.webelement.WebElement (session="305d124440d3e000808de516cb617b2e", element="e2ca663e-1ebf-45c3-84a5-b79450236d6f")>
+2022-07-02 14:38:16 INFO : ${text} = $.getText(${element_xpath})
+2022-07-02 14:38:16 INFO : --> key: variable
+2022-07-02 14:38:16 INFO : --> value: [<selenium.webdriver.remote.webelement.WebElement (session="305d124440d3e000808de516cb617b2e", element="e2ca663e-1ebf-45c3-84a5-b79450236d6f")>]
+2022-07-02 14:38:16 INFO : <-- text: <class 'str'> 寻找隐适美治疗机构
+2022-07-02 14:38:16 INFO : assert '寻找隐适美治疗机构' in ${text}
+2022-07-02 14:38:16 INFO : --> key: assert
+2022-07-02 14:38:16 INFO : --> value: ['\'寻找隐适美治疗机构\' in "寻找隐适美治疗机构"']
+2022-07-02 14:38:16 INFO : <-- True
+2022-07-02 14:38:16 INFO :******************* Total: 13, Success: 13, Failed: 0, Error: 0, Skipped: 0 ********************
+

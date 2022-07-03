@@ -1,0 +1,16 @@
+driver: 'selenium'
+reStart: true
+saveScreenshot: false
+timeOut: 5
+desiredCapabilities:
+  browser: 'chrome'
+  maxWindow: True
+  chrome:
+    driver: 'Resource/chromedriver' # 驱动地址
+    options:
+      # - '--headless'  # 打开浏览器时不显示界面
+      - '--dissble-gpu' # 关闭GPU加速
+
+testcase:
+  - 'TestCase/action'
+  - 'TestCase/page'

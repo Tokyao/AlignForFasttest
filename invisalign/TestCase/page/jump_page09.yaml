@@ -1,0 +1,13 @@
+module: page
+skip: false
+description: 页面跳转-9
+steps:
+  # 调用公共方法：打开浏览器目标地址
+  - call CommonTest()
+  # 点击‘寻找隐适美治疗机构button’
+  - click('class=fad-link')
+  # ⻚⾯跳转后断⾔新⻚⾯中的元素
+  - ${element_class} = $.getElement('class=dl-welcome-header')
+  - ${text} = $.getText(${element_class})
+  # 定位当前⻚⾯元素并断⾔
+  - assert '查找附近的 Invisalign 隐适美治疗机构' in ${text}
