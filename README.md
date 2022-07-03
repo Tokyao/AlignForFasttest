@@ -1,0 +1,13 @@
+# AlignForFasttest
+- use Fasttest framework for UI e2e testing from https://github.com/Jodeee/fasttest 
+- fasttest makes a layer of keyword mapping on the basis of MACACA, Appium and Selenium, and writes automatic use cases on YAML files. Even QA without code foundation can quickly get used to automated testing
+- more info click [Fasttest](https://www.yuque.com/jodeee/fasttest/oue9xb)
+- need to install：
+  - pip3 install selenium
+- need download chromedriver:http://npm.taobao.org/mirrors/chromedriver/
+- take your chromedriver path to replace the path which in the resource file
+- need to install dependencies:
+  - cd fasttest
+  - python3 setup.py install or python3 -m pip install -r requirements.txt  -i https://pypi.douban.com/simple/ --trusted-host=pypi.douban.com/simple
+  - fasttest -V(make sure the order worked)
+- fasttest -r invisalign
